@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block main %}
+    <div class="jumbotron">
+        <h1>Welcome {{username}} to CS50 Finance!</h1>
+        <p>You can get a quote, buy and sell stocks.</p>
+        {% if cash %}
+            <p>You currently have <b>${{cash}}</b> in cash.</p>
+        {% endif %}
+        {% if net_portfolio %}
+            <p>Your portfolio is worth <b>${{net_portfolio}}</b>.</p>
+        {% endif %}
+    </div>
+    <table class="table">
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        {% if info %}
+            {% for row in info %}
+                <tr>
+                    <td>${{row['ticker']}}</td>
+                    <td>{{row['company_name']}}</td>
+                    <td>{{row['shares']}}</td>
+                    <td>${{row['price']}}</td>
+                    <td>${{row['total']}}</td>
+                </tr>
+            {% endfor %}
+            <td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b>${{net_portfolio}}</b></td>
+            </td>
+        {% endif %}
+    </table>
+{% endblock %}

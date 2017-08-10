@@ -1,0 +1,12 @@
+1.  Typedef's for defining maximum and minimum values for integers.
+2.  For working with interger sets of fixed widths.
+3.  Byte = 1 byte, DWord = 4 bytes, LONG = 4 bytes, Word = 2 bytes.
+4.  0x42 0x4D are the first two bytes.
+5.  bf contains the size of the file header, bi contains the size of the information header.
+6.  It means that the image is inverted.
+7.  biClrUsed contains information about the colour depth.
+8.  Because a bmp file stores 24 bits of color information so opening bits from 24 to 32 may not return anything.
+9.  Because there is only one element being read.
+10. There will be no padding assigned.
+11. fseek will move the position in the stream to a different location depending on the arguments.
+12. SEEK_CUR says that the offset is from the current position in the stream and not from the beginning or end.

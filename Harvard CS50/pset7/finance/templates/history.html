@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block main %}
+    <h1>History</h1>
+    <table class="table">
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Transacted</th>
+        </tr>
+        {% if info %}
+            {% for row in info %}
+                <tr>
+                    <td>${{row['ticker']}}</td>
+                    <td>{{row['amount']}}</td>
+                    <td>${{row['price']}}</td>
+                    <td>{{row['date']}}</td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </table>
+{% endblock %}

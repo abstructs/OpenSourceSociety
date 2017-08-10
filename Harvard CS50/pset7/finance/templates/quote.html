@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block title %} Quote {% endblock %}
+{% block main %}
+    <h1>Quote</h1>
+    {% if quote: %}
+        <h1>for {{quote['name']}}</h1>
+        <table class="table">
+            <tr>
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>${{quote['symbol']}}</td>
+                <td>{{quote['name']}}</td>
+                <td>{{quote['price']}}</td>
+            </tr>
+        </table>
+        <h3>Search again?</h3>
+    {% endif %}
+    <form action="{{ url_for('quote') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autofocus class="form-control" name="ticker" placeholder="Stock Ticker" type="text"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Get Quote</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}

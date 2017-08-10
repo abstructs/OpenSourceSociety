@@ -1,0 +1,23 @@
+0.  A lung disease caused by ash in the lungs.
+1.  getrusage records the amount of resources being used by a calling thread
+2.  There are 16 values in the rusage structure
+3.  getrusage wants to check for the resource of the thread, passing in a 
+    non-reference would check the resource cost of the value.
+4. Main reads words from a file by reading characters one at a time storing 
+   the read character into an array of characters until it reads a non-alphabetical 
+   value, an asterisk, or the file reader reaches the end of the file. If the 
+   index counting the length of the read string exceeds that of the longest 
+   possible word in the dictionary, it is counted as a misspelled word and a 
+   while loop will read the remaining characters in the word exhausting the remaining
+   characters so we can begin reading a new word. At that point it adds a \0 to 
+   indicate the end of the word, sets the index recording the length of the word to 
+   0 to prepare for the next word and checks to see if the word is misspelled by passing
+   a pointer to the first location in memory of the array into the misspelled method. 
+   If it is misspelled, the misspelled word is added to an array of misspelled words. 
+5. If you were to use fscanf with %s as a format the file reader may end up reading
+    very long words unneccesarily, then inorder to check we would have to read through 
+    every index of that word's memory. Whereas if we read one character at a time and we find we 
+    exceeded the length limit for a correctly spelled word we can confidently declare
+    the word as misspelled and move on to the next one without expending excess resources.
+6.  Check and load takes constants as arguments because these functions should not be mutating
+    the arguments recieved in anyway as their only purpose in life is to read values.
