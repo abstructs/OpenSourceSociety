@@ -16,7 +16,7 @@
 (struct snd  (e)    #:transparent) ;; get second part of a pair
 (struct aunit ()    #:transparent) ;; unit value -- good for ending a list
 (struct isaunit (e) #:transparent) ;; evaluate to 1 if e is unit else 0
-
+(struct ifeq (e1 e2 e3 e4) #:transparent) ;; check if two ints are equal
 ;; a closure is not in "source" programs but /is/ a MUPL value; it is what functions evaluate to
 (struct closure (env fun) #:transparent) 
 
@@ -78,19 +78,34 @@
          (letrec ([new_env (cons (cons (mlet-var e) (eval-under-env (mlet-e e) env)) env)]
                   [v1 (eval-under-env (mlet-body e) new_env)])
            v1)]
-        [(call? e) (if (closure? (call-funexp e))
-                       (let ([env-with-fun (cons (cons (fun-nameopt (closure-fun (call-funexp e))) (closure-fun (call-funexp e))) (closure-env (call-funexp e)))]
-                             [arguments (cons (fun-formal (closure-fun (call-funexp e))) (call-actual e))])
-                         (if (fun-nameopt (closure-fun (call-funexp e)))
-                             (eval-under-env (fun-body (closure-fun (call-funexp e))) (cons arguments env-with-fun))
-                             (eval-under-env (fun-body (closure-fun (call-funexp e))) (cons arguments (closure-env (call-funexp e))))))
-                       (error "First argument must be a closure"))]
+        [(call? e) (letrec ([call-fn (eval-under-env (call-funexp e) env)]
+                            [closr (eval-under-env call-fn env)])
+                     (if (closure? closr)
+                         (letrec ([fun (closure-fun closr)]
+                                  [args (cons (fun-formal fun) (eval-under-env (call-actual e) env))]
+                                  [new_env (if (fun-nameopt fun)
+                                               (append (list (cons (fun-nameopt fun) fun) args) (closure-env closr))
+                                               (cons args (closure-env closr)))])
+                           (eval-under-env (fun-body (closure-fun closr)) new_env))
+                         (error "Could not evaluate to a closure.")))]
         [(apair? e) (let ([v1 (eval-under-env (apair-e1 e) env)]
                           [v2 (eval-under-env (apair-e2 e) env)])
                       (apair v1 v2))]
-        [(snd? e) (if (apair? (snd-e e)) (apair-e2 (snd-e e)) (error "Argument should be an apair"))]
-        [(fst? e) (if (apair? (fst-e e)) (apair-e1 (fst-e e)) (error "Argument should be an apair"))]
-        [(isaunit? e) (if (aunit? e) (int 1) (int 0))]
+        [(closure? e) e]
+        [(aunit? e) e]
+        [(fun? e) (closure env e)]
+        [(fst? e) (let ([v1 (eval-under-env (fst-e e) env)])
+                    (if (apair? v1) (apair-e1 v1) (error "Argument should be an apair")))]
+        [(snd? e) (let ([v1 (eval-under-env (snd-e e) env)])
+                    (if (apair? v1) (apair-e2 v1) (error "Argument should be an apair")))]
+        [(isaunit? e) (if (aunit? (eval-under-env (isaunit-e e) env)) (int 1) (int 0))]
+        [(ifeq? e) (let ([v1 (eval-under-env (ifeq-e1 e) env)]
+                         [v2 (eval-under-env (ifeq-e2 e) env)])
+                     (if (and (int? v1) (int? v2))
+                         (if (= (int-num v1) (int-num v2))
+                             (eval-under-env (ifeq-e3 e) env)
+                             (eval-under-env (ifeq-e4 e) env))
+                         (error "Cannot do equal with two non-ints!")))]
         [#t (error (format "bad MUPL expression: ~v" e))]))
 
 ;; Do NOT change
@@ -106,23 +121,24 @@
     (cond [(null? lstlst) (eval-under-env e2 acc)]
           [#t (aux (cdr lstlst) (cons (first lstlst) acc))]))
   (aux lstlst null))
-         
-
-(define (ifeq e1 e2 e3 e4)
-  (if (and (int? e1) (int? e2))
-      (if (= (int-num e1) (int-num e2)) e3 e4)
-      (error "Cannot do equal with two non-ints!")))
 
 ;; Problem 4
 
-(define mupl-map (closure null
-                          (fun "map" (list (cons "mlst" (apair (int 1) (aunit))))
-                               (cond [(aunit? (var "mlst")) (aunit)]
-                                     [#t "hi"]))))
+(define mupl-map (fun "map" "fun"
+                               (fun "aux" "lst"
+                                    (ifeq (int 1) (isaunit (var "lst"))
+                                          (aunit)
+                                          (apair (call (var "fun") (fst (var "lst"))) (call (var "aux") (snd (var "lst"))))))))
 
-(define mupl-mapAddN 
-  (mlet "map" mupl-map
-        "CHANGE (notice map is now in MUPL scope)"))
+;(apair (call (var "fun") (fst (var "lst")))
+                                          
+                                          
+(define mupl-mapAddN
+  (fun #f "i"
+       (mlet "map" mupl-map
+             (call (var "map") (fun "add" "x" (add (var "x") (var "i")))))))
+  
+  ;"CHANGE (notice map is now in MUPL scope)"))
 
 ;; Challenge Problem
 
