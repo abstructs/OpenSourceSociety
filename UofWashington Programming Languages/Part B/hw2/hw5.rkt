@@ -16,10 +16,7 @@
 (struct snd  (e)    #:transparent) ;; get second part of a pair
 (struct aunit ()    #:transparent) ;; unit value -- good for ending a list
 (struct isaunit (e) #:transparent) ;; evaluate to 1 if e is unit else 0
-(struct ifeq (e1 e2 e3 e4) #:transparent) ;; check if two ints are equal
-(struct ifaunit (e1 e2 e3) #:transparent) ;; check if something evaluates to a unit
 ;; a closure is not in "source" programs but /is/ a MUPL value; it is what functions evaluate to
-(struct mlet* (lstlst e2) #:transparent)
 (struct closure (env fun) #:transparent)
 
 ;; Problem 1
@@ -96,23 +93,11 @@
         [(closure? e) e]
         [(aunit? e) e]
         [(fun? e) (closure env e)]
-        [(ifaunit? e) (let ([v1 (eval-under-env (ifaunit-e1 e) env)])
-                        (if (aunit? v1)
-                            (ifaunit-e2 e)
-                            (ifaunit-e3 e)))]
         [(fst? e) (let ([v1 (eval-under-env (fst-e e) env)])
                     (if (apair? v1) (apair-e1 v1) (error "Argument should be an apair")))]
         [(snd? e) (let ([v1 (eval-under-env (snd-e e) env)])
                     (if (apair? v1) (apair-e2 v1) (error "Argument should be an apair")))]
         [(isaunit? e) (if (aunit? (eval-under-env (isaunit-e e) env)) (int 1) (int 0))]
-        [(mlet*? e) (mlet-fun (mlet*-lstlst e) (mlet*-e2 e) env)]
-        [(ifeq? e) (let ([v1 (eval-under-env (ifeq-e1 e) env)]
-                         [v2 (eval-under-env (ifeq-e2 e) env)])
-                     (if (and (int? v1) (int? v2))
-                         (if (= (int-num v1) (int-num v2))
-                             (eval-under-env (ifeq-e3 e) env)
-                             (eval-under-env (ifeq-e4 e) env))
-                         (error "Cannot do equal with two non-ints!")))]
         [#t (error (format "bad MUPL expression: ~v" e))]))
 
 ;; Do NOT change
@@ -121,11 +106,23 @@
         
 ;; Problem 3
 
-(define (mlet-fun lstlst e2 env)
-  (define (aux lstlst acc)
-    (cond [(null? lstlst) (eval-under-env e2 acc)]
-          [#t (aux (cdr lstlst) (cons (cons (car (first lstlst)) (eval-under-env (cdr (first lstlst)) acc)) acc))]))
-  (aux lstlst env))
+(define (ifaunit e1 e2 e3) (ifgreater (isaunit e1) (int 0) e2 e3))
+
+(define (mlet* lstlst e2)
+  (define (aux lstlst)
+    (cond [(null? lstlst) e2]
+          [#t (mlet (car (car lstlst)) (cdr (car lstlst)) (aux (cdr lstlst)))]))
+  (aux lstlst))
+
+
+(define (ifeq e1 e2 e3 e4)
+  (mlet "_x" e1
+        (mlet "_y" e2
+              (ifgreater (var "_x") (var "_y")
+                         e4
+                         (ifgreater (var "_y") (var "_x")
+                                    e4
+                                    e3)))))
 
 ;; Problem 4
 
@@ -134,10 +131,7 @@
                                     (ifeq (int 1) (isaunit (var "lst"))
                                           (aunit)
                                           (apair (call (var "fun") (fst (var "lst"))) (call (var "aux") (snd (var "lst"))))))))
-
-;(apair (call (var "fun") (fst (var "lst")))
-                                          
-                                          
+                    
 (define mupl-mapAddN
   (fun #f "i"
        (mlet "map" mupl-map
