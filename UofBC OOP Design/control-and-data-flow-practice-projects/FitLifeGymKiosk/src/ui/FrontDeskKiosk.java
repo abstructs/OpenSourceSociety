@@ -28,7 +28,7 @@ public class FrontDeskKiosk {
         System.out.println("Welcome to FitLifeGym!");
 
         kiosk.handleUserInput();
-        kiosk.endProgram();
+        kiosk.c();
 
         System.out.println("Thank you for choosing FitLifeGym!");
     }

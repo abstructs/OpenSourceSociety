@@ -1,8 +1,6 @@
 package ui;
 
 
-import java.util.Scanner;
-
 import model.FitnessClass;
 import model.Gym;
 import model.cardio.CardioMachine;
@@ -10,9 +8,9 @@ import model.members.Member;
 import model.members.Visit;
 import model.weights.Weight;
 
-import static model.members.MembershipLevel.BASIC;
-import static model.members.MembershipLevel.CLASSES;
-import static model.members.MembershipLevel.DELUXE;
+import java.util.Scanner;
+
+import static model.members.MembershipLevel.*;
 
 
 public class Kiosk {

@@ -22,7 +22,7 @@ public class HockeyTeamTest {
         p3 = new Player("Wayne Gretzky", 99);
         p4 = new Player("John Paulson", 2);
         p5 = new Player("Sidney Crosby", 87);
-        p6 = new Player("Jack Hammerschmidt", 45);
+        p6 = new Player("Jack Hammer    schmidt", 45);
     }
 
     @Test
