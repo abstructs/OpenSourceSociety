@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-class CoinTest {
+public class CoinTest {
     private Coin coin;
 
     @Before
@@ -24,6 +24,6 @@ class CoinTest {
             if (face.equals("tails")) { tailsFlipped++; }
             else if (face.equals("heads")) { headsFlipped++; }
         }
-        assertTrue(tailsFlipped > 0 && headsFlipped > 0);
+        assertTrue(Math.abs(tailsFlipped - headsFlipped) < 10);
     }
 }
