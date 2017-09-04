@@ -13,16 +13,11 @@ class MyPiece < Piece
 
   # your enhancements here
 
-  def self.next_piece (board, cheat=false)
-    if cheat
-      return MyPiece.new(Cheat_Block, board)
-    end
-    
+  def self.next_piece (board)
     MyPiece.new(All_My_Pieces.sample, board)
   end
 
-  Cheat_Block = [[[0, 0], [0, 0]],
-                [[0, 0], [0, 0]]]
+  My_Cheat_Block = [[[0, 0]]]
 
   All_My_Pieces  = [[[[0, 0], [1, 0], [0, 1], [1, 1]]],  # square (only needs one)
   rotations([[0, 0], [-1, 0], [1, 0], [0, -1]]), # T
@@ -56,13 +51,14 @@ class MyBoard < Board
   end
 
   def next_piece
-    @current_block = MyPiece.next_piece(self, eval("@cheat if score >= 100"))
-    @current_pos = nil
-    
     if @cheat && @score >= 100      
+      @current_block = MyPiece.new(MyPiece::My_Cheat_Block, self)
       @score -= 100
+    else
+      @current_block = MyPiece.next_piece(self)
     end
 
+    @current_pos = nil
     @cheat = false
   end
 

@@ -56,10 +56,10 @@ public class BandTest {
 
         band.addMember("Sazi");
         band.payMembers(50);
-        assertEquals(band.getCurrentMoney(), 80, 0.01);
+        assertEquals(band.getCurrentMoney(), 30, 0.01);
 
         band.payMembers(30);
-        assertEquals(band.getCurrentMoney(), 20, 0.01);
+        assertEquals(band.getCurrentMoney(), 0, 0.01);
     }
 
     @Test
