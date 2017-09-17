@@ -58,7 +58,7 @@ class GeometryValue
   # the intersection of self with a NoPoints is a NoPoints object
   def intersectNoPoints np
     np # could also have NoPoints.new here instead
-  end 
+  end
 
   # we put this in this class so all subclasses can inhert it:
   # the intersection of self with a LineSegment is computed by
@@ -94,7 +94,7 @@ class NoPoints < GeometryValue
   end
   def intersectLine line
     self # intersection with line and no-points is no-points
-  end 
+  end
   def intersectVerticalLine vline
     self # intersection with line and no-points is no-points
   end
@@ -119,57 +119,13 @@ class Point < GeometryValue
     @y = y
   end
 
-  private 
-
-  def inbetween(v, end1, end2)
-    epsilon = GeometryExpression::Epsilon
-    return ((end1 - epsilon <= v && v <= end2 + epsilon) || (end2 - epsilon <= v && v <= end1 + epsilon))
-  end
-
-  public 
-
   def shift(x, y)
-    Point.new(@x+x, @y+y)
+    this.x += x
+    this.y += y
   end
 
-  def preprocess_prog
-    self
-  end
-
-  def eval_prog env
-    self
-  end
-
-  def intersect something
-    something.intersectPoint self
-  end
-  def intersectPoint p
-    if real_close(p.x, @x) and real_close(p.y, @y)
-      self
-    else
-      NoPoints.new
-    end
-  end
-  def intersectLine np
-    if real_close(@x, np.x)
-      self
-    else
-      NoPoints.new
-    end
-  end
-  def intersectVerticalLine vl
-    if real_close(@x, vl.x)
-      self
-    else
-      NoPoints.new
-    end
-  end 
-  def intersectWithSegmentAsLineResult ls
-    if inbetween(@x, ls.x1, ls.x2) && inbetween(@y, ls.y1, ls.y2)
-      Point.new(@x, @y)
-    else
-      NoPoints.new
-    end
+  def preprocess_prof
+    
   end
 end
 
@@ -183,40 +139,7 @@ class Line < GeometryValue
   end
 
   def shift(x, y)
-    Line.new(m, b + (y - (m * x)))
-  end
-
-  def preprocess_prog
-    self
-  end
-
-  def eval_prog env
-    self
-  end
-  def intersect something
-    something.intersectLine self
-  end
-  def intersectPoint p
-    p.intersectLine self
-  end
-  def intersectLine l
-    if real_close(l.m, m)
-      if real_close(l.b, b)
-        self
-      else
-        NoPoints.new
-      end
-    else
-      x = (l.b - b) / (m - l.m)
-      y = m * x + b
-      Point.new(x, y)
-    end
-  end
-  def intersectVerticalLine vl
-    Point.new(vl.x, @m1 * vl.x + @b)
-  end
-  def intersectWithSegmentAsLineResult ls
-    ls
+    b = b + (y - (m * x))
   end
 end
 
@@ -229,34 +152,7 @@ class VerticalLine < GeometryValue
   end
 
   def shift(x, y)
-    VerticalLine.new(@x+x)
-  end
-
-  def preprocess_prog
-    self
-  end
-
-  def eval_prog env
-    self
-  end
-  def intersect something
-    something.intersectVerticalLine self
-  end
-  def intersectPoint p
-    p.intersectVerticalLine self
-  end
-  def intersectLine l
-    l.intersectLine self
-  end
-  def intersectVerticalLine vl
-    if real_close(vl.x, x)
-      self
-    else
-      NoPoints.new
-    end
-  end
-  def intersectWithSegmentAsLineResult ls
-    ls
+    this.x += x
   end
 end
 
@@ -275,58 +171,8 @@ class LineSegment < GeometryValue
   end
 
   def shift(x, y)
-    LineSegment.new(@x1 + x, @y1 + y, @x2 + x, @y2 + y)
-  end
-
-  def eval_prog env
-    self
-  end
-
-  def preprocess_prog 
-    if real_close(x1, x2) and real_close(y1, y2)
-      return Point.new(x1, y1)
-    elsif x1 > x2 || real_close(x1, x2) && y1 > y2
-      @x1, @x2 = @x2, @x1
-      @y1, @y2 = @y2, @y1
-    end
-
-    self
-  end
-
-  def intersect something
-    something.intersectLineSegment self
-  end
-  
-  def intersectWithSegmentAsLineResult ls
-    seg = self
-    seg2 = ls
-    if real_close(seg.x1, seg.x2)
-      if seg.y1 < seg2.y1
-        (seg, seg2) = seg2, seg
-      end
-      if real_close(seg.y2, seg2.y1)
-        return Point.new(seg.x2, seg.y2)
-      elsif seg.y2 < seg2.y1
-        return NoPoints.new
-      elsif seg.y2 > seg2.y2
-        return LineSegment.new(seg2.x1, seg2.y1, seg2.x2, seg2.y2)
-      else
-        return LineSegment.new(seg2.x1, seg2.y1, seg.x2, seg.y2)
-      end
-    else
-      if seg.x1 < seg2.x1
-        (seg, seg2) = seg2, seg
-      end
-      if real_close(seg.x2, seg2.x1)
-         return Point.new(seg.x2, seg.y2)
-      elsif seg.x2 < seg2.x1
-        return NoPoints.new
-      elsif seg.x2 > seg2.x2
-        return LineSegment.new(seg2.x1, seg2.y1, seg2.x2, seg2.y2)
-      else
-        return LineSegment.new(seg.x1, seg.y1, seg.x2, seg.y2)
-      end
-    end
+    x2 += x
+    y2 += y
   end
 end
 
@@ -339,12 +185,6 @@ class Intersect < GeometryExpression
     @e1 = e1
     @e2 = e2
   end
-  def eval_prog env
-    @e1.eval_prog(env).intersect(@e2.eval_prog(env))
-  end
-  def preprocess_prog
-    Intersect.new(@e1, @e2)
-  end
 end
 
 class Let < GeometryExpression
@@ -355,12 +195,6 @@ class Let < GeometryExpression
     @s = s
     @e1 = e1
     @e2 = e2
-  end
-  def eval_prog env
-    @e2.eval_prog env.push(Var.new(@s), [@s, @e1])
-  end
-  def preprocess_prog
-    Let.new(@s, @e1, @e2)
   end
 end
 
@@ -375,9 +209,6 @@ class Var < GeometryExpression
     raise "undefined variable" if pr.nil?
     pr[1]
   end
-  def preprocess_prog
-    self
-  end
 end
 
 class Shift < GeometryExpression
@@ -387,11 +218,5 @@ class Shift < GeometryExpression
     @dx = dx
     @dy = dy
     @e = e
-  end
-  def eval_prog env
-    @e.eval_prog(env).shift(@dx, @dy)
-  end
-  def preprocess_prog
-    Shift.new(@dx, @dy, @e)
   end
 end

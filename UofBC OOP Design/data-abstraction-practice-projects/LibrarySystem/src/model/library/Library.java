@@ -16,8 +16,9 @@ public class Library {
     private List<Book> textBooks;
     private List<Book> cookBooks;
 
-    public Library(String nm, Librarian manager) {
+    private Library(String nm) {
         //TODO: complete the implementation of this method
+        this.name = nm;
     }
 
     // getters
