@@ -143,6 +143,9 @@ class Point < GeometryValue
   def intersect something
     something.intersectPoint self
   end
+  def intersectNoPoints np
+    NoPoints.new
+  end
   def intersectPoint p
     if real_close(p.x, @x) and real_close(p.y, @y)
       self
@@ -150,8 +153,8 @@ class Point < GeometryValue
       NoPoints.new
     end
   end
-  def intersectLine np
-    if real_close(@x, np.x)
+  def intersectLine l
+    if real_close(@y, l.m * @x + l.b)
       self
     else
       NoPoints.new
@@ -199,6 +202,9 @@ class Line < GeometryValue
   def intersectPoint p
     p.intersectLine self
   end
+  def intersectNoPoints np
+    NoPoints.new
+  end
   def intersectLine l
     if real_close(l.m, m)
       if real_close(l.b, b)
@@ -210,13 +216,13 @@ class Line < GeometryValue
       x = (l.b - b) / (m - l.m)
       y = m * x + b
       Point.new(x, y)
-    end
+    end 
   end
   def intersectVerticalLine vl
-    Point.new(vl.x, @m1 * vl.x + @b)
+    Point.new(vl.x, @m * vl.x + @b) 
   end
   def intersectWithSegmentAsLineResult ls
-    ls
+    ls.intersectLine self
   end
 end
 
@@ -256,7 +262,7 @@ class VerticalLine < GeometryValue
     end
   end
   def intersectWithSegmentAsLineResult ls
-    ls
+    ls.intersectVerticalLine self
   end
 end
 
@@ -296,7 +302,19 @@ class LineSegment < GeometryValue
   def intersect something
     something.intersectLineSegment self
   end
-  
+  def intersectPoint p
+    p.intersectLineSegment self
+  end
+  def intersectNoPoints np
+    NoPoints.new
+  end
+  def intersectLine l
+    self
+  end
+  def intersectVerticalLine vl
+    self
+  end
+
   def intersectWithSegmentAsLineResult ls
     seg = self
     seg2 = ls
@@ -340,7 +358,7 @@ class Intersect < GeometryExpression
     @e2 = e2
   end
   def eval_prog env
-    @e1.eval_prog(env).intersect(@e2.eval_prog(env))
+    @e1.preprocess_prog.eval_prog(env).intersect(@e2.preprocess_prog.eval_prog(env))
   end
   def preprocess_prog
     Intersect.new(@e1, @e2)
@@ -357,9 +375,11 @@ class Let < GeometryExpression
     @e2 = e2
   end
   def eval_prog env
-    @e2.eval_prog env.push(Var.new(@s), [@s, @e1])
+    new_env = env.clone.map { |e| e[0] == @s ? [@s, @e1.preprocess_prog.eval_prog(new_env)] : e }
+    new_env.push([@s, @e1.preprocess_prog.eval_prog(new_env)]) unless not(new_env.assoc(@s).nil?)
+    @e2.preprocess_prog.eval_prog new_env
   end
-  def preprocess_prog
+  def preprocess_prog 
     Let.new(@s, @e1, @e2)
   end
 end
@@ -389,7 +409,7 @@ class Shift < GeometryExpression
     @e = e
   end
   def eval_prog env
-    @e.eval_prog(env).shift(@dx, @dy)
+    @e.preprocess_prog.eval_prog(env).shift(@dx, @dy)
   end
   def preprocess_prog
     Shift.new(@dx, @dy, @e)

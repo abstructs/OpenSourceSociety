@@ -59,3 +59,15 @@ in
 	then (print "eval_prog with shadowing 'a' in environment is working properly\n")
 	else (print "eval_prog with shadowing 'a' in environment is not working properly\n")
 end;
+
+
+(* Failed tests: *)
+(* Preprocess tests *)
+let
+    val Point(a,b) = preprocess_prog(LineSegment(~3.7,1.5,~3.7,1.5))
+    val Point(c,d) = Point(~3.7,1.5)
+in
+    if real_equal(a,c) andalso real_equal(b,d)
+    then (print "t1 works\n")
+    else (print "t1 doesn't work\n")
+end;

@@ -212,8 +212,16 @@ fun eval_prog (e,env) =
 	    
 fun preprocess_prog exp =
   case exp of
-      LineSegment(x1,y1,x2,y2) => if real_close(x1, x2) andalso real_close(y1, y2)
+      LineSegment(x1,y1,x2,y2) => (if real_close(x1, x2) andalso real_close(y1, y2)
 				  then Point(x1,y1)
-				  else LineSegment(x1,y1,x2,y2)
+				  else (let val seg = (x1, y1, x2, y2)
+					    val seg2 = (x2, y2, x1, y1)
+					    val new_line = (if real_close(x1, x2) andalso (y2 < y1)
+							    then seg2
+							    else (if x2 < x1 then seg2 else seg))
+							    in
+								LineSegment(new_line)
+							    end))
      |_  => exp
-						  
+		
+		
