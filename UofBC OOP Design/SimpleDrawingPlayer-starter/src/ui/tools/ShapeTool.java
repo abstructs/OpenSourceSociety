@@ -1,6 +1,7 @@
 package ui.tools;
 
 
+import model.shapes.*;
 import model.Shape;
 import ui.DrawingEditor;
 
@@ -9,8 +10,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 
-public class ShapeTool extends Tool {
-	private Shape shape;
+public abstract class ShapeTool extends Tool {
+	protected Shape shape;
 
     public ShapeTool(DrawingEditor editor, JComponent parent) {
 		super(editor, parent);
@@ -43,7 +44,6 @@ public class ShapeTool extends Tool {
 		editor.addToDrawing(shape);
 	}
 
-
 	// MODIFIES: this
     // EFFECTS:  unselects this shape, and sets it to null
 	@Override
@@ -60,14 +60,10 @@ public class ShapeTool extends Tool {
 	}
 
 	//EFFECTS: Returns the string for the label.
-	private String getLabel() {
-		return "Shape";
-	}
+	protected abstract String getLabel(); //{
 
 	//EFFECTS: Constructs and returns the new shape
-	private void makeShape(MouseEvent e) {
-		shape = new Shape(e.getPoint(), editor.getMidiSynth());
-	}
+    protected abstract void makeShape(MouseEvent e);
 
 	private class ShapeToolClickHandler implements ActionListener {
 

@@ -6,20 +6,19 @@ import sound.MidiSynth;
 import java.awt.*;
 
 
-public class Shape {
-    private static Color PLAYING_COLOR;
+public abstract class Shape {
+    protected static Color PLAYING_COLOR;
 
-    private int x;
-    private int y;
-    private int width;
-    private int height;
+    protected int x;
+    protected int y;
+    protected int width;
+    protected int height;
 
     private boolean selected;
 
     private MidiSynth midiSynth;
-    private int instrument;
+    protected int instrument;
     private int playLineCoord;
-
 
     public Shape(Point topLeft, MidiSynth midiSynth) {
         this((int) topLeft.getX(), (int) topLeft.getY(), 0, 0); //note to students: calls the other constructor!
@@ -29,7 +28,6 @@ public class Shape {
         playLineCoord = 0;
         PLAYING_COLOR = new Color(230, 158, 60);
     }
-
 
     public Shape(int x, int y, int w, int h) {
         this.x = x;
@@ -46,6 +44,9 @@ public class Shape {
         this.playLineCoord = playLineCoord;
     }
 
+    // EFFECTS: return true if the given Point (x,y) is contained within the bounds of this Shape
+    public abstract boolean contains(Point point);
+
     // EFFECTS: return true iff the given x value is within the bounds of the Shape
     public boolean containsX(int x){
         return (this.x <= x) && (x <= this.x + width);
@@ -54,14 +55,6 @@ public class Shape {
     // EFFECTS: return true iff the given y value is within the bounds of the Shape
     public boolean containsY(int y) {
         return (this.y <= y) && (y <= this.y + height);
-    }
-
-    // EFFECTS: return true if the given Point (x,y) is contained within the bounds of this Shape
-    public boolean contains(Point point) {
-        int point_x = point.x;
-        int point_y = point.y;
-
-        return containsX(point_x) && containsY(point_y);
     }
 
     // REQUIRES: the x,y coordinates of the Point are larger than the x,y coordinates of the shape
@@ -91,8 +84,6 @@ public class Shape {
             g.setColor(save);
         }
     }
-
-
 
     // MODIFIES: this
     // EFFECTS:  adds dx to the shapes x coordinate, and dy to the shapes y coordinate.
@@ -129,21 +120,19 @@ public class Shape {
     }
 
     //EFFECTS: draws the shape
-    private void drawGraphics(Graphics g) {
-        g.drawRect(x, y, width, height);
-    }
+    protected abstract void drawGraphics(Graphics g);
 
     //EFFECTS: fills the shape
-    private void fillGraphics(Graphics g) {
-        g.fillRect(x, y, width, height);
-    }
-
+    protected abstract void fillGraphics(Graphics g);
 
     // EFFECTS: starts playing this Shape, where sound is dependent on the area/coordinates of the Shape
     private void play(){
-        int volume = areaToVelocity(width * height);
+        int volume = areaToVelocity(computeArea());
         midiSynth.play(instrument, coordToNote(y), volume);
     }
+
+    // EFFECTS: calculates the area of the shape
+    protected abstract int computeArea();
 
     // EFFECTS: stops playing this Shape
     private void stopPlaying(){
