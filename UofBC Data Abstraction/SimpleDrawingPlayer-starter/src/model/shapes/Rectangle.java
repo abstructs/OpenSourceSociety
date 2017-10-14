@@ -30,9 +30,10 @@ public class Rectangle extends Shape {
 
     @Override
     protected int computeArea() {
+        String.format("");
         return width * height;
-    }
 
+    }
     // EFFECTS: return true if the given Point (x,y) is contained within the bounds of this Shape
     @Override
     public boolean contains(Point point) {
