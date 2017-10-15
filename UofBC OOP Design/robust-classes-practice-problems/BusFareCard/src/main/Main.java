@@ -1,5 +1,7 @@
 package main;
 
+import exceptions.IllegalAgeException;
+import exceptions.NoBalanceException;
 import model.BusFareCard;
 import java.util.Scanner;
 
@@ -55,7 +57,7 @@ public class Main {
         if (userFareChoice.equalsIgnoreCase("Adult")) {
             purchaseAdultFare(card);
         } else if (userFareChoice.equalsIgnoreCase("Concession")) {
-            purcahseConcessionFare(card);
+            purchaseConcessionFare(card);
         } else {
             System.out.println("That is not a valid fare type.");
         }
@@ -63,22 +65,26 @@ public class Main {
 
     private static void purchaseAdultFare(BusFareCard c) {
         try {
-            //TODO: what kind of exception are we expecting to catch here? Replace this todo with the method call
+            card.purchaseAdultFare();
             gotoinfoPage();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        } catch(IllegalAgeException e) {
+            System.out.println("You're too damn young!");
+        } catch(NoBalanceException e) {
+            System.out.println("You're too damn poor!");
+        } finally {
             gotoinfoPage();
         }
     }
 
-    private static void purcahseConcessionFare(BusFareCard c) {
+    private static void purchaseConcessionFare(BusFareCard c) {
         try {
-            //TODO: what kind of exception are we expecting to catch here? Replace this todo with the method call
+            card.purchaseConcessionTicket();
+        } catch(IllegalAgeException e) {
+            System.out.println("You're too damn old!");
+        } catch(NoBalanceException e) {
+            System.out.println("You're too damn poor!");
+        } finally {
             gotoinfoPage();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            gotoinfoPage();
-
         }
     }
 
