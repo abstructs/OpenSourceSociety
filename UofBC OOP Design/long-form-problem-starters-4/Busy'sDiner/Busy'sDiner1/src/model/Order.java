@@ -1,15 +1,21 @@
 package model;
 
+import java.util.List;
+
 public class Order {
 
-    private String dish;
+    private Dish dish;
     private int number;
     private boolean served;
     private boolean prepared;
+    private List<String> orderIngredients;
+    private String orderRecipe;
 
-    public Order(String dish, int orderNumber) {
+    public Order(Dish dish, int orderNumber) {
         this.dish = dish;
         this.number = orderNumber;
+        this.orderIngredients = dish.getIngredients();
+        this.orderRecipe = dish.getRecipe();
     }
 
     //EFFECTS: prints this order with number, dish and any modifications
@@ -24,7 +30,17 @@ public class Order {
     }
 
     //getters
-    public String getDish() {
+    //EFFECTS: returns the recipe to follow for this order
+    public String getOrderRecipe() {
+        return orderRecipe;
+    }
+
+    //EFFECTS: returns a list of ingredients needed for this order
+    public List<String> getOrderIngredients() {
+        return orderIngredients;
+    }
+
+    public Dish getDish() {
         return dish;
     }
 
@@ -41,7 +57,7 @@ public class Order {
     //REQUIRES: dish != null
     //MODIFIES: this
     //EFFECTS: sets order's dish to given dish
-    public void setDish(String dish) {
+    public void setDish(Dish dish) {
         this.dish = dish;
     }
 
