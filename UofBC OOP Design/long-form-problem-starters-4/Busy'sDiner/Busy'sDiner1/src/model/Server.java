@@ -24,8 +24,6 @@ public class Server {
         this.dish = dish;
     }
 
-
-
     //getter
     public List<Order> getActiveOrders() {
         return orders;

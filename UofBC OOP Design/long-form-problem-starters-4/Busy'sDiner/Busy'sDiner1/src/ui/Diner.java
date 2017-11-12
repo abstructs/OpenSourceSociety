@@ -1,9 +1,6 @@
 package ui;
 
-import model.Server;
-import model.Order;
-import model.Chef;
-import model.Dish;
+import model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,19 +10,19 @@ public class Diner {
     public static void main(String[] args) {
         Server server = new Server(generateTurkeyClubSandwich());
         Chef chef = new Chef();
-
+        Host host = new Host(generateTurkeyClubSandwich());
         for (int i=0; i < 2 ; i++) {
             System.out.println("Table " + (i + 1) + ":\n");
 
-            server.greet();
-            server.describeDish();
+            host.greet();
+            host.describeDish();
             Order o = server.takeOrder();
 
             chef.makeDish(o);
 
             System.out.println();
 
-            doOrderRoutine(server, o);
+            doOrderRoutine(host, o, server);
             System.out.println();
         }
 
@@ -33,10 +30,10 @@ public class Diner {
         chef.doDishes();
     }
 
-    private static void doOrderRoutine(Server e, Order o) {
-        e.deliverFood(o);
+    private static void doOrderRoutine(Host h, Order o, Server s) {
+        h.deliverFood(o);
         if(o.isReadyToBePaid())
-            e.takePayment(o);
+            s.takePayment(o);
     }
 
 
