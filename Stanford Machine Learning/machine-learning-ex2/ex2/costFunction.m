@@ -21,21 +21,19 @@ grad = zeros(size(theta));
 %
 
 for i=1:m;
-    J = J + -y(i) * log(sigmoid( theta' .* X(i))) - (1 - y(i)) .* log(1 - sigmoid(theta' .* X(i)));
+    J = J .+ (-y(i) .* log(sigmoid(X(i, :) * theta))) .- ((1 - y(i)) * log(1 - sigmoid(X(i, :) * theta)));
 endfor;
 
 J = J ./ m;
 
-z = 0;
+% z = 0;
 
 
-for j=1:length(grad)
-    temp = grad;    
+for j=1:length(theta)
     for i=1:m
-        temp(j) = temp(j) .+ (sigmoid(X(i)) .- y(i)) .* (X(i, j));
+        grad(j) = grad(j) + (((sigmoid(X(i, :) * theta)) - y(i)) .* X(i, j));
     endfor
-
-    grad(j) = temp(j) ./ m;
+    grad(j) = grad(j) / m;
 endfor
 
 % =============================================================
