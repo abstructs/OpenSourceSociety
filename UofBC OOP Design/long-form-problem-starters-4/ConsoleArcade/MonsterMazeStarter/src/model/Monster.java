@@ -1,19 +1,20 @@
 package model;
 
-public class Monster {
+public class Monster extends Choice {
 
     private Treasure treasure;
-    private String optionMessage;
+//    private String optionMessage;
 
     public Monster() {
-        this.optionMessage = "Fight a monster.";
+//        this.optionMessage = "Fight a monster.";
+        super("Fight a monster.");
         treasure = null;
     }
 
-    //EFFECTS: prints a message representing this possible next choice
-    public void printOptionMessage() {
-        System.out.println(optionMessage);
-    }
+//    //EFFECTS: prints a message representing this possible next choice
+//    public void printOptionMessage() {
+//        System.out.println(optionMessage);
+//    }
 
     //MODIFIES: this
     //EFFECTS: sets the treasure to t
@@ -22,11 +23,20 @@ public class Monster {
     }
 
     //EFFECTS: prints the result of choosing this choice
-    public void printOutcome() {
+//    public void printOutcome() {
+//        if (treasure == null) {
+//            System.out.println("Ha! I killed you!");
+//        } else {
+//            System.out.println("Ahh! You killed me!");
+//            treasure.printOutcome();
+//        }
+//    }
+    // TODO: THIS SHIT
+    protected String getOutcome() {
         if (treasure == null) {
-            System.out.println("Ha! I killed you!");
+            return "Ha! I killed you!";
         } else {
-            System.out.println("Ahh! You killed me!");
+            return "Ahh! You killed me!";
             treasure.printOutcome();
         }
     }
