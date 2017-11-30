@@ -10,14 +10,13 @@ import java.util.List;
 import static model.Game.CARD_SIZE;
 import static model.Game.SIDE_LENGTH;
 
-//TODO: implement Observer pattern
-public class PlayerCard {
+public class PlayerCard implements Observer {
 
     private List<NumberSquare> numbers;
     private int numberSquaresStamped;
     private boolean hasBingo;
 
-    public PlayerCard(){
+    public PlayerCard() {
         numbers = new ArrayList<>();
 
         for(int i=0; i < CARD_SIZE; i++){
@@ -25,10 +24,9 @@ public class PlayerCard {
         }
     }
 
-    // TODO: refactor this method
     //MODIFIES: this
     //EFFECTS: checks whether bingo call matches a square in this card, stamps if so, and updates hasBingo
-    public void checkCallMatch(Object o){
+    public void update(Object o){
         BingoCall bc = (BingoCall) o;
         int i = numberSquaresMatch(bc);
         for (int j=0; j < i; j++) {
@@ -37,6 +35,8 @@ public class PlayerCard {
             checkIfBingo(index);
         }
     }
+
+
 
     //EFFECTS: returns true if player has column, row or diagonal stamped
     public boolean hasBingo(){

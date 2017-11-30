@@ -19,7 +19,6 @@ public class BingoUI {
         new BingoUI();
     }
 
-
     public BingoUI() throws InterruptedException {
         game = new Game();
         playerCard = new PlayerCard();
@@ -42,9 +41,9 @@ public class BingoUI {
             game.callNext();
 
             //TODO: remove this loop
-            for (PlayerCard pc : game.getCards()) {
-                pc.checkCallMatch(game.getCurrentCall());
-            }
+//            for (PlayerCard pc : game.getCards()) {
+//                pc.checkCallMatch(game.getCurrentCall());
+//            }
             //end todo
 
             System.out.println("\nNumber called: " + formatBingoCall());

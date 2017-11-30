@@ -7,17 +7,17 @@ import model.random.BingoCall;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Game {
+public class Game implements Subject {
 
     public static int CARD_SIZE = 25;
     public static int SIDE_LENGTH = (int) Math.sqrt(CARD_SIZE);
 
     private BingoCall currentCall;
-    private List<PlayerCard> cards;
+    private List<Observer> observers;
     private boolean gameOver;
 
     public Game() {
-        cards = new ArrayList<>();
+        observers = new ArrayList<>();
         callNext();
     }
 
@@ -33,29 +33,41 @@ public class Game {
 
     public List<PlayerCard> getCards() {
         List<PlayerCard> playerCards = new ArrayList<>();
-        for (PlayerCard o : cards) { //NOTE: refactor this line ONLY.
+        for (Observer o : observers) { //NOTE: refactor this line ONLY.
             if (o.getClass().getSimpleName().equals("PlayerCard"))
                 playerCards.add((PlayerCard) o);
         }
         return playerCards;
     }
 
-    //TODO: refactor this method
     //EFFECTS: generates the next bingo call and notifies observers
     public void callNext() {
         currentCall = new BingoCall();
+        for(Observer o : observers) {
+            o.update(currentCall);
+        }
     }
 
-    //TODO: refactor this method
     //MODIFIES: this
     //EFFECTS: adds observer to list of observers
     public void addCard(PlayerCard pc) {
-        cards.add(pc);
+        observers.add(pc);
+    }
+
+    //MODIFIES: this
+    //EFFECTS: adds observer to list of observers
+    public void addObserver(Observer o) {
+
+    }
+
+    //EFFECTS: notifies observers of state change
+    public void notifyObservers() {
+
     }
 
     //EFFECTS: sets game over to true if one of the players has bingo
     private void checkGameOver(){
-        for (PlayerCard pc : cards) {
+        for (Observer pc : observers) {
             PlayerCard p = (PlayerCard) pc;
             if (p.hasBingo()) {
                 gameOver = true;
