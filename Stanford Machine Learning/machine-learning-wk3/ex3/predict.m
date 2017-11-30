@@ -21,11 +21,17 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
+% get the ones column to add to layer one's first columns
+% note: the results in X are stored in rows
+layer_1_ones = ones(size(X)(1))(:,1);
+layer_1_activation = sigmoid([layer_1_ones X] * Theta1');
+% the results in layer_one_activation are stored in rows
+layer_2_ones = ones(size(layer_1_activation)(1))(:,1);
+layer_2_activation = sigmoid([layer_2_ones layer_1_activation] * Theta2');
+%get the index of the highest value in each row
+[hyp ind] = max(layer_2_activation, [], 2);
 
-
-
-
-
+p = ind;
 
 
 

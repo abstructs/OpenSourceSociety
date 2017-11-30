@@ -18,7 +18,7 @@ public abstract class Choice {
         System.out.println(optionMessage);
     }
 
-//    public void printOutcome() {
-//        System.out.println("How do you outcome");
-//    }
+    public void printOutcome() {
+        System.out.println(this.getOutcome());
+    }
 }
