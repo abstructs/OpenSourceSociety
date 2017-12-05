@@ -64,21 +64,27 @@ Theta2_grad = zeros(size(Theta2));
 
 
 
+% a1
+a1 = [ones(size(X)(1), 1), X];
 
+% a2
 
+a2 = sigmoid(Theta1 * a1')';
+a2 = [ones(size(a2)(1), 1), a2];
 
+% a3
+a3 = sigmoid(Theta2 * a2');
 
+acc = 0;
+for i=1:m
+    new_y = (0 * ones(10)(:,1));
+    new_y(y(i)) = 1;
+    for k=1:num_labels
+        acc = acc + sum((-new_y(k) .* log(a3(k,i))) - (1 - new_y(k)) * log(1 - a3(k,i)));
+    endfor
+endfor
 
-
-
-
-
-
-
-
-
-
-
+J = (acc / m); 
 
 % -------------------------------------------------------------
 
