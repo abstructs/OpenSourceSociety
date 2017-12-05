@@ -63,7 +63,7 @@ Theta2_grad = zeros(size(Theta2));
 %
 
 
-
+% feedforward implementation
 % a1
 a1 = [ones(size(X)(1), 1), X];
 
@@ -75,16 +75,42 @@ a2 = [ones(size(a2)(1), 1), a2];
 % a3
 a3 = sigmoid(Theta2 * a2');
 
-acc = 0;
+% compute the cost of our neural net
+acc1 = 0;
 for i=1:m
     new_y = (0 * ones(10)(:,1));
     new_y(y(i)) = 1;
     for k=1:num_labels
-        acc = acc + sum((-new_y(k) .* log(a3(k,i))) - (1 - new_y(k)) * log(1 - a3(k,i)));
+        acc1 = acc1 + sum((-new_y(k) .* log(a3(k,i))) - (1 - new_y(k)) * log(1 - a3(k,i)));
     endfor
 endfor
 
-J = (acc / m); 
+J = (acc1 / m); 
+
+% compute the regularization term for theta1 ignoring our bias
+acc2 = 0;
+[col_s,row_s] = size(Theta1);
+for j=1:col_s
+    for k=2:row_s
+        acc2 = acc2 + Theta1(j, k) ^ 2;
+    endfor
+endfor
+
+% compute the regularization term for theta2 ignoring our bias
+acc3 = 0;
+[col_s,row_s] = size(Theta2);
+for j=1:col_s
+    for k=2:row_s
+        acc3 = acc3 + Theta2(j, k) ^ 2;
+    endfor
+endfor
+
+% fully compute the regularized term
+
+reg = (lambda / (2 * m)) * (acc2 + acc3);
+
+% put it all together :)
+J = J + reg;
 
 % -------------------------------------------------------------
 
