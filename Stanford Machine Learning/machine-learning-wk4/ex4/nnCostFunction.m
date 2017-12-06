@@ -88,10 +88,10 @@ for t=1:m
     output = sigmoid(z3);
 
 
-    new_y = (0 * ones(10)(:,1));
+    new_y = (0 * ones(10,1));
     new_y(y(t)) = 1;
     
-    delta_3 = ones(num_labels)(:,1);
+    delta_3 = ones(num_labels,1);
     for k=1:num_labels
         delta_3(k) = output(k) - new_y(k);
     endfor
@@ -103,15 +103,16 @@ for t=1:m
 
 endfor
 
-Theta1_grad = 1/m * Theta1_grad;
-Theta2_grad = 1/m * Theta2_grad;
+Theta1_grad = (1/m) .* Theta1_grad;
+Theta2_grad = (1/m) .* Theta2_grad;
 
-grad1_reg = (lambda / m) * Theta1;
-grad2_reg = (lambda / m) * Theta2;
+temp1 = Theta1;
+temp1(:,1) = 0 * ones(size(Theta1_grad)(1),1);
 
-grad1_reg(1,:) = 0 * ones(size(grad1_reg)(2))(1,:);
-grad2_reg(1,:) = 0 * ones(size(grad2_reg)(2))(1,:);
-
+temp2 = Theta2;
+temp2(:,1) = 0 * ones(size(Theta2_grad)(1),1);
+grad1_reg = (lambda / m) * temp1;
+grad2_reg = (lambda / m) * temp2;
 
 Theta1_grad = Theta1_grad + grad1_reg;
 Theta2_grad = Theta2_grad + grad2_reg;
@@ -119,7 +120,7 @@ Theta2_grad = Theta2_grad + grad2_reg;
 % compute the cost of our neural net
 acc1 = 0;
 for i=1:m
-    new_y = (0 * ones(10)(:,1));
+    new_y = (0 * ones(10,1));
     new_y(y(i)) = 1;
     for k=1:num_labels
         acc1 = acc1 + sum((-new_y(k) .* log(a3(k,i))) - (1 - new_y(k)) * log(1 - a3(k,i)));
