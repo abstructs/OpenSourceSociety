@@ -106,6 +106,15 @@ endfor
 Theta1_grad = 1/m * Theta1_grad;
 Theta2_grad = 1/m * Theta2_grad;
 
+grad1_reg = (lambda / m) * Theta1;
+grad2_reg = (lambda / m) * Theta2;
+
+grad1_reg(1,:) = 0 * ones(size(grad1_reg)(2))(1,:);
+grad2_reg(1,:) = 0 * ones(size(grad2_reg)(2))(1,:);
+
+
+Theta1_grad = Theta1_grad + grad1_reg;
+Theta2_grad = Theta2_grad + grad2_reg;
 
 % compute the cost of our neural net
 acc1 = 0;
