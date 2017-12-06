@@ -69,11 +69,43 @@ a1 = [ones(size(X)(1), 1), X];
 
 % a2
 
-a2 = sigmoid(Theta1 * a1')';
+z2 = Theta1 * a1';
+a2 = sigmoid(z2)';
 a2 = [ones(size(a2)(1), 1), a2];
 
 % a3
-a3 = sigmoid(Theta2 * a2');
+z3 = Theta2 * a2';
+a3 = sigmoid(z3);
+
+
+for t=1:m
+    a = [ones(size(X(t,:))(1), 1), X(t,:)];
+    
+    z2 = Theta1 * a';
+    a2 = sigmoid(z2);
+    a2 = [1 ; a2];
+    z3 = Theta2 * a2;
+    output = sigmoid(z3);
+
+
+    new_y = (0 * ones(10)(:,1));
+    new_y(y(t)) = 1;
+    
+    delta_3 = ones(num_labels)(:,1);
+    for k=1:num_labels
+        delta_3(k) = output(k) - new_y(k);
+    endfor
+
+    delta_2 = (Theta2' * delta_3)(2:end) .* sigmoidGradient(z2);
+    
+    Theta1_grad = Theta1_grad + (delta_2 * a);
+    Theta2_grad = Theta2_grad + (delta_3 * a2');
+
+endfor
+
+Theta1_grad = 1/m * Theta1_grad;
+Theta2_grad = 1/m * Theta2_grad;
+
 
 % compute the cost of our neural net
 acc1 = 0;
@@ -100,7 +132,7 @@ endfor
 acc3 = 0;
 [col_s,row_s] = size(Theta2);
 for j=1:col_s
-    for k=2:row_s
+    for k=2:row_s   
         acc3 = acc3 + Theta2(j, k) ^ 2;
     endfor
 endfor
@@ -115,6 +147,8 @@ J = J + reg;
 % -------------------------------------------------------------
 
 % =========================================================================
+
+
 
 % Unroll gradients
 grad = [Theta1_grad(:) ; Theta2_grad(:)];
