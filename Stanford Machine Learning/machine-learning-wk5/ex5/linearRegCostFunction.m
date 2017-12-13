@@ -20,17 +20,20 @@ grad = zeros(size(theta));
 %
 
 for i=1:m
-    J = J + (X(i,:) * theta - y(i)) .^ 2;
+    J = J + (X(i, :) * theta - y(i)) .^ 2;
 endfor
 J = (1 / (2 * m)) * J;
 
+% size = (n x 2)
+
 % J = J + ((lambda ./ (2 * m)) * sum(theta(2:end,:)' .^ 2, 2));
 
+acc = 0;
 for j=2:size(theta)(1)
-    J = J + theta(j) . ^2;
+    acc = acc + theta(j) .^ 2;
 endfor
 
-J = (lambda / (2 * m)) * J;
+J = J + (lambda / (2 * m)) * acc;
 
 
 for j=1:size(theta)(1)
