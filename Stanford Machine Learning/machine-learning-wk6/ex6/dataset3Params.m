@@ -23,15 +23,17 @@ sigma = 0.3;
 %        mean(double(predictions ~= yval))
 %
 
-c_vals =  [0.3; 1; 3; 10; 30];
-sigma_vals =  [0.3; 1; 3; 10; 30];
+c_vals = [0.01; 0.03; 0.1; 0.3; 1; 3; 10; 30];
+sigma_vals = [0.01; 0.03; 0.1; 0.3; 1; 3; 10; 30];
 
 results = ones(length(c_vals) * length(sigma_vals), 3);
 
 iter = 1;
 for i=1:length(c_vals)
     for j=1:length(sigma_vals)
-        model = svmTrain(Xval, yval, c_vals(i), @(x1, x2) gaussianKernel(Xval(:,1), Xval(:,2), sigma_vals(j)));
+        z1 = X(:,1);
+        z2 = X(:,2);
+        model = svmTrain(X, y, c_vals(i), @(z1, z2) gaussianKernel(z1, z2, sigma_vals(j)));
         predictions = svmPredict(model, Xval);
         
         results(iter,:) = [c_vals(i) sigma_vals(j) mean(double(predictions ~= yval))];
@@ -39,9 +41,9 @@ for i=1:length(c_vals)
     endfor
 endfor
 
-min_result = min(results);
-C = min_result(1);
-sigma = min_result(2);
+[min_pred, row_index] = min(results(:, 3));
+C = results(row_index, 1)
+sigma = results(row_index, 2)
 
 % =========================================================================
 
