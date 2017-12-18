@@ -18,8 +18,8 @@ word_indices = [];
 % Uncomment the following lines if you are working with raw emails with the
 % full headers
 
-% hdrstart = strfind(email_contents, ([char(10) char(10)]));
-% email_contents = email_contents(hdrstart(1):end);
+hdrstart = strfind(email_contents, ([char(10) char(10)]));
+email_contents = email_contents(hdrstart(1):end);
 
 % Lower case
 email_contents = lower(email_contents);
