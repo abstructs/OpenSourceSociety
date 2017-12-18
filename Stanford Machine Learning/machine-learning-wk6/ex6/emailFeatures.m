@@ -48,7 +48,22 @@ x = zeros(n, 1);
 %
 %
 
+% word_indices
 
+for i=1:n
+    in_dict = false;
+    for j=1:length(word_indices)
+        if word_indices(j) == i
+            x(i) = 1;
+            in_dict = true;
+            break;
+        endif
+    endfor
+
+    if ~in_dict
+        x(i) = 0;
+    endif
+endfor
 
 
 
