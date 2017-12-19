@@ -20,7 +20,11 @@ S = zeros(n);
 %       number of examples).
 %
 
+% compute covariance 
+Sigma = 1 / m * X' * X;
 
+% singular value decomposition to compute eigen vectors
+[U, S, V] = svd(Sigma);
 
 
 
