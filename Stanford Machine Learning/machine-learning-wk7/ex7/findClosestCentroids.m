@@ -21,6 +21,18 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+warning ("off", "Octave:broadcast");
+
+for i=1:length(idx)
+    % readable code
+    % norms = sqrt(sum((X(i,:) - centroids) .^ 2, 2));
+
+    % [min_val, min_idx] = min(norms);
+    % idx(i) = min_idx;
+
+    % condensed
+    [~, idx(i)] = min(sqrt(sum((X(i,:) - centroids) .^ 2, 2)));
+endfor
 
 
 
