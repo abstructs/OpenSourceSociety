@@ -133,7 +133,7 @@ public class Application extends JFrame {
                         statuses += "<html><img src=\"" + marker.status.getUser().getProfileImageURL() + "\">"
                                 + marker.status.getText() + "\n";
                     }
-                    
+
                     map().setToolTipText(statuses);
                 }
             }
