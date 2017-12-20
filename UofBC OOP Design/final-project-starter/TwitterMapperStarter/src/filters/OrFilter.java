@@ -32,7 +32,7 @@ public class OrFilter implements Filter {
      */
     @Override
     public boolean matches(Status s) {
-        return child1.matches(s) || child1.matches(s);
+        return child1.matches(s) || child2.matches(s);
     }
 
     @Override
@@ -41,6 +41,6 @@ public class OrFilter implements Filter {
     }
 
     public String toString() {
-        return child1.toString() + " or " + child2.toString();
+        return "(" + child1.toString() + " or " + child2.toString() +")";
     }
 }

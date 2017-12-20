@@ -27,6 +27,15 @@ public class TestFilters {
         assertFalse(f.matches(makeStatus("fred Flintstone")));
         assertTrue(f.matches(makeStatus("Red Skelton")));
         assertTrue(f.matches(makeStatus("red Skelton")));
+
+        Filter f1 = new AndFilter(new BasicFilter("fred"), new BasicFilter("test"));
+        assertFalse(f1.matches(makeStatus("fred")));
+        assertTrue(f1.matches(makeStatus("fred test")));
+
+        Filter f2 = new OrFilter(new BasicFilter("fred"), new BasicFilter("test"));
+        assertFalse(f2.matches(makeStatus("flamingo")));
+        assertTrue(f2.matches(makeStatus("fred")));
+        assertTrue(f2.matches(makeStatus("test")));
     }
 
     private Status makeStatus(String text) {

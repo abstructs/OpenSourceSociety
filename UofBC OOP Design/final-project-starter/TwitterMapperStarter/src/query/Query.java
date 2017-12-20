@@ -1,17 +1,30 @@
 package query;
 
 import filters.Filter;
+import javafx.beans.binding.ListBinding;
+import javafx.collections.ObservableList;
+import org.openstreetmap.gui.jmapviewer.Coordinate;
 import org.openstreetmap.gui.jmapviewer.JMapViewer;
 import org.openstreetmap.gui.jmapviewer.Layer;
+import twitter.TwitterSource;
+import twitter4j.GeoLocation;
+import twitter4j.Status;
+import twitter4j.Twitter;
+import ui.MapMarkerOP;
+import ui.MapMarkerSimple;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * A query over the twitter stream.
  * TODO: Task 4: you are to complete this class.
  */
-public class Query {
+public class Query implements Observer {
     // The map on which to display markers when the query matches
     private final JMapViewer map;
     // Each query has its own "layer" so they can be turned on and off all at once
@@ -24,6 +37,7 @@ public class Query {
     private final Filter filter;
     // The checkBox in the UI corresponding to this query (so we can turn it on and off and delete it)
     private JCheckBox checkBox;
+    public List<MapMarkerOP> markers;
 
     public Color getColor() {
         return color;
@@ -54,6 +68,7 @@ public class Query {
         this.color = color;
         this.layer = new Layer(queryString);
         this.map = map;
+        this.markers = new ArrayList<>();
     }
 
     @Override
@@ -67,7 +82,23 @@ public class Query {
      * TODO: Implement this method
      */
     public void terminate() {
-
+        for(MapMarkerOP m : markers) {
+            this.map.removeMapMarker(m);
+        }
     }
+
+    public void update(Observable o, Object arg) {
+        TwitterSource ts = (TwitterSource) o;
+        Status s = (Status) arg;
+
+        if(this.filter.matches((Status) arg)) {
+            GeoLocation geo = s.getGeoLocation();
+            Coordinate coord = new Coordinate(geo.getLatitude(), geo.getLongitude());
+            MapMarkerOP marker = new MapMarkerOP(this.layer, coord, this.color, s);
+            this.map.addMapMarker(marker);
+            this.markers.add(marker);
+        }
+    }
+
 }
 
