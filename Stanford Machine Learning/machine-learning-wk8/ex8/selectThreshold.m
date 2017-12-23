@@ -10,7 +10,7 @@ bestEpsilon = 0;
 bestF1 = 0;
 F1 = 0;
 
-stepsize = (max(pval) - min(pval)) / 1000;
+stepsize = (max(pval) -  min(pval)) / 1000;
 for epsilon = min(pval):stepsize:max(pval)
     
     % ====================== YOUR CODE HERE ======================
@@ -23,17 +23,16 @@ for epsilon = min(pval):stepsize:max(pval)
     % Note: You can use predictions = (pval < epsilon) to get a binary vector
     %       of 0's and 1's of the outlier predictions
 
+    predictions = (pval < epsilon);
 
+    tp = length(predictions(predictions(predictions == 1) == yval(predictions == 1)));
+    fp = length(predictions(predictions(predictions == 1) ~= yval(predictions == 1)));
+    fn = length(predictions(predictions(predictions == 0) ~= yval(predictions == 0)));
 
+    rec = tp / (tp + fn);
+    prec = tp / (tp + fp);
 
-
-
-
-
-
-
-
-
+    F1 = (2 * prec * rec) / (prec + rec);
 
     % =============================================================
 

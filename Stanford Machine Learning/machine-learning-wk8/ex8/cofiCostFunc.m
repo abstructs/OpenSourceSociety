@@ -41,6 +41,17 @@ Theta_grad = zeros(size(Theta));
 %
 
 
+% for i=1:size(R,1)
+%     for j=1:size(R,2)
+%         if R(i,j) == 1
+%             J = J + ((Theta(j,:) * X(i,:)') - Y(i, j)) .^ 2;
+%         endif
+%     endfor
+% endfor
+
+% J = 1/2 * J;
+
+J = 1/2 * sum(sum(((X * Theta' - Y) .* R) .^ 2));
 
 
 
