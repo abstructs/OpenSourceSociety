@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="recfun-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20180710140446"/>
+	<dependencies>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.4" status="release" pubdate="20150403083112" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11673" time="0" location="/Users/abstruct/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="3.4" rev-constraint-default="3.4" rev-constraint-dynamic="3.4" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="434678" time="0" location="/Users/abstruct/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106091535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="34">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10608" time="0" location="/Users/abstruct/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="284184" time="0" location="/Users/abstruct/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaj" name="scalaj-http_2.10">
+			<revision name="2.2.1" status="release" pubdate="20160105095336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scalaj/scalaj-http" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="33">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3158" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaj/scalaj-http_2.10/ivy-2.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.10/2.2.1/scalaj-http_2.10-2.2.1.pom"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalaj-http_2.10" type="jar" ext="jar" status="no" details="" size="118795" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaj/scalaj-http_2.10/jars/scalaj-http_2.10-2.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.10/2.2.1/scalaj-http_2.10-2.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalastyle" name="scalastyle_2.10">
+			<revision name="0.8.0" status="release" pubdate="20151201154424" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalastyle.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3427" time="0" location="/Users/abstruct/.ivy2/cache/org.scalastyle/scalastyle_2.10/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.10/0.8.0/scalastyle_2.10-0.8.0.pom"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalastyle_2.10" type="jar" ext="jar" status="no" details="" size="904092" time="0" location="/Users/abstruct/.ivy2/cache/org.scalastyle/scalastyle_2.10/jars/scalastyle_2.10-0.8.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.10/0.8.0/scalastyle_2.10-0.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.0" status="release" pubdate="20140115100944" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2867" time="0" location="/Users/abstruct/.ivy2/cache/com.typesafe/config/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="file:////Users/abstruct/.sbt/preloaded/com.typesafe/config/1.2.0/ivys/ivy.xml"/>
+				<caller organisation="org.scalastyle" name="scalastyle_2.10" conf="default, compile, runtime, master" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="0.8.0"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="217897" time="0" location="/Users/abstruct/.ivy2/cache/com.typesafe/config/bundles/config-1.2.0.jar">
+						<origin-location is-local="false" location="file:////Users/abstruct/.sbt/preloaded/com.typesafe/config/1.2.0/bundles/config.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalariform" name="scalariform_2.10">
+			<revision name="0.1.7" status="release" pubdate="20150827204905" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mdr/scalariform" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2787" time="0" location="/Users/abstruct/.ivy2/cache/org.scalariform/scalariform_2.10/ivy-0.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalariform/scalariform_2.10/0.1.7/scalariform_2.10-0.1.7.pom"/>
+				<caller organisation="org.scalastyle" name="scalastyle_2.10" conf="default, compile, runtime, master" rev="0.1.7" rev-constraint-default="0.1.7" rev-constraint-dynamic="0.1.7" callerrev="0.8.0"/>
+				<artifacts>
+					<artifact name="scalariform_2.10" type="jar" ext="jar" status="no" details="" size="1964551" time="0" location="/Users/abstruct/.ivy2/cache/org.scalariform/scalariform_2.10/jars/scalariform_2.10-0.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalariform/scalariform_2.10/0.1.7/scalariform_2.10-0.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.7" status="release" pubdate="20171103160708" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2647" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.7/scala-reflect-2.10.7.pom"/>
+				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="2.1.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3227385" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.7.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="sbt-coursier">
+			<revision name="1.0.2" status="release" pubdate="20180209052156" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/coursier/coursier" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="19">
+				<license name="Apache 2.0" url="http://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3984" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/io.get-coursier/sbt-coursier/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/sbt-coursier_2.10_0.13/1.0.2/sbt-coursier-1.0.2.pom"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-coursier" type="jar" ext="jar" status="no" details="" size="524146" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/io.get-coursier/sbt-coursier/jars/sbt-coursier-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/sbt-coursier_2.10_0.13/1.0.2/sbt-coursier-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="sbt-shared">
+			<revision name="1.0.2" status="release" pubdate="20180209052114" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/coursier/coursier" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache 2.0" url="http://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3819" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/io.get-coursier/sbt-shared/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/sbt-shared_2.10_0.13/1.0.2/sbt-shared-1.0.2.pom"/>
+				<caller organisation="io.get-coursier" name="sbt-coursier" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-shared" type="jar" ext="jar" status="no" details="" size="92284" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/io.get-coursier/sbt-shared/jars/sbt-shared-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/sbt-shared_2.10_0.13/1.0.2/sbt-shared-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.dwijnand" name="sbt-compat">
+			<revision name="1.2.5" status="release" pubdate="20180208113903" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/dwijnand/sbt-compat" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="29">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2063" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/com.dwijnand/sbt-compat/ivy-1.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.dwijnand/sbt-compat/scala_2.10/sbt_0.13/1.2.5/ivys/ivy.xml"/>
+				<caller organisation="io.get-coursier" name="sbt-shared" conf="compile, runtime" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="1.0.2" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-compat" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2501" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/com.dwijnand/sbt-compat/srcs/sbt-compat-1.2.5-sources.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.dwijnand/sbt-compat/scala_2.10/sbt_0.13/1.2.5/srcs/sbt-compat-sources.jar"/>
+					</artifact>
+					<artifact name="sbt-compat" type="jar" ext="jar" status="no" details="" size="66029" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/com.dwijnand/sbt-compat/jars/sbt-compat-1.2.5.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.dwijnand/sbt-compat/scala_2.10/sbt_0.13/1.2.5/jars/sbt-compat.jar"/>
+					</artifact>
+					<artifact name="sbt-compat" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="444755" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/com.dwijnand/sbt-compat/docs/sbt-compat-1.2.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.dwijnand/sbt-compat/scala_2.10/sbt_0.13/1.2.5/docs/sbt-compat-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier-extra_2.10">
+			<revision name="1.0.2" status="release" pubdate="20180209051738" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/coursier/coursier" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache 2.0" url="http://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2815" time="0" location="/Users/abstruct/.ivy2/cache/io.get-coursier/coursier-extra_2.10/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier-extra_2.10/1.0.2/coursier-extra_2.10-1.0.2.pom"/>
+				<caller organisation="io.get-coursier" name="sbt-coursier" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2"/>
+				<artifacts>
+					<artifact name="coursier-extra_2.10" type="jar" ext="jar" status="no" details="" size="3090" time="0" location="/Users/abstruct/.ivy2/cache/io.get-coursier/coursier-extra_2.10/jars/coursier-extra_2.10-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier-extra_2.10/1.0.2/coursier-extra_2.10-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier-cache_2.10">
+			<revision name="1.0.2" status="release" pubdate="20180209051924" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/coursier/coursier" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache 2.0" url="http://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2967" time="0" location="/Users/abstruct/.ivy2/cache/io.get-coursier/coursier-cache_2.10/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier-cache_2.10/1.0.2/coursier-cache_2.10-1.0.2.pom"/>
+				<caller organisation="io.get-coursier" name="sbt-coursier" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2"/>
+				<caller organisation="io.get-coursier" name="sbt-shared" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2"/>
+				<artifacts>
+					<artifact name="coursier-cache_2.10" type="jar" ext="jar" status="no" details="" size="376071" time="0" location="/Users/abstruct/.ivy2/cache/io.get-coursier/coursier-cache_2.10/jars/coursier-cache_2.10-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier-cache_2.10/1.0.2/coursier-cache_2.10-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-concurrent_2.10">
+			<revision name="7.2.16" status="release" pubdate="20171014062523" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2952" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-concurrent_2.10/ivy-7.2.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-concurrent_2.10/7.2.16/scalaz-concurrent_2.10-7.2.16.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.10" conf="compile, runtime" rev="7.2.16" rev-constraint-default="7.2.16" rev-constraint-dynamic="7.2.16" callerrev="1.0.2"/>
+				<artifacts>
+					<artifact name="scalaz-concurrent_2.10" type="bundle" ext="jar" status="no" details="" size="320181" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-concurrent_2.10/bundles/scalaz-concurrent_2.10-7.2.16.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-concurrent_2.10/7.2.16/scalaz-concurrent_2.10-7.2.16.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-effect_2.10">
+			<revision name="7.2.16" status="release" pubdate="20171014062519" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="26">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2792" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-effect_2.10/ivy-7.2.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.2.16/scalaz-effect_2.10-7.2.16.pom"/>
+				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="7.2.16" rev-constraint-default="7.2.16" rev-constraint-dynamic="7.2.16" callerrev="7.2.16"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="7.2.14" rev-constraint-default="7.2.14" rev-constraint-dynamic="7.2.14" callerrev="5.2.4"/>
+				<artifacts>
+					<artifact name="scalaz-effect_2.10" type="bundle" ext="jar" status="no" details="" size="402968" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-effect_2.10/bundles/scalaz-effect_2.10-7.2.16.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.2.16/scalaz-effect_2.10-7.2.16.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="7.2.14" status="release" pubdate="20170625031453" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2792" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-effect_2.10/ivy-7.2.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.2.14/scalaz-effect_2.10-7.2.14.pom"/>
+				<evicted-by rev="7.2.16"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="7.2.14" rev-constraint-default="7.2.14" rev-constraint-dynamic="7.2.14" callerrev="5.2.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier_2.10">
+			<revision name="1.0.2" status="release" pubdate="20180209052107" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/coursier/coursier" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache 2.0" url="http://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2946" time="0" location="/Users/abstruct/.ivy2/cache/io.get-coursier/coursier_2.10/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier_2.10/1.0.2/coursier_2.10-1.0.2.pom"/>
+				<caller organisation="io.get-coursier" name="sbt-coursier" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2"/>
+				<caller organisation="io.get-coursier" name="sbt-shared" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2"/>
+				<caller organisation="io.get-coursier" name="coursier-extra_2.10" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.10" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.2"/>
+				<artifacts>
+					<artifact name="coursier_2.10" type="jar" ext="jar" status="no" details="" size="2288308" time="0" location="/Users/abstruct/.ivy2/cache/io.get-coursier/coursier_2.10/jars/coursier_2.10-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier_2.10/1.0.2/coursier_2.10-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.10">
+			<revision name="7.2.16" status="release" pubdate="20171014062554" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="23">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2640" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.2.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.2.16/scalaz-core_2.10-7.2.16.pom"/>
+				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="7.2.16" rev-constraint-default="7.2.16" rev-constraint-dynamic="7.2.16" callerrev="7.2.16"/>
+				<caller organisation="io.get-coursier" name="coursier_2.10" conf="compile, runtime" rev="7.2.16" rev-constraint-default="7.2.16" rev-constraint-dynamic="7.2.16" callerrev="1.0.2"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="7.2.14" rev-constraint-default="7.2.14" rev-constraint-dynamic="7.2.14" callerrev="7.2.14"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="compile, runtime" rev="7.2.16" rev-constraint-default="7.2.16" rev-constraint-dynamic="7.2.16" callerrev="7.2.16"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="7.2.14" rev-constraint-default="7.2.14" rev-constraint-dynamic="7.2.14" callerrev="5.2.4"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.10" type="bundle" ext="jar" status="no" details="" size="10924574" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.2.16.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.2.16/scalaz-core_2.10-7.2.16.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="7.2.14" status="release" pubdate="20170625031527" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2640" time="0" location="/Users/abstruct/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.2.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.2.14/scalaz-core_2.10-7.2.14.pom"/>
+				<evicted-by rev="7.2.16"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="7.2.14" rev-constraint-default="7.2.14" rev-constraint-dynamic="7.2.14" callerrev="7.2.14"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="7.2.14" rev-constraint-default="7.2.14" rev-constraint-dynamic="7.2.14" callerrev="5.2.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalamacros" name="quasiquotes_2.10">
+			<revision name="2.1.0" status="release" pubdate="20151119111126" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
+				<metadata-artifact status="no" details="" size="2868" time="0" location="/Users/abstruct/.ivy2/cache/org.scalamacros/quasiquotes_2.10/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.1.0/quasiquotes_2.10-2.1.0.pom"/>
+				<caller organisation="io.get-coursier" name="coursier_2.10" conf="compile, runtime" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="1.0.2"/>
+				<artifacts>
+					<artifact name="quasiquotes_2.10" type="jar" ext="jar" status="no" details="" size="720702" time="0" location="/Users/abstruct/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.1.0/quasiquotes_2.10-2.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="sbt-scalajs">
+			<revision name="0.6.22" status="release" pubdate="20180123225629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-scalaVersion="2.10" extra-sbtVersion="0.13" extra-info.apiURL="http://www.scala-js.org/api/sbt-scalajs/0.6.22/" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="3">
+				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2160" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/org.scala-js/sbt-scalajs/ivy-0.6.22.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.22/ivys/ivy.xml"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-scalajs" type="jar" ext="jar" status="no" details="" size="426848" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/org.scala-js/sbt-scalajs/jars/sbt-scalajs-0.6.22.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.22/jars/sbt-scalajs.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.10">
+			<revision name="0.6.22" status="release" pubdate="20180123163737" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-sbt-test-adapter/0.6.22/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3308" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-sbt-test-adapter_2.10/ivy-0.6.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.22/scalajs-sbt-test-adapter_2.10-0.6.22.pom"/>
+				<caller organisation="org.scala-js" name="sbt-scalajs" conf="compile" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.6.22" extra-info.apiURL="http://www.scala-js.org/api/scalajs-sbt-test-adapter/0.6.22/"/>
+				<artifacts>
+					<artifact name="scalajs-sbt-test-adapter_2.10" type="jar" ext="jar" status="no" details="" size="211789" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-sbt-test-adapter_2.10/jars/scalajs-sbt-test-adapter_2.10-0.6.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.22/scalajs-sbt-test-adapter_2.10-0.6.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-interface">
+			<revision name="1.0" status="release" pubdate="20150507162859" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2584" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="file:////Users/abstruct/.sbt/preloaded/org.scala-sbt/test-interface/1.0/ivys/ivy.xml"/>
+				<caller organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.10" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.6.22"/>
+				<artifacts>
+					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="14755" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar">
+						<origin-location is-local="false" location="file:////Users/abstruct/.sbt/preloaded/org.scala-sbt/test-interface/1.0/jars/test-interface.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-js-envs_2.10">
+			<revision name="0.6.22" status="release" pubdate="20180123163718" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-js-envs/0.6.22/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="14">
+				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3594" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-js-envs_2.10/ivy-0.6.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.10/0.6.22/scalajs-js-envs_2.10-0.6.22.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.10" conf="default, compile, runtime, master" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.6.22"/>
+				<caller organisation="org.scala-js" name="sbt-scalajs" conf="compile" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.6.22" extra-info.apiURL="http://www.scala-js.org/api/scalajs-js-envs/0.6.22/"/>
+				<artifacts>
+					<artifact name="scalajs-js-envs_2.10" type="jar" ext="jar" status="no" details="" size="319410" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-js-envs_2.10/jars/scalajs-js-envs_2.10-0.6.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.10/0.6.22/scalajs-js-envs_2.10-0.6.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.webjars" name="envjs">
+			<revision name="1.2" status="release" pubdate="20131221121238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3229" time="0" location="/Users/abstruct/.ivy2/cache/org.webjars/envjs/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/envjs/1.2/envjs-1.2.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.10" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.6.22"/>
+				<artifacts>
+					<artifact name="envjs" type="jar" ext="jar" status="no" details="" size="161775" time="0" location="/Users/abstruct/.ivy2/cache/org.webjars/envjs/jars/envjs-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/envjs/1.2/envjs-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.apigee" name="rhino">
+			<revision name="1.7R5pre4" status="release" pubdate="20141014201202" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Mozilla Public License 2.0" url="http://www.mozilla.org/MPL/2.0/"/>
+				<metadata-artifact status="no" details="" size="2844" time="0" location="/Users/abstruct/.ivy2/cache/io.apigee/rhino/ivy-1.7R5pre4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/apigee/rhino/1.7R5pre4/rhino-1.7R5pre4.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.10" conf="default, compile, runtime, master" rev="1.7R5pre4" rev-constraint-default="1.7R5pre4" rev-constraint-dynamic="1.7R5pre4" callerrev="0.6.22"/>
+				<artifacts>
+					<artifact name="rhino" type="jar" ext="jar" status="no" details="" size="1160579" time="0" location="/Users/abstruct/.ivy2/cache/io.apigee/rhino/jars/rhino-1.7R5pre4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/apigee/rhino/1.7R5pre4/rhino-1.7R5pre4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-tools_2.10">
+			<revision name="0.6.22" status="release" pubdate="20180123163645" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-tools/0.6.22/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="4">
+				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3523" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-tools_2.10/ivy-0.6.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-tools_2.10/0.6.22/scalajs-tools_2.10-0.6.22.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.10" conf="default, compile, runtime, master" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.6.22"/>
+				<caller organisation="org.scala-js" name="sbt-scalajs" conf="compile" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.6.22" extra-info.apiURL="http://www.scala-js.org/api/scalajs-tools/0.6.22/"/>
+				<artifacts>
+					<artifact name="scalajs-tools_2.10" type="jar" ext="jar" status="no" details="" size="2569759" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-tools_2.10/jars/scalajs-tools_2.10-0.6.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-tools_2.10/0.6.22/scalajs-tools_2.10-0.6.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.json-simple" name="json-simple">
+			<revision name="1.1.1" status="release" pubdate="20120321011134" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/json-simple/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2986" time="0" location="/Users/abstruct/.ivy2/cache/com.googlecode.json-simple/json-simple/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.10" conf="default, compile, runtime, master" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.6.22"/>
+				<artifacts>
+					<artifact name="json-simple" type="bundle" ext="jar" status="no" details="" size="23931" time="0" location="/Users/abstruct/.ivy2/cache/com.googlecode.json-simple/json-simple/bundles/json-simple-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="closure-compiler-java-6">
+			<revision name="v20160517" status="release" pubdate="20160707053552" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scala-js/closure-compiler/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="6766" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/closure-compiler-java-6/ivy-v20160517.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/closure-compiler-java-6/v20160517/closure-compiler-java-6-v20160517.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.10" conf="default, compile, runtime, master" rev="v20160517" rev-constraint-default="v20160517" rev-constraint-dynamic="v20160517" callerrev="0.6.22"/>
+				<artifacts>
+					<artifact name="closure-compiler-java-6" type="jar" ext="jar" status="no" details="" size="6800665" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/closure-compiler-java-6/jars/closure-compiler-java-6-v20160517.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/closure-compiler-java-6/v20160517/closure-compiler-java-6-v20160517.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.2.4" status="release" pubdate="20130513175652" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3381" time="0" location="/Users/abstruct/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
+				<caller organisation="org.scala-js" name="closure-compiler-java-6" conf="compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="v20160517"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="no" details="" size="190432" time="0" location="/Users/abstruct/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="2.5.0" status="release" pubdate="20130307191811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3139" time="0" location="/Users/abstruct/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom"/>
+				<caller organisation="org.scala-js" name="closure-compiler-java-6" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="v20160517"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="bundle" ext="jar" status="no" details="" size="533455" time="0" location="/Users/abstruct/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="19.0" status="release" pubdate="20151209155835" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6356" time="0" location="/Users/abstruct/.ivy2/cache/com.google.guava/guava/ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom"/>
+				<caller organisation="org.scala-js" name="closure-compiler-java-6" conf="compile, runtime" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="v20160517"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2308517" time="0" location="/Users/abstruct/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="1.3.9" status="release" pubdate="20090824182822" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2519" time="0" location="/Users/abstruct/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-1.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom"/>
+				<caller organisation="org.scala-js" name="closure-compiler-java-6" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="v20160517"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33015" time="0" location="/Users/abstruct/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-1.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="args4j" name="args4j">
+			<revision name="2.0.26" status="release" pubdate="20131102210025" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3588" time="0" location="/Users/abstruct/.ivy2/cache/args4j/args4j/ivy-2.0.26.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/args4j/args4j/2.0.26/args4j-2.0.26.pom"/>
+				<caller organisation="org.scala-js" name="closure-compiler-java-6" conf="compile, runtime" rev="2.0.26" rev-constraint-default="2.0.26" rev-constraint-dynamic="2.0.26" callerrev="v20160517"/>
+				<artifacts>
+					<artifact name="args4j" type="bundle" ext="jar" status="no" details="" size="74703" time="0" location="/Users/abstruct/.ivy2/cache/args4j/args4j/bundles/args4j-2.0.26.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/args4j/args4j/2.0.26/args4j-2.0.26.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="closure-compiler-externs-java-6">
+			<revision name="v20160517" status="release" pubdate="20160707053438" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3436" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/closure-compiler-externs-java-6/ivy-v20160517.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/closure-compiler-externs-java-6/v20160517/closure-compiler-externs-java-6-v20160517.pom"/>
+				<caller organisation="org.scala-js" name="closure-compiler-java-6" conf="compile, runtime" rev="v20160517" rev-constraint-default="v20160517" rev-constraint-dynamic="v20160517" callerrev="v20160517"/>
+				<artifacts>
+					<artifact name="closure-compiler-externs-java-6" type="jar" ext="jar" status="no" details="" size="147963" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/closure-compiler-externs-java-6/jars/closure-compiler-externs-java-6-v20160517.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/closure-compiler-externs-java-6/v20160517/closure-compiler-externs-java-6-v20160517.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-ir_2.10">
+			<revision name="0.6.22" status="release" pubdate="20180123163613" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-ir/0.6.22/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2941" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-ir_2.10/ivy-0.6.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-ir_2.10/0.6.22/scalajs-ir_2.10-0.6.22.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.10" conf="default, compile, runtime, master" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.6.22"/>
+				<artifacts>
+					<artifact name="scalajs-ir_2.10" type="jar" ext="jar" status="no" details="" size="656977" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-js/scalajs-ir_2.10/jars/scalajs-ir_2.10-0.6.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-ir_2.10/0.6.22/scalajs-ir_2.10-0.6.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin">
+			<revision name="5.2.4" status="release" pubdate="20171116160157" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="1673" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/ivy-5.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/5.2.4/ivys/ivy.xml"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="5.2.4" rev-constraint-default="5.2.4" rev-constraint-dynamic="5.2.4" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbteclipse-plugin" type="jar" ext="jar" status="no" details="" size="348631" time="0" location="/Users/abstruct/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/jars/sbteclipse-plugin-5.2.4.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/5.2.4/jars/sbteclipse-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="global-plugins">
+			<revision name="0.0" status="integration" pubdate="20180710140441" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="default" name="recfun-build" conf="compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.7" status="release" pubdate="20171103160659" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.7/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.7/scala-library-2.10.7.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.10" conf="default, compile, runtime, master" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="0.6.22"/>
+				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="7.2.16"/>
+				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="2.1.0"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="1.0.2"/>
+				<caller organisation="org.scala-js" name="scalajs-ir_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="0.6.22"/>
+				<caller organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.10" conf="default, compile, runtime, master" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="0.6.22"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="7.2.16"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="2.10.7"/>
+				<caller organisation="org.scalaj" name="scalaj-http_2.10" conf="default, compile, runtime, master" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="2.2.1"/>
+				<caller organisation="io.get-coursier" name="coursier_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="1.0.2"/>
+				<caller organisation="io.get-coursier" name="coursier-extra_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="1.0.2"/>
+				<caller organisation="org.scalariform" name="scalariform_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="0.1.7"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="7.2.14"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.10" conf="default, compile, runtime, master" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="0.6.22"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="compile, runtime" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="7.2.16"/>
+				<caller organisation="org.scalastyle" name="scalastyle_2.10" conf="default, compile, runtime, master" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="0.8.0"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="default, compile, runtime, master" rev="2.10.7" rev-constraint-default="2.10.7" rev-constraint-dynamic="2.10.7" callerrev="7.2.14"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7132588" time="0" location="/Users/abstruct/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.7.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
