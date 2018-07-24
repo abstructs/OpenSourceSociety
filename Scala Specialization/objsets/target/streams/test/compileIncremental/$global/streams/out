@@ -1,0 +1,43 @@
+[0m[[0mdebug[0m] [0m[naha] The objsets.Empty source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	mostRetweeted.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.Empty: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.Empty.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/src/test/scala/objsets/TweetSetSuite.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The objsets.Tweet source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	mostRetweeted.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.Tweet: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.Tweet.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/src/test/scala/objsets/TweetSetSuite.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The objsets.TweetSet source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	mostRetweeted.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.TweetSet: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.TweetSet.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/src/test/scala/objsets/TweetSetSuite.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] The objsets.TweetList source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	mostRetweeted.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.TweetList: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.TweetList.[0m
+[0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/src/test/scala/objsets/TweetSetSuite.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(objsets.Empty,ModifiedNames(regularNames = mostRetweeted, implicitNames = )), NamesChange(objsets.Tweet,ModifiedNames(regularNames = mostRetweeted, implicitNames = )), NamesChange(objsets.TweetSet,ModifiedNames(regularNames = mostRetweeted, implicitNames = )), NamesChange(objsets.TweetList,ModifiedNames(regularNames = mostRetweeted, implicitNames = )))[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m

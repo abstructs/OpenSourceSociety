@@ -67,7 +67,7 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-    def mostRetweeted: Tweet = ???
+    def mostRetweeted: Tweet
   
   /**
    * Returns a list containing all tweets of this set, sorted by retweet count
@@ -78,7 +78,7 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-    def descendingByRetweet: TweetList = ???
+    def descendingByRetweet: TweetList
   
   /**
    * The following methods are already implemented
@@ -113,9 +113,12 @@ class Empty extends TweetSet {
 
   override def isEmpty: Boolean = true
 
-  override def filter(p: (Tweet) => Boolean): TweetSet = ???
+  override def filter(p: (Tweet) => Boolean): TweetSet = this
 
   override def union(that: TweetSet): TweetSet = that
+
+  override def mostRetweeted: Tweet = new Tweet("", "", Int.MinValue)
+  
   
   /**
    * The following methods are already implemented
@@ -136,10 +139,22 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = ???
 
-  override def filter(p: (Tweet) => Boolean): TweetSet = ???
+  override def filter(p: (Tweet) => Boolean): TweetSet = {
+    if (p(elem)) (left.filter(p) union right.filter(p)) incl elem
+    else left.filter(p) union right.filter(p)
+  }
 
   override def union(that: TweetSet): TweetSet = {
-    left.union(right).union(that)
+    ((left union right) union that) incl elem
+  }
+
+  override def mostRetweeted: Tweet = {
+    val leftMostRts = left.mostRetweeted
+    val rightMostRts = right.mostRetweeted
+
+    if(elem.retweets > leftMostRts.retweets && elem.retweets > rightMostRts.retweets) elem
+    else if(leftMostRts.retweets > rightMostRts.retweets) leftMostRts
+    else rightMostRts
   }
   /**
    * The following methods are already implemented
