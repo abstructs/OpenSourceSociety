@@ -1,9 +1,1 @@
-[0m[[0minfo[0m] [0mPackaging /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/target/scala-2.11/progfun1-objsets_2.11-0.1-SNAPSHOT.jar ...[0m
-[0m[[0mdebug[0m] [0mInput file mappings:[0m
-[0m[[0mdebug[0m] [0m	objsets/TweetSet.scala[0m
-[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/src/main/scala/objsets/TweetSet.scala[0m
-[0m[[0mdebug[0m] [0m	objsets/TweetReader.scala[0m
-[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/src/main/scala/objsets/TweetReader.scala[0m
-[0m[[0mdebug[0m] [0m	objsets/TweetData.scala[0m
-[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/src/main/scala/objsets/TweetData.scala[0m
-[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[0mdebug[0m] [0mJar uptodate: /Users/abstruct/Desktop/Open Source Society/Scala Specialization/objsets/target/scala-2.11/progfun1-objsets_2.11-0.1-SNAPSHOT.jar[0m
