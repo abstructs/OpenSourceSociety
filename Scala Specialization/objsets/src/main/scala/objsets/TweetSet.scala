@@ -209,8 +209,7 @@ object Nil extends TweetList {
 
 class Cons(val head: Tweet, val tail: TweetList) extends TweetList {
   def isEmpty = false
-}
-
+}l
 
 object GoogleVsApple {
   val google = List("android", "Android", "galaxy", "Galaxy", "nexus", "Nexus")
@@ -223,7 +222,7 @@ object GoogleVsApple {
    * A list of all tweets mentioning a keyword from either apple or google,
    * sorted by the number of retweets.
    */
-     lazy val trending: TweetList = (googleTweets union appleTweets).descendingByRetweet
+   lazy val trending: TweetList = (googleTweets union appleTweets).descendingByRetweet
   }
 
 object Main extends App {

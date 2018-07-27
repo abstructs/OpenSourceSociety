@@ -1,0 +1,194 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes
+compile options:
+1 items
+0 -> -deprecation
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.12
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+12 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$1$$anon$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$2$$anon$2.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$2.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$3.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$4.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$5.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$6$$anon$3.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$6.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$TestTrees$class.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$TestTrees.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite.class
+binary dependencies:
+4 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.Huffman$
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+12 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$1$$anon$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$2$$anon$2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$4
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$5
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$6
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$$anonfun$6$$anon$3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$TestTrees
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat.HuffmanSuite$TestTrees$class
+used names:
+73 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> $anon
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> $org_scalatest_assert_macro_expr
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> $org_scalatest_assert_macro_left
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> $org_scalatest_assert_macro_right
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> <byname>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> <init>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> <refinement>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> <repeated>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> ===
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> A
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Any
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> AnyRef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> AssertionsHelper
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Bit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Bool
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Boolean
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Char
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> CodeTree
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Equality
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Equalizer
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Fork
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> FunSuite
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Huffman
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> HuffmanSuite
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Int
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> JUnitRunner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Leaf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> List
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Nothing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Object
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Predef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Product
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> RunWith
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Serializable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> String
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> StringOps
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> T
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> T1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> T2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Tag
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> TestTrees
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Tuple2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> Unit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> apply
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> assert
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> assertionsHelper
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> augmentString
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> binaryMacroBool
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> chars
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> combine
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> convertToEqualizer
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> decode
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> default
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> encode
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> immutable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> junit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> leaflist
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> macroAssert
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> makeOrderedLeafList
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> org
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> patmat
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> println
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> runner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> scala
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> scalactic
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> scalatest
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> string2Chars
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> t1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> t2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> test
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> toList
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> weight
+product stamps:
+12 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$1$$anon$1.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$1.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$2$$anon$2.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$2.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$3.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$4.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$5.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$6$$anon$3.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$$anonfun$6.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$TestTrees$class.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite$TestTrees.class -> lastModified(1532662230000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/target/scala-2.11/test-classes/patmat/HuffmanSuite.class -> lastModified(1532662230000)
+source stamps:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> hash(28d258d8f9bb06c584b19af0c46935d6f469cc29)
+binary stamps:
+4 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1500701265000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar -> lastModified(1317323535000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> lastModified(1509673049000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar -> lastModified(1422515758000)
+class names:
+4 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar -> org.junit.runner.RunWith
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> scala.Serializable
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar -> org.scalatest.FunSuite
+internal apis:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw7DkfjgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAJzcgAgeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2hbDvUidjhXzwIAAkkABGhhc2hMAARuYW1ldAASTGphdmEvbGFuZy9TdHJpbmc7eHA/thaKdAAVdW5jb25zdHJhaW5lZEVxdWFsaXR5c3EAfgALkRIilXQAEmNvbnZlcnRUb0VxdWFsaXplcnVxAH4ACQAAAGhzcQB+AAvbrj1KdAAGYXNzZXJ0c3EAfgALG7UKvXQABm5vdGlmeXNxAH4AC67X7AF0ACZsb3dQcmlvcml0eUNvbnZlcnNpb25DaGVja2VkQ29uc3RyYWludHNxAH4AC3/VRdt0ABBBc3NlcnRpb25zSGVscGVyc3EAfgALCi9+3XQABmNhbmNlbHNxAH4AC2QgfBp0AAR0ZXN0c3EAfgALaZOQ7nQAEWV4ZWN1dGUkZGVmYXVsdCQyc3EAfgAL0aX59XQADGV4cGVjdFJlc3VsdHNxAH4AC2yEmSN0AAlpbnRlcmNlcHRzcQB+AAuzqqnDdAAEZmFpbHNxAH4AC+scZRd0AARuYW1lc3EAfgALlq1DI3QAFGFzc2VydERvZXNOb3RDb21waWxlc3EAfgALWix+enQAEWV4ZWN1dGUkZGVmYXVsdCQ0c3EAfgALvHrWu3QAB2V4ZWN1dGVzcQB+AAtx9w29dAAEd2FpdHNxAH4AC/mtA9d0AAt0ZXN0RGF0YUZvcnNxAH4AC0tC5tZ0ABNjcmVhdGVDYXRjaFJlcG9ydGVyc3EAfgALJohCWnQACXN0eWxlTmFtZXNxAH4ACzlTWf90AA0kYXNJbnN0YW5jZU9mc3EAfgALQldkSXQAEWV4ZWN1dGUkZGVmYXVsdCQzc3EAfgALfHWLxHQACWNvbmZpZ01hcHNxAH4AC698FnZ0AAZlcXVhbHNzcQB+AAu1a5pfdAAsY29udmVydEVxdWl2YWxlbmNlVG9BVG9CQ29udmVyc2lvbkNvbnN0cmFpbnRzcQB+AAvXUqTndAAPZGVmYXVsdEVxdWFsaXR5c3EAfgALNQuIZXQAImNvbnZlcnRFcXVpdmFsZW5jZVRvQVRvQkNvbnN0cmFpbnRzcQB+AAtEK/0gdAAEdGFnc3NxAH4AC5d4+zB0AAxhc0luc3RhbmNlT2ZzcQB+AAtVdNzqdAAFYWxlcnRzcQB+AAvfXlPZdAADcnVuc3EAfgALLp4tq3QAD0xlZ2FjeUVxdWFsaXplcnNxAH4AC6y2QOF0AAZzY29wZXNzcQB+AAsW4IeLdAAYY29udmVydFRvTGVnYWN5RXF1YWxpemVyc3EAfgALa6FM83QADHN5bmNocm9uaXplZHNxAH4AC5cRIXl0AA5hc3NlcnRDb21waWxlc3NxAH4AC8i7ss10AA0kaXNJbnN0YW5jZU9mc3EAfgALt8xg3HQABHRyYXBzcQB+AAtttdIydAAVdGVzdERhdGFGb3IkZGVmYXVsdCQyc3EAfgALhSDL63QADGFzc2VydFJlc3VsdHNxAH4AC/TuwQZ0AAlUZXN0VHJlZXNzcQB+AAtaqFeEdAAEdGV4dHNxAH4AC4iJFrp0ACxjb252ZXJ0RXF1aXZhbGVuY2VUb0JUb0FDb252ZXJzaW9uQ29uc3RyYWludHNxAH4ACxeOe1J0ABFleGVjdXRlJGRlZmF1bHQkN3NxAH4AC67I6Wd0ABV0eXBlQ2hlY2tlZENvbnN0cmFpbnRzcQB+AAvC1Tj2dAADIT09c3EAfgALffO/u3QABGluZm9zcQB+AAtc56GEdAAJbm90aWZ5QWxsc3EAfgALsr6TEXQAC3dpdGhGaXh0dXJlc3EAfgALp19MmnQAB3J1blRlc3RzcQB+AAtJ1HmMdAAMaXNJbnN0YW5jZU9mc3EAfgAL1SPNCnQACHdpdGhDbHVlc3EAfgALthJMbXQAEGFzc2VydGlvbnNIZWxwZXJzcQB+AAve9bejdAARZXhlY3V0ZSRkZWZhdWx0JDZzcQB+AAvGgIZRdAAPYXNzZXJ0VHlwZUVycm9yc3EAfgALvBPFtHQABm1hcmt1cHNxAH4AC3IW4zR0AAhsZWZ0U2lkZXNxAH4AC/u5aPV0AAJ0MnNxAH4ACxg5sWl0AAY8aW5pdD5zcQB+AAvxQanvdAALbWFjcm9Bc3N1bWVzcQB+AAuEZN4pdAAPcnVuTmVzdGVkU3VpdGVzc3EAfgALAih2WHQABWFwcGx5c3EAfgALVW5sq3QACUVxdWFsaXplcnNxAH4AC3Eux0d0ABtuZXdBc3NlcnRpb25GYWlsZWRFeGNlcHRpb25zcQB+AAvJcRlvdAAEbm90ZXNxAH4AC+dJJfB0AAI9PXNxAH4AC7YtGgN0AAVjbG9uZXNxAH4AC+rkWWx0AAZleHBlY3RzcQB+AAt4QS2NdAAMSHVmZm1hblN1aXRlc3EAfgAL2vOK9HQADG5lc3RlZFN1aXRlc3NxAH4ACz9bTNB0AAZhc3N1bWVzcQB+AAugOlUFdAAGJGluaXQkc3EAfgALYCi2RHQAIGxvd1ByaW9yaXR5VHlwZUNoZWNrZWRDb25zdHJhaW50c3EAfgALw+ipe3QADHJlZ2lzdGVyVGVzdHNxAH4ACwSyZvV0ABFleGVjdXRlJGRlZmF1bHQkNXNxAH4AC2Rk5h90AAM9PT1zcQB+AAsQsp60dAAYbmV3VGVzdENhbmNlbGVkRXhjZXB0aW9uc3EAfgALI2gjKHQACHRvU3RyaW5nc3EAfgAL+uXbR3QACXRlc3ROYW1lc3NxAH4AC25WITZ0ABFleGVjdXRlJGRlZmF1bHQkMXNxAH4ACzHjI8B0AAIhPXNxAH4ACwZOUa90ABdMZWdhY3lDaGVja2luZ0VxdWFsaXplcnNxAH4ACx1Py0Z0AAhnZXRDbGFzc3NxAH4AC2y8w0R0ABNyZWdpc3Rlcklnbm9yZWRUZXN0c3EAfgAL1Qgfx3QACHRlc3RzRm9yc3EAfgALkgO7enQACHJ1blRlc3Rzc3EAfgALJOBGfHQAEXBlbmRpbmdVbnRpbEZpeGVkc3EAfgALSmfeL3QAEWV4cGVjdGVkVGVzdENvdW50c3EAfgALqhErbnQACHJlcnVubmVyc3EAfgAL5GcjiHQAAnQxc3EAfgALq5id+3QAImNvbnZlcnRFcXVpdmFsZW5jZVRvQlRvQUNvbnN0cmFpbnRzcQB+AAvMSQ9KdAACbmVzcQB+AAsmDTIhdAARQ2hlY2tpbmdFcXVhbGl6ZXJzcQB+AAsYOM+MdAAgY29udmVydFRvTGVnYWN5Q2hlY2tpbmdFcXVhbGl6ZXJzcQB+AAtfGkA+dAAHcGVuZGluZ3NxAH4AC4Uyfnd0AAZpZ25vcmVzcQB+AAu+UAPZdAALbWFjcm9Bc3NlcnRzcQB+AAv/W1W7dAACZXFzcQB+AAskgEgJdAAaY29udmVydFRvQ2hlY2tpbmdFcXVhbGl6ZXJzcQB+AAt2y1LUdAAJTm9BcmdUZXN0c3EAfgALSH1SAHQAAiMjc3EAfgAL0SjluXQACGZpbmFsaXplc3EAfgALi20FhHQAG2NvbnZlcnNpb25DaGVja2VkQ29uc3RyYWludHNxAH4AC1PZUph0AAhoYXNoQ29kZXNxAH4AC09i/s10AAdzdWl0ZUlkc3EAfgALMDqjXnQACXN1aXRlTmFtZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AOt4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgAMeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAAFzcgAUeHNidGkuYXBpLkFubm90YXRpb27eDoGi9lwKsgIAAlsACWFyZ3VtZW50c3QAH1tMeHNidGkvYXBpL0Fubm90YXRpb25Bcmd1bWVudDtMAARiYXNldAAQTHhzYnRpL2FwaS9UeXBlO3hwdXIAH1tMeHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudDtRnaaPOCUPeAIAAHhwAAAAAXNyABx4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW501kWx2AMbF3wCAAJMAARuYW1lcQB+AAxMAAV2YWx1ZXEAfgAMeHB0AAV2YWx1ZXQAKGNsYXNzT2Zbb3JnLnNjYWxhdGVzdC5qdW5pdC5KVW5pdFJ1bm5lcl1zcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwdAAHUnVuV2l0aHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4BBHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAABHNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AAx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAADb3Jnc3EAfgEQdAAFanVuaXRzcQB+ARB0AAZydW5uZXJzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4BEXNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAE3BhdG1hdC5IdWZmbWFuU3VpdGV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAJ0ABBzY2FsYS5kZXByZWNhdGVkdAAnc2NhbGEucmVmbGVjdC5tYWNyb3MuaW50ZXJuYWwubWFjcm9JbXBsc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cQB+AQRzcQB+ASdzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4A60wACWluaGVyaXRlZHEAfgDrTAAHcGFyZW50c3EAfgDreHEAfgEFc3EAfgEndXEAfgDmAAAAAHNxAH4BJ3VxAH4A5gAAAABzcQB+ASd1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAD3NxAH4BAnQACEZ1blN1aXRlc3EAfgEIc3EAfgELdXEAfgEOAAAAA3NxAH4BEHQAA29yZ3NxAH4BEHQACXNjYWxhdGVzdHEAfgEZc3EAfgECdAAMRnVuU3VpdGVMaWtlcQB+AThzcQB+AQJ0AAtEb2N1bWVudGluZ3EAfgE4c3EAfgECdAAIQWxlcnRpbmdxAH4BOHNxAH4BAnQACU5vdGlmeWluZ3EAfgE4c3EAfgECdAAJSW5mb3JtaW5ncQB+AThzcQB+AQJ0ABBUZXN0UmVnaXN0cmF0aW9ucQB+AThzcQB+AQJ0AAVTdWl0ZXEAfgE4c3EAfgECdAAMU2VyaWFsaXphYmxlc3EAfgEIc3EAfgELdXEAfgEOAAAAA3NxAH4BEHQABGphdmFzcQB+ARB0AAJpb3EAfgEZc3EAfgECdAANQWJzdHJhY3RTdWl0ZXEAfgE4c3EAfgECdAAKQXNzZXJ0aW9uc3EAfgE4c3EAfgECdAAMVHJpcGxlRXF1YWxzc3EAfgEIc3EAfgELdXEAfgEOAAAAA3NxAH4BEHQAA29yZ3NxAH4BEHQACXNjYWxhY3RpY3EAfgEZc3EAfgECdAATVHJpcGxlRXF1YWxzU3VwcG9ydHEAfgFcc3EAfgECdAAGT2JqZWN0c3EAfgEIc3EAfgELdXEAfgEOAAAAA3NxAH4BEHEAfgFTc3EAfgEQdAAEbGFuZ3EAfgEZc3EAfgECdAADQW55c3EAfgEIc3EAfgELdXEAfgEOAAAAAnNxAH4BEHQABXNjYWxhcQB+ARl1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAMeHB0AAZwYXRtYXRzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWTZyaladXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAMTAAPc291cmNlRGlyZWN0b3J5cQB+AAx4cHQAZi9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vcGF0bWF0L3RhcmdldC9zY2FsYS0yLjExL3Rlc3QtY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFCjSWNj5uwbFhLGa8MRpNdb0acwp
+external apis:
+1 items
+patmat.Huffman$ -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwiqiSgQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAA/c3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwEGpG5nQABm5vdGlmeXNxAH4ADOPjQIN0AAxtYWtlQ29kZVRyZWVzcQB+AAww19/AdAAGc2VjcmV0c3EAfgAM+eYOCXQAB3VuYXBwbHlzcQB+AAymkAlEdAAGZW5jb2Rlc3EAfgAMYbD+jXQABndlaWdodHNxAH4ADHtAd9p0AAdjdXJyaWVkc3EAfgAM2fgDJnQABHdhaXRzcQB+AAw/TF2FdAAOY29weSRkZWZhdWx0JDJzcQB+AAyfMkQ+dAANJGFzSW5zdGFuY2VPZnNxAH4ADKFPmqN0AAxwcm9kdWN0QXJpdHlzcQB+AAytikLFdAAGZXF1YWxzc3EAfgAMU0v47nQAC3F1aWNrRW5jb2Rlc3EAfgAMZyVeY3QADGFzSW5zdGFuY2VPZnNxAH4ADJnCMkl0AAxzeW5jaHJvbml6ZWRzcQB+AAwzgt2YdAAEbGVmdHNxAH4ADC8/JqF0AA0kaXNJbnN0YW5jZU9mc3EAfgAM5G1jmHQABnR1cGxlZHNxAH4ADCLp1Md0AAdIdWZmbWFuc3EAfgAMrzPg1XQACGNhbkVxdWFsc3EAfgAM3LgqmXQADmNvcHkkZGVmYXVsdCQ0c3EAfgAM6aMAh3QABGNoYXJzcQB+AAy4FAb8dAAGZGVjb2Rlc3EAfgAMkvT5NHQABExlYWZzcQB+AAzUn/iQdAAIY29kZUJpdHNzcQB+AAwEhdRkdAANcHJvZHVjdFByZWZpeHNxAH4ADBjqSON0AAV1bnRpbHNxAH4ADNaygLF0AApmcmVuY2hDb2Rlc3EAfgAM9BfrKXQACW5vdGlmeUFsbHNxAH4ADOrGGQ50AAVjaGFyc3NxAH4ADArqKv90AAxpc0luc3RhbmNlT2ZzcQB+AAw0cbMjdAAGPGluaXQ+c3EAfgAM2+5dGXQABWFwcGx5c3EAfgAM/kzrr3QADWRlY29kZWRTZWNyZXRzcQB+AAwk6L+cdAACPT1zcQB+AAwS9KK9dAAFY2xvbmVzcQB+AAwYFyThdAAPbWVyZ2VDb2RlVGFibGVzc3EAfgAMCCr1QHQABXRpbWVzc3EAfgAMS89n5nQABiRpbml0JHNxAH4ADPNo+jJ0AAdjb21iaW5lc3EAfgAMmiZunnQADmNvcHkkZGVmYXVsdCQzc3EAfgAMvj6PcnQABGNvcHlzcQB+AAxf3ETIdAAMc3RyaW5nMkNoYXJzc3EAfgAM1GDg6nQACHRvU3RyaW5nc3EAfgAMjocP53QACXNpbmdsZXRvbnNxAH4ADNqLXi10AAIhPXNxAH4ADKItZap0AAhnZXRDbGFzc3NxAH4ADBoL2sF0AAlDb2RlVGFibGVzcQB+AAxHYPjfdAAOY3JlYXRlQ29kZVRyZWVzcQB+AAxF8kE2dAAOY29weSRkZWZhdWx0JDFzcQB+AAySTXI6dAAERm9ya3NxAH4ADCXGoJJ0AANCaXRzcQB+AAyykPVvdAACbmVzcQB+AAxDwK/IdAATbWFrZU9yZGVyZWRMZWFmTGlzdHNxAH4ADOCpjvF0AAhDb2RlVHJlZXNxAH4ADMd0bZF0AAJlcXNxAH4ADId5BKh0AAdjb252ZXJ0c3EAfgAMXh7u1XQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADBmtLgZ0AAVyaWdodHNxAH4ADCGmWoh0AAIjI3NxAH4ADDMwnRd0AAhmaW5hbGl6ZXNxAH4ADFUl1x50AA5wcm9kdWN0RWxlbWVudHNxAH4ADNHAT710AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AJV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AA5wYXRtYXQuSHVmZm1hbnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4ArXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgCVTAAJaW5oZXJpdGVkcQB+AJVMAAdwYXJlbnRzcQB+AJV4cQB+ALJzcQB+AK11cQB+AJAAAAAAc3EAfgCtdXEAfgCQAAAAAHNxAH4ArXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AsXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AsXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AynQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ay3NxAH4AvnQAA0FueXNxAH4AwnNxAH4AxXVxAH4AyAAAAAJzcQB+AMp0AAVzY2FsYXEAfgDRdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAGcGF0bWF0c3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFk2cUYVHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AGEvVXNlcnMvYWJzdHJ1Y3QvRGVza3RvcC9PcGVuIFNvdXJjZSBTb2NpZXR5L1NjYWxhIFNwZWNpYWxpemF0aW9uL3BhdG1hdC90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUOcH+oSupwRb0donq1Yuo6OUae50=
+source infos:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/patmat/src/test/scala/patmat/HuffmanSuite.scala -> 
+AAAAAAAAAAA=
+compilations:
+4 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZNnFM891cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZi9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vcGF0bWF0L3RhcmdldC9zY2FsYS0yLjExL3Rlc3QtY2xhc3Nlc3QAAS8=
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZNnJIWl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZi9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vcGF0bWF0L3RhcmdldC9zY2FsYS0yLjExL3Rlc3QtY2xhc3Nlc3QAAS8=
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZNnJXst1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZi9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vcGF0bWF0L3RhcmdldC9zY2FsYS0yLjExL3Rlc3QtY2xhc3Nlc3QAAS8=
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZNnJqVp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZi9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vcGF0bWF0L3RhcmdldC9zY2FsYS0yLjExL3Rlc3QtY2xhc3Nlc3QAAS8=
