@@ -31,8 +31,8 @@
       <file leaf-file-name="HuffmanSuite.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="32" column="108" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="108" />
+            <state relative-caret-position="39">
+              <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -41,8 +41,8 @@
       <file leaf-file-name="Huffman.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="117" column="7" lean-forward="true" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+            <state relative-caret-position="113">
+              <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -53,6 +53,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>times</find>
+      <find>codetre</find>
+      <find>codetree</find>
+      <find>class fork</find>
+      <find>combine</find>
+      <find>(trees: List[CodeTree]): List[CodeTree]</find>
+      <find>until</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -313,29 +319,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file=" - 2018.07.26 at 23h 26m 16s.xml">
-      <configuration name="" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file=" - 2018.07.26 at 23h 26m 36s.xml">
-      <configuration name="" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file=" - 2018.07.26 at 23h 29m 57s.xml">
-      <configuration name="" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file=" - 2018.07.26 at 23h 30m 12s.xml">
-      <configuration name="" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file=" - 2018.07.26 at 23h 30m 31s.xml">
-      <configuration name="" configurationId="JUnit" />
-    </history-entry>
     <history-entry file=" - 2018.07.27 at 00h 53m 27s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
     <history-entry file=" - 2018.07.27 at 00h 54m 51s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="null - 2018.07.26 at 23h 25m 41s.xml">
-      <configuration name="null" configurationId="JUnit" />
+    <history-entry file=" - 2018.07.27 at 01h 05m 49s.xml">
+      <configuration name="" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file=" - 2018.07.27 at 13h 36m 38s.xml">
+      <configuration name="" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file=" - 2018.07.27 at 13h 38m 04s.xml">
+      <configuration name="" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file=" - 2018.07.27 at 13h 38m 55s.xml">
+      <configuration name="" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file=" - 2018.07.27 at 13h 39m 20s.xml">
+      <configuration name="" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file=" - 2018.07.27 at 13h 40m 16s.xml">
+      <configuration name="" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file=" - 2018.07.27 at 14h 01m 49s.xml">
+      <configuration name="" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file=" - 2018.07.27 at 14h 18m 32s.xml">
+      <configuration name="" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -358,7 +370,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27144867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -388,18 +400,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/Predef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="32" column="108" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="108" />
+        <state relative-caret-position="39">
+          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="117" column="7" lean-forward="true" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+        <state relative-caret-position="113">
+          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
           <folding />
         </state>
       </provider>
