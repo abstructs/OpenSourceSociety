@@ -83,14 +83,14 @@ object Huffman {
       def insert(elem: Char, list: List[(Char, Int)]): List[(Char, Int)] = {
         list match {
           case List() => List((elem, 1))
-          case (c:Char, n:Int)::xs => if(c == elem) List((c, n + 1)) else insert(elem, xs)
+          case (c:Char, n:Int)::xs => if(c == elem) List((c, n + 1)) ++ xs else List((c, n)) ++ insert(elem, xs)
         }
       }
 
       def aux(chars: List[Char], acc: List[(Char, Int)]): List[(Char, Int)] = {
         chars match {
           case List() => acc
-          case x::xs => aux(xs, acc ++ insert(x, acc))
+          case x::xs => aux(xs, insert(x, acc))
         }
       }
 
@@ -104,7 +104,21 @@ object Huffman {
    * head of the list should have the smallest weight), where the weight
    * of a leaf is the frequency of the character.
    */
-    def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = ???
+    def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = {
+      def insert(elem: (Char, Int), list: List[Leaf]): List[Leaf] = list match {
+        case List() => List(Leaf(elem._1, elem._2))
+        case Leaf(c, n)::xs => if(elem._2 < n) Leaf(elem._1, elem._2) :: Leaf(c, n) :: xs else Leaf(c, n) :: insert(elem, xs)
+      }
+
+      def aux(freqs: List[(Char, Int)], acc: List[Leaf]): List[Leaf] = {
+        freqs match {
+          case List() => acc
+          case (c, n)::xs => aux(xs, insert((c, n), acc))
+        }
+      }
+
+      aux(freqs, List())
+    }
   
   /**
    * Checks whether the list `trees` contains only one single code tree.
