@@ -31,8 +31,8 @@
       <file leaf-file-name="HuffmanSuite.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="65" />
+            <state relative-caret-position="159">
+              <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -41,8 +41,8 @@
       <file leaf-file-name="Huffman.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+            <state relative-caret-position="216">
+              <caret line="324" column="30" lean-forward="true" selection-start-line="324" selection-start-column="30" selection-end-line="324" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -56,9 +56,20 @@
       <find>codetre</find>
       <find>codetree</find>
       <find>class fork</find>
-      <find>combine</find>
       <find>(trees: List[CodeTree]): List[CodeTree]</find>
       <find>until</find>
+      <find>decode</find>
+      <find>???</find>
+      <find>makecode</find>
+      <find>c</find>
+      <find>convert</find>
+      <find>combine</find>
+      <find>Nil</find>
+      <find>encode</find>
+      <find>single</find>
+      <find>singleton</find>
+      <find>quickencode</find>
+      <find>codetable</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -69,8 +80,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala" />
       </list>
     </option>
   </component>
@@ -319,34 +330,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file=" - 2018.07.27 at 00h 53m 27s.xml">
+    <history-entry file=" - 2018.07.27 at 18h 36m 06s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 00h 54m 51s.xml">
+    <history-entry file=" - 2018.07.27 at 18h 36m 19s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 01h 05m 49s.xml">
+    <history-entry file=" - 2018.07.27 at 18h 37m 14s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 13h 36m 38s.xml">
+    <history-entry file=" - 2018.07.28 at 17h 47m 58s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 13h 38m 04s.xml">
+    <history-entry file=" - 2018.07.28 at 17h 48m 07s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 13h 38m 55s.xml">
+    <history-entry file=" - 2018.07.28 at 17h 53m 34s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 13h 39m 20s.xml">
+    <history-entry file=" - 2018.07.28 at 17h 56m 23s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 13h 40m 16s.xml">
+    <history-entry file=" - 2018.07.28 at 18h 26m 22s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 14h 01m 49s.xml">
+    <history-entry file=" - 2018.07.28 at 18h 26m 36s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
-    <history-entry file=" - 2018.07.27 at 14h 18m 32s.xml">
+    <history-entry file=" - 2018.07.28 at 18h 27m 19s.xml">
       <configuration name="" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -361,7 +372,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -370,8 +380,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27144867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27144867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -395,7 +405,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -408,18 +418,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4-sources.jar!/org/scalatest/Assertions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="499" column="0" lean-forward="false" selection-start-line="499" selection-start-column="0" selection-end-line="499" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="65" />
+        <state relative-caret-position="159">
+          <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        <state relative-caret-position="216">
+          <caret line="324" column="30" lean-forward="true" selection-start-line="324" selection-start-column="30" selection-end-line="324" selection-end-column="30" />
           <folding />
         </state>
       </provider>

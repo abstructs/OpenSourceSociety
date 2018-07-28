@@ -18,7 +18,7 @@ object Huffman {
    * present in the leaves below it. The weight of a `Fork` node is the sum of the weights of these
    * leaves.
    */
-abstract class CodeTree
+  abstract class CodeTree
   case class Fork(left: CodeTree, right: CodeTree, chars: List[Char], weight: Int) extends CodeTree
   case class Leaf(char: Char, weight: Int) extends CodeTree
   
@@ -126,6 +126,7 @@ abstract class CodeTree
    * Checks whether the list `trees` contains only one single code tree.
    */
     def singleton(trees: List[CodeTree]): Boolean = trees match {
+      case List() => false
       case _::_::_ => false
       case _::_ => true
     }
@@ -209,7 +210,17 @@ abstract class CodeTree
    * the resulting list of characters.
    */
     def decode(tree: CodeTree, bits: List[Bit]): List[Char] = {
-      
+      def aux(auxTree: CodeTree, bits: List[Bit], acc: List[Char]): List[Char] = {
+        auxTree match {
+          case Leaf(c, _) => aux(tree, bits, acc ++ List(c))
+          case Fork(l, r, _, _) => bits match {
+            case List() => acc
+            case x::xs => aux(if (x == 0) l else r, xs, acc)
+          }
+        }
+      }
+
+      aux(tree, bits, List())
     }
   
   /**
@@ -237,7 +248,25 @@ abstract class CodeTree
    * This function encodes `text` using the code tree `tree`
    * into a sequence of bits.
    */
-    def encode(tree: CodeTree)(text: List[Char]): List[Bit] = ???
+    def encode(tree: CodeTree)(text: List[Char]): List[Bit] = {
+
+      // EFFECT: Find the Bit sequence for a given char
+      def sequenceForChar(elem: Char, tree: CodeTree, acc: List[Bit]): List[Bit] = {
+        tree match {
+          case Leaf(c, _) => if(c == elem) acc else List()
+          case Fork(l, r, _, _) => sequenceForChar(elem, l, acc ++ List(0)) ++ sequenceForChar(elem, r, acc ++ List(1))
+        }
+      }
+
+      def aux(text: List[Char], acc: List[Bit]): List[Bit] = {
+        text match {
+          case List() => acc
+          case x::xs => aux(xs, acc ++ sequenceForChar(x, tree, List()))
+        }
+      }
+
+      aux(text, List())
+    }
   
   // Part 4b: Encoding using code table
 
@@ -247,7 +276,11 @@ abstract class CodeTree
    * This function returns the bit sequence that represents the character `char` in
    * the code table `table`.
    */
-    def codeBits(table: CodeTable)(char: Char): List[Bit] = ???
+    def codeBits(table: CodeTable)(char: Char): List[Bit] = {
+      table match {
+        case (c, b)::xs => if(c == char) b else codeBits(xs)(char)
+      }
+    }
   
   /**
    * Given a code tree, create a code table which contains, for every character in the
@@ -257,14 +290,24 @@ abstract class CodeTree
    * a valid code tree that can be represented as a code table. Using the code tables of the
    * sub-trees, think of how to build the code table for the entire tree.
    */
-    def convert(tree: CodeTree): CodeTable = ???
+    def convert(tree: CodeTree): CodeTable = {
+      def aux(tree: CodeTree, acc: List[Bit]): CodeTable = {
+        tree match {
+          case Leaf(c, _) => List((c, acc))
+          case Fork(l, r, _, _) => mergeCodeTables(aux(l, acc ++ List(0)), aux(r, acc ++ List(1)))
+        }
+      }
+
+      aux(tree, List())
+    }
   
   /**
    * This function takes two code tables and merges them into one. Depending on how you
    * use it in the `convert` method above, this merge method might also do some transformations
    * on the two parameter code tables.
    */
-    def mergeCodeTables(a: CodeTable, b: CodeTable): CodeTable = ???
+    def mergeCodeTables(a: CodeTable, b: CodeTable): CodeTable = a ++ b
+
   
   /**
    * This function encodes `text` according to the code tree `tree`.
@@ -272,5 +315,21 @@ abstract class CodeTree
    * To speed up the encoding process, it first converts the code tree to a code table
    * and then uses it to perform the actual encoding.
    */
-    def quickEncode(tree: CodeTree)(text: List[Char]): List[Bit] = ???
-  }
+    def quickEncode(tree: CodeTree)(text: List[Char]): List[Bit] = {
+      val codeTable:CodeTable = convert(tree)
+
+      def aux(text: List[Char], table: CodeTable, acc: List[Bit]): List[Bit] = {
+        table match {
+          case List() => throw new Error("quickEncode.aux::table match List(): Character in text not found in CodeTable")
+          case (char , bits)::cts => text match {
+            case List() => acc
+            case textHead::ts =>
+              if(textHead == char) aux(ts, codeTable, acc ++ bits)
+              else aux(textHead::ts, cts, acc)
+          }
+        }
+      }
+
+      aux(text, codeTable, List())
+    }
+}
