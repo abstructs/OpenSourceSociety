@@ -1,3 +1,4 @@
+import scala.io
 package object forcomp {
   val dictionaryPath = List("forcomp", "linuxwords.txt")
 
