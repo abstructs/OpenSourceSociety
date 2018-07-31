@@ -92,7 +92,57 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
-  def combinations(occurrences: Occurrences): List[Occurrences] = ???
+  def combinations(occurrences: Occurrences): List[List[(Char, Int)]] = {
+    def getMembers(occurrences: List[(Char, Int)], acc: List[(Char, Int)]): List[(Char, Int)] = {
+      occurrences match {
+        case List() => acc
+        case (c, i)::xs => getMembers(xs, (List.range(1, i + 1) map ((c, _))) ++ acc)
+      }
+    }
+
+//    def fk(occurrences: List[(Char, Int)], acc: List[(Char, Int)]): List[List[(Char, Int)]] = {
+//      occurrences match {
+//        case List() => List(acc)
+//        case (c, n)::xs => {
+//          (1 to n) map ((1 to n) map identity)
+//        }
+//      }
+//    }
+
+    def permute(pieces: List[(Char, Int)], acc: List[(Char, Int)]):List[List[(Char, Int)]] = {
+      pieces match {
+        case List() => List(acc)
+//        case x::xs => permute(xs, List(x) :: permute(xs, List(x) :: acc))
+          case x::xs => permute(xs, x :: acc)
+      }
+    }
+
+    def aux(occurrences: List[(Char, Int)], acc: List[(Char, Int)]): List[List[(Char, Int)]] = {
+      occurrences match {
+        case List() => List(acc)
+        case (c, n)::xs =>
+          ((for (i <- 1 to n)
+          yield (c, i)) flatMap ((p: (Char, Int)) => List(p) :: aux(xs, acc ++ List(p)))).distinct.toList
+      }
+    }
+
+    // check if e1 is less than than e2
+    def sortByOccurrences(e1: List[(Char, Int)], e2: List[(Char, Int)]): Boolean = {
+      if(e1.isEmpty) false
+      else if (e2.isEmpty) true
+      else if(e1.head == e2.head) sortByOccurrences(e1.tail, e2.tail)
+      else if(e1.length >= e2.length) e1.head._1 <= e2.head._1
+      else true
+//      else (e1.head._1 == e2.head._1) e1.head._2 < e2.head._2
+//      else e1.head._1 > e2.head._1 || e1.head._2 > e1.head._2
+    }
+
+    List() :: aux(occurrences, List()).sortWith(sortByOccurrences)
+//    val pieces = getMembers(occurrences, List())
+//
+//    permute(pieces, List())
+
+  }
 
   /** Subtracts occurrence list `y` from occurrence list `x`.
    *
