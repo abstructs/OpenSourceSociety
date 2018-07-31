@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mListsSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- one plus one is two[0m[0m
+[0m[[0minfo[0m] [0m[31m- one plus one is three? *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.scalatest.exceptions.TestFailedException was thrown. (ListsSuite.scala:49)[0m[0m
+[0m[[0minfo[0m] [0m[31m- details why one plus one is not three *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  2 did not equal 3 (ListsSuite.scala:74)[0m[0m
+[0m[[0minfo[0m] [0m[32m- intNotZero throws an exception if its argument is 0[0m[0m
+[0m[[0minfo[0m] [0m[32m- sum of a few numbers[0m[0m
+[0m[[0minfo[0m] [0m[32m- max of a few numbers[0m[0m
