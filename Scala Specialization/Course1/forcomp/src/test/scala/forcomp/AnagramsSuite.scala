@@ -67,8 +67,29 @@ class AnagramsSuite extends FunSuite  {
       List(('a', 1), ('b', 2)),
       List(('a', 2), ('b', 2))
     )
-    assert(combinations(abba) == abbacomb)
+//    assert(combinations(abba) == abbacomb)
     assert(combinations(abba).toSet == abbacomb.toSet)
+  }
+
+  test("combinations: ab") {
+    val ab = List(('a', 1), ('b', 1))
+    val abcomb = List(
+      List(),
+      List(('a', 1)),
+      List(('b', 1)),
+      List(('a', 1), ('b', 1))
+    )
+    assert(combinations(ab).toSet == abcomb.toSet)
+  }
+
+  test("combinations: a2") {
+    val a2 = List(('a', 2))
+    val a2comb = List(
+      List(),
+      List(('a', 1)),
+      List(('a', 2))
+    )
+    assert(combinations(a2).toSet == a2comb.toSet)
   }
 
 
