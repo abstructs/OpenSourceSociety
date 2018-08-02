@@ -2,3 +2,13 @@
 all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/test:products
 console
 all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/test:products
+submit polygoning@gmail.com bigEbkXsSOhZDi3b
+all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/test:products
+val t = List(List("a", "a"))
+val t = List(List("a", "b"))
+val t = List(List())
+val z = List()
+console
+val t = List()
+console
+all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course1/forcomp/}root/test:products

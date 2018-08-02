@@ -39,8 +39,9 @@ object Anagrams {
   }
 
   /** Converts a sentence into its character occurrence list. */
-  def sentenceOccurrences(s: Sentence): Occurrences = s flatMap wordOccurrences
-
+  def sentenceOccurrences(s: Sentence): Occurrences = {
+    ((s.flatten groupBy identity) map { case (c: Char, s: List[Char]) => (c, s.length)}).toList.sorted
+  }
 
   /** The `dictionaryByOccurrences` is a `Map` from different occurrences to a sequence of all
     * the words that have that occurrence count.
@@ -178,10 +179,24 @@ object Anagrams {
    *  Note: There is only one anagram of an empty sentence.
    */
 //  List[Word]
-  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
-    sentence match {
-      case List() => List()
-      case s :: xs => sentenceAnagrams(xs)
+//  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+  def sentenceAnagrams(sentence: Sentence): List[Occurrences] = {
+    def getWord(occ: Occurrences): List[Word] = {
+      dictionaryByOccurrences get occ.sorted match {
+        case Some(x) => x
+        case None => List()
+      }
     }
+
+    def aux(occurrences: Occurrences): List[Occurrences] = {
+      occurrences match {
+        case List() => List(List())
+        case x::xs => {
+          combinations(occurrences) flatMap ((occ: Occurrences) => occ :: aux(subtract(occurrences, occ)))
+        }
+      }
+    }
+
+    aux(sentenceOccurrences(sentence))
   }
 }
