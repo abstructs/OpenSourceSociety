@@ -40,7 +40,7 @@ object Anagrams {
 
   /** Converts a sentence into its character occurrence list. */
   def sentenceOccurrences(s: Sentence): Occurrences = {
-    ((s.flatten groupBy identity) map { case (c: Char, s: List[Char]) => (c, s.length)}).toList.sorted
+    ((s.flatten groupBy ((c: Char) => c.toLower)) map { case (c: Char, s: List[Char]) => (c.toLower, s.length)}).toList.sorted
   }
 
   /** The `dictionaryByOccurrences` is a `Map` from different occurrences to a sequence of all
@@ -180,23 +180,40 @@ object Anagrams {
    */
 //  List[Word]
 //  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
-  def sentenceAnagrams(sentence: Sentence): List[Occurrences] = {
-    def getWord(occ: Occurrences): List[Word] = {
+  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+    def getWords(occ: Occurrences): List[Word] = {
       dictionaryByOccurrences get occ.sorted match {
         case Some(x) => x
         case None => List()
       }
     }
 
-    def aux(occurrences: Occurrences): List[Occurrences] = {
-      occurrences match {
-        case List() => List(List())
-        case x::xs => {
-          combinations(occurrences) flatMap ((occ: Occurrences) => occ :: aux(subtract(occurrences, occ)))
+    def wordCombinations(acc: List[Sentence], words: List[Word], cutOff: Int): List[Sentence] = {
+      words match {
+        case List() => acc
+        case w::ws => {
+          wordCombinations(acc ++ (acc map (_ ++ List(w))) filter ((s: Sentence) => s.flatten.length <= cutOff), ws, cutOff)
         }
       }
     }
 
-    aux(sentenceOccurrences(sentence))
+    val sentenceOccs = sentenceOccurrences(sentence)
+    val sentenceLength = sentence.flatten.length
+
+    val words = for(
+      subsetOccs <- combinations(sentenceOccs);
+      words <- getWords(subsetOccs)
+    ) yield words
+
+    val validSentences = wordCombinations(List(List()), words, sentenceLength) filter ((s: Sentence) => {
+      sentenceOccurrences(s).sorted == sentenceOccs.sorted
+    })
+
+    validSentences map ((s: Sentence) => {
+      s map ((w1: Word) => {
+        w1
+      })
+    })
   }
+
 }

@@ -20740,6 +20740,7 @@ icon
 iconoclasm
 iconoclast
 icons
+i
 icosahedra
 icosahedral
 icosahedron
@@ -22487,7 +22488,7 @@ inward
 inwardly
 inwardness
 inwards
-Io
+a
 iodine
 ion
 Ionian
