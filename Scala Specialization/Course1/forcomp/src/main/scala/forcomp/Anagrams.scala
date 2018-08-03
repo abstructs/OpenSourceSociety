@@ -197,6 +197,15 @@ object Anagrams {
       }
     }
 
+    def permute(words: List[Word], acc: List[List[Word]]): List[List[Word]] = {
+      words match {
+        case List() => acc
+        case w::ws => {
+          permute(ws, acc)
+        }
+      }
+    }
+
     val sentenceOccs = sentenceOccurrences(sentence)
     val sentenceLength = sentence.flatten.length
 
@@ -209,11 +218,9 @@ object Anagrams {
       sentenceOccurrences(s).sorted == sentenceOccs.sorted
     })
 
-    validSentences map ((s: Sentence) => {
-      s map ((w1: Word) => {
-        w1
-      })
-    })
+//    validSentences.permutations.toList
+
+    validSentences flatMap ((s: Sentence) => s.permutations.toList)
   }
 
 }
