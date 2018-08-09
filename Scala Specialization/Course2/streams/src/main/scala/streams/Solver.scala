@@ -30,7 +30,7 @@ trait Solver extends GameDef {
    */
   def neighborsWithHistory(b: Block, history: List[Move]): Stream[(Block, List[Move])] = {
     (b.legalNeighbors map (neighbor => {
-      (neighbor._1, neighbor._2 :: history)
+      (neighbor._1, history ++ List(neighbor._2))
     })).toStream
 //    b.legalNeighbors.foldLeft[Stream[(Block, List[Move])]] (Stream()) (
 //      (acc: Stream[(Block, List[Move])], neighbor: (Block, Move)) => {
@@ -84,7 +84,7 @@ trait Solver extends GameDef {
 
       ) yield (newBlock, newMoves)
 
-      initial.filter((pair) => done(pair._1)) #::: from(neighbors, explored ++ neighbors.map(_._1).toSet)
+      initial.filter((pair) => done(pair._1) && pair._1.isLegal) #::: from(neighbors, explored ++ neighbors.map(_._1).toSet)
     }
   }
 
@@ -109,5 +109,8 @@ trait Solver extends GameDef {
    * the first move that the player should perform from the starting
    * position.
    */
-  lazy val solution: List[Move] = pathsToGoal.head._2
+  lazy val solution: List[Move] = {
+    if(pathsToGoal.nonEmpty) pathsToGoal.head._2
+    else List()
+  }
 }
