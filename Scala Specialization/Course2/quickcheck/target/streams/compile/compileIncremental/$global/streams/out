@@ -1,54 +1,30 @@
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	added: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Recompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 3 Scala sources to /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 3273bdc4, interfacing (CompilerInterface) with Scala compiler version 2.11.12[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 13d29893, interfacing (CompilerInterface) with Scala compiler version 2.11.12[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-deprecation[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes:/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/target/scala-2.11/classes:/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar:/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar:/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.12.1/scalacheck_2.11-1.12.1.jar:/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar:/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 8.198198773 s[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] The /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/common/package.scala source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	notify, package, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, resourceAsStreamFromSrc, notifyAll, isInstanceOf, ???, ==, clone, subFile, toString, !=, getClass, ne, eq, ##, finalize, hashCode, ***.[0m
-[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] The /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	arbHeap.[0m
-[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Including /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala by /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala, /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] The /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/Heap.scala source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	notify, unapply, curried, Heap, x, wait, copy$default$2, $asInstanceOf, empty, Bogus1BinomialHeap, insert, root, productArity, equals, Rank, IntHeap, Bogus4BinomialHeap, asInstanceOf, Bogus2BinomialHeap, rank, synchronized, deleteMin, A, Bogus5BinomialHeap, $isInstanceOf, Node, tupled, canEqual, productPrefix, notifyAll, isInstanceOf, ins, <init>, apply, ==, clone, link, $init$, copy$default$3, copy, meld, toString, H, !=, c, BinomialHeap, getClass, copy$default$1, r, isEmpty, Bogus3BinomialHeap, ne, findMin, eq, productIterator, ord, ##, finalize, productElement, hashCode.[0m
-[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course2/quickcheck/src/main/scala/quickcheck/QuickCheck.scala: Set(insert, IntHeap, A, <init>, apply, ==, H, isEmpty, findMin)[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.783154733 s[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
