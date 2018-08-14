@@ -4,6 +4,7 @@ import common._
 
 trait IntHeap extends Heap {
   override type A = Int
+//  type H = List[A]
   override def ord = scala.math.Ordering.Int
 }
 
