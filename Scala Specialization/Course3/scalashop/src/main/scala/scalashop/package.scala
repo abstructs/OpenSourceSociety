@@ -53,7 +53,7 @@ package object scalashop {
       var j = y - radius
 
       while (j <= y + radius) {
-//        && !(i == x && j == y)
+
         if(i >= 0 && j >= 0 && i < src.width && j < src.height) {
           val rgba = src(i, j)
           val (r, g, b, a) = (red(rgba), green(rgba), blue(rgba), alpha(rgba))

@@ -1,5 +1,7 @@
 package scalashop
 
+import java.util.concurrent.ForkJoinTask
+
 import org.scalameter._
 import common._
 
@@ -62,8 +64,12 @@ object VerticalBoxBlur {
    *  columns.
    */
   def parBlur(src: Img, dst: Img, numTasks: Int, radius: Int): Unit = {
-    // TODO implement using the `task` construct and the `blur` method
-    ???
+    val range = 0 until src.width by clamp(src.width / numTasks, 1, src.width)
+    val strips = range zip (range.tail ++ List(src.width))
+
+    val tasks = strips map ((i: (Int, Int)) => task(blur(src,  dst, i._1, i._2, radius)))
+
+    tasks foreach ((f:ForkJoinTask[Unit]) => f.join())
   }
 
 }
