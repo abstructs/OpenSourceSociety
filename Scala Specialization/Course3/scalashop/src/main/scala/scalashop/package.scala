@@ -41,34 +41,38 @@ package object scalashop {
 
   /** Computes the blurred RGBA value of a single pixel of the input image. */
   def boxBlurKernel(src: Img, x: Int, y: Int, radius: Int): RGBA = {
+
     if(radius <= 0) return src(x, y)
 
-    var i = x - radius
 
-//    var reds = List[RGBA](); var blues = List[RGBA]();
-//    var greens = List[RGBA](); var alphas = List[RGBA]()
-    var values = List[RGBA]()
+    var (rs, gs, bs, as) = (List[RGBA](), List[RGBA](), List[RGBA](), List[RGBA]())
+
+    var i = x - radius
 
     while(i <= x + radius) {
       var j = y - radius
 
-      while(j <= y + radius) {
-        println("(" + i + ", " + j + ")")
-        val rgbaValue = src(clamp(i, 0, src.width - 1), clamp(j, 0, src.height - 1))
-        values = rgbaValue :: values
-//        reds = red(rgbaValue) :: reds
-//        blues = blue(rgbaValue) :: blues
-//        greens = green(rgbaValue) :: greens
-//        alphas = alpha(rgbaValue) :: alphas
-//
+      while (j <= y + radius) {
+//        && !(i == x && j == y)
+        if(i >= 0 && j >= 0 && i < src.width && j < src.height) {
+          val rgba = src(i, j)
+          val (r, g, b, a) = (red(rgba), green(rgba), blue(rgba), alpha(rgba))
+          rs = r :: rs
+          gs = g :: gs
+          bs = b :: bs
+          as = a :: as
+        }
+
         j += 1
       }
 
+
       i += 1
     }
-//    2
-//    (reds.sum / reds.length) + (greens.sum / greens.length) + (blues.sum / blues.length) + (alphas.sum / alphas.length)
-    values.sum / values.length
+    val (rsAvg, gsAvg, bsAvg, asAvg) = (rs.sum / rs.length, gs.sum / gs.length, bs.sum / bs.length, as.sum / as.length)
+//    val (r, g, b, a) = (red(src(x, y)), green(src(x, y)), blue(src(x, y)), alpha(src(x, y)))
+
+    rgba(rsAvg, gsAvg, bsAvg, asAvg)
   }
 
 }

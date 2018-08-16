@@ -42,9 +42,16 @@ object HorizontalBoxBlur {
    *  Within each row, `blur` traverses the pixels by going from left to right.
    */
   def blur(src: Img, dst: Img, from: Int, end: Int, radius: Int): Unit = {
-  // TODO implement this method using the `boxBlurKernel` method
+    var y = from
+    while(y < end) {
+      var x = 0
 
-  ???
+      while(x < dst.width) {
+        dst.update(x, y, boxBlurKernel(src, x, y, radius))
+        x += 1
+      }
+      y += 1
+    }
   }
 
   /** Blurs the rows of the source image in parallel using `numTasks` tasks.

@@ -43,33 +43,12 @@ object VerticalBoxBlur {
    *  bottom.
    */
   def blur(src: Img, dst: Img, from: Int, end: Int, radius: Int): Unit = {
-    // TODO implement this method using the `boxBlurKernel` method
-
     var x = from
     while(x < end) {
       var y = 0
 
       while(y < dst.height) {
-//        println("before")
-//        println(dst(x, y))
-//        println("start")
-//        println(src(0, 0))
-//        println(src(0, 1))
-//        println(src(0, 2))
-//
-//        println(src(1, 0))
-//        println(src(1, 1))
-//        println(src(1, 2))
-//
-//        println(src(2, 0))
-//        println(src(2, 1))
-//        println(src(2, 2))
-//        println("end")
-
         dst.update(x, y, boxBlurKernel(src, x, y, radius))
-//        println("after")
-//        println(dst)
-
         y += 1
       }
       x += 1
