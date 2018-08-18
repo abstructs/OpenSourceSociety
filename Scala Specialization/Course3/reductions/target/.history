@@ -9,3 +9,5 @@ all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization
 :q
 runMain reductions.ParallelCountChangeRunner
 all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/reductions/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/reductions/}root/test:products
+runMain reductions.ParallelCountChangeRunner
+submit polygoning@gmail.com 1eqX3Mp93H9zhjcO

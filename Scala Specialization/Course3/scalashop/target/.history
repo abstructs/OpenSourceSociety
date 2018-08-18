@@ -36,3 +36,9 @@ submit polygoning@gmail.com EDvrDqf2rDRDQjZA
 all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/scalashop/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/scalashop/}root/test:products
 submit polygoning@gmail.com Mc6Vv74beI3jaBNg
 submit polygoning@gmail.com 1ztRDteD4qv0jbpn
+scalashop.ScalaShop
+> runMain scalashop.ScalaShop
+run scalashop.scalashop
+all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/scalashop/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/scalashop/}root/test:products
+2
+run scalashop.scalashop

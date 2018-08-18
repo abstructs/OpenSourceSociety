@@ -58,34 +58,31 @@ object ParallelParenthesesBalancing {
    */
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
 
-    def traverse(idx: Int, until: Int, legals: Int, illegals: Int): (Int, Int) = {
-      if(idx == until) (legals, illegals)
-      else {
-        //   [)(((]   -  [)))(]
-        //   let x = [3, -1]
-        //   let y = [1, -3]
-        //   if (x._2 > y._2) false
-        //   else if (x._1
-//        val newArg1 = if(chars(idx) == '(') arg1 + 1
-//        else if(chars(idx) == ')') arg1 - 1
-//        else arg1
-//
-//        val newArg2 = if(newArg1 == 0) {
-//          if(chars(idx) == '(') arg2 + 1
-//          else if(chars(idx) == ')') arg2 - 1
-//          else arg2
-//        } else arg2
+    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): Boolean = {
+      if(math.ceil((until - idx) / 2) < 1) {
+        if(chars(until - 1) == '(') true
+        else if (chars(until - 1) == ')') false
+        else throw new Error("oops")
+      } else {
+        val mid = math.ceil((until - idx) / 2).toInt
 
-//        traverse(idx + 1, until, newArg1, newArg2)
-        (2, 2)
+        chars(idx) == '('
+        chars(idx) == ')'
+
+        chars(mid) == '('
+        chars(mid) == ')'
+
+        val (x, y) = parallel(traverse(idx, mid, arg1, arg2), traverse(mid, until, arg1, arg2))
+        x && y
       }
     }
 
-    def reduce(from: Int, until: Int): (Int, Int) = {
-      ???
+    def reduce(from: Int, until: Int) /* :??? */ = {
+      traverse(from, until, 0, 0)
     }
-
-    reduce(0, chars.length) == ???
+    
+    if(chars.length == 0) true
+    else reduce(0, chars.length) // == ???
   }
 
   // For those who want more:

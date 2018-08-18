@@ -1,7 +1,7 @@
-[0m[[0minfo[0m] [0mRunning reductions.ParallelCountChangeRunner [0m
+[0m[[0minfo[0m] [0mRunning scalashop.ScalaShop scalashop.scalashop[0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/scalashop/target/scala-2.11/classes[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/scala-blitz/scala-blitz_2.11/1.1/scala-blitz_2.11-1.1.jar[0m
@@ -11,16 +11,6 @@
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
-[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-2[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-2[0m
-[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
-[0m[[0mdebug[0m] [0mExited with code 0[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-2 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-2 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AWT-EventQueue-0 to terminate.[0m
