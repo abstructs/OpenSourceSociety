@@ -1,0 +1,560 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes
+compile options:
+1 items
+0 -> -deprecation
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+34 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$DefaultTaskScheduler$$anon$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$DefaultTaskScheduler.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$TaskScheduler.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Leaf$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Leaf.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Node$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Node.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Tree.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$$anonfun$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$$anonfun$2.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$$anonfun$3.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$3.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$4.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$combinedThreshold$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$moneyThreshold$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$totalCoinsThreshold$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner$$anonfun$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner$$anonfun$2.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$2.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner.class
+binary dependencies:
+11 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+34 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> common.package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> common.package$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> common.package$DefaultTaskScheduler
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> common.package$DefaultTaskScheduler$$anon$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> common.package$TaskScheduler
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSight
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSight$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSight$Leaf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSight$Leaf$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSight$Node
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSight$Node$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSight$Tree
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSightRunner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSightRunner$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSightRunner$$anonfun$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSightRunner$$anonfun$2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions.LineOfSightRunner$$anonfun$3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChange
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChange$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChange$$anonfun$3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChange$$anonfun$4
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChange$$anonfun$combinedThreshold$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChange$$anonfun$moneyThreshold$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChange$$anonfun$totalCoinsThreshold$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChangeRunner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChangeRunner$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChangeRunner$$anonfun$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions.ParallelCountChangeRunner$$anonfun$2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> reductions.ParallelParenthesesBalancing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> reductions.ParallelParenthesesBalancing$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> reductions.ParallelParenthesesBalancingRunner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> reductions.ParallelParenthesesBalancingRunner$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> reductions.ParallelParenthesesBalancingRunner$$anonfun$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> reductions.ParallelParenthesesBalancingRunner$$anonfun$2
+used names:
+346 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> $anon
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> <byname>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> <init>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> ?0
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> A
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Any
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> AnyRef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> B
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Boolean
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> C
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> D
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> DefaultTaskScheduler
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> DynamicVariable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> ForkJoinPool
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> ForkJoinTask
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Nothing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Object
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> RecursiveTask
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> T
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> T1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> T2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> T3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> T4
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> TaskScheduler
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Thread
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Tuple2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Tuple4
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> Unit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> _root_
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> body
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> common
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> concurrent
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> currentThread
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> execute
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> fork
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> forkJoinPool
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> isInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> java
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> join
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> lang
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> left
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> parallel
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> right
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> scala
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> schedule
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> scheduler
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> t
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> ta
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> task
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> taskA
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> taskB
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> taskC
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> taskD
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> tb
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> tc
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> td
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> util
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> value
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> %
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> &&
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> *
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> +
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> ->
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> /
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> <byname>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> <init>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> <repeated>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> ==
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> >
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> ???
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> A
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> AbstractFunction2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> AbstractFunction3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Any
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> AnyRef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Array
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> ArrowAssoc
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> B
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Boolean
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> CanBuildFrom
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> ClassTag
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Coll
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Default
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Double
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Float
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Function1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> IndexOutOfBoundsException
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> IndexedSeq
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Int
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Iterator
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Key
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> KeyValue
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> KeyWithDefault
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Leaf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> LineOfSight
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> LineOfSightRunner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> MeasureBuilder
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Node
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> None
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Nothing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Object
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Predef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Product
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Range
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> RichInt
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> S
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> ScalaRunTime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Serializable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Some
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Statics
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> String
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> StringContext
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> T
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> T0
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> T1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> T2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> T3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> That
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Tree
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Tuple2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Tuple3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Unit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> Warmer
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> _hashCode
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> _toString
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> a
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> asInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> b
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> benchRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> canBuildFrom
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> common
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> config
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> eq
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> exec
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> finalizeHash
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> floatHash
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> from
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> immutable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> input
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> intWrapper
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> isInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> left
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> length
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> lineOfSight
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> map
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> materializeClassTag
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> max
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> maxPrevious
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> maxWarmupRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> measure
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> minWarmupRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> mix
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> org
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> output
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> parLineOfSight
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> partime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> println
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> reductions
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> right
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> runtime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> s
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> scala
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> scalameter
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> seqtime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> standardConfig
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> toArray
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> toString
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> typedProductIterator
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> until
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> verbose
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> withWarmer
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> ||
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> !=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> &&
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> *
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> +
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> -
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> ->
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> /
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> ::
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> <
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> <=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> <byname>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> <init>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> <repeated>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> ==
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> A
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Any
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> AnyRef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Array
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> ArrowAssoc
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> B
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Boolean
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Default
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Double
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Function2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Int
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Key
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> KeyValue
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> KeyWithDefault
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> List
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> MatchError
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> MeasureBuilder
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Nothing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Object
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> ParallelCountChange
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> ParallelCountChangeRunner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Predef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> S
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Some
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> String
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> StringContext
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> T0
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> T1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> T2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Threshold
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Tuple2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Unit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> Warmer
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> _1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> _2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> _root_
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> allCoins
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> amount
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> apply
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> asInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> benchRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> coins
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> combinedThreshold
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> common
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> config
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> countChange
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> exec
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> fjtime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> get
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> head
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> immutable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> isEmpty
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> isInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> length
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> lengthCompare
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> maxWarmupRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> measure
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> measureParallelCountChange
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> minWarmupRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> money
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> moneyThreshold
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> n1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> n2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> ne
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> org
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> parCountChange
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> parResult
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> parResult_=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> parallel
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> println
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> reductions
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> s
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> scala
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> scalameter
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> seqResult
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> seqResult_=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> seqtime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> standardConfig
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> startingMoney
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> threshold
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> totalCoins
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> totalCoinsThreshold
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> unapplySeq
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> unary_!
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> unchecked
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> verbose
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> withWarmer
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> x
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> xs
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> +
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> -
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> ->
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> /
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> <
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> <byname>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> <init>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> <repeated>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> ==
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> A
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Any
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> AnyRef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Array
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> ArrowAssoc
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> B
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Boolean
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Char
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Default
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Double
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Int
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Key
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> KeyValue
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> KeyWithDefault
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> MeasureBuilder
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Nothing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Object
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> ParallelParenthesesBalancing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> ParallelParenthesesBalancingRunner
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Predef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> S
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> String
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> StringContext
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Tuple2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Unit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> Warmer
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> annotation
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> apply
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> balance
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> benchRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> chars
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> common
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> config
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> counter
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> exec
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> fjtime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> i
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> length
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> maxWarmupRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> measure
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> minWarmupRuns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> org
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> parBalance
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> parResult
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> parResult_=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> println
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> reductions
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> s
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> scala
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> scalameter
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> seqResult
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> seqResult_=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> seqtime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> standardConfig
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> threshold
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> verbose
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> while$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> withWarmer
+product stamps:
+34 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$DefaultTaskScheduler$$anon$1.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$DefaultTaskScheduler.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package$TaskScheduler.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/common/package.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Leaf$.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Leaf.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Node$.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Node.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight$Tree.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSight.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$$anonfun$1.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$$anonfun$2.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$$anonfun$3.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner$.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/LineOfSightRunner.class -> lastModified(1534517951000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$3.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$4.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$combinedThreshold$1.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$moneyThreshold$1.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$totalCoinsThreshold$1.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange$.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChange.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner$$anonfun$1.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner$$anonfun$2.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner$.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelCountChangeRunner.class -> lastModified(1534521311000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$.class -> lastModified(1534530974000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing.class -> lastModified(1534530974000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$1.class -> lastModified(1534530974000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$2.class -> lastModified(1534530974000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$.class -> lastModified(1534530974000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner.class -> lastModified(1534530974000)
+source stamps:
+4 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> hash(19ffe96b09c84ba566e866c51bacad3b301b2c11)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> hash(18427629d10b25e2051476d418630bcf2866e1e7)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> hash(23f139a9aa982aef8135ca912bbe56b8c73e0993)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> hash(efab716f26464a254afa71e03987f36671b42445)
+binary stamps:
+3 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1500701265000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6.jar -> lastModified(1405518657000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar -> lastModified(1435004218000)
+class names:
+3 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6.jar -> org.scalameter.Key$
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar -> scala.StringContext
+internal apis:
+4 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwso2RrgABc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAcc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw6466WnQABm5vdGlmeXNxAH4ADLd7app0AAdwYWNrYWdlc3EAfgAM60dllnQABHdhaXRzcQB+AAxFEfvWdAAEdGFza3NxAH4ADFdaVZl0AA0kYXNJbnN0YW5jZU9mc3EAfgAMLZS+xHQAFERlZmF1bHRUYXNrU2NoZWR1bGVyc3EAfgAM/pUpbXQABmVxdWFsc3NxAH4ADE48rut0AAxhc0luc3RhbmNlT2ZzcQB+AAxHd91ldAAMc3luY2hyb25pemVkc3EAfgAMBJ7vw3QADSRpc0luc3RhbmNlT2ZzcQB+AAzWCh9fdAAMZm9ya0pvaW5Qb29sc3EAfgAMNUekVHQACW5vdGlmeUFsbHNxAH4ADHLyoyJ0AAxpc0luc3RhbmNlT2ZzcQB+AAxPOtqWdAAGPGluaXQ+c3EAfgAMQiN1EHQACXNjaGVkdWxlcnNxAH4ADH8bLs50AAI9PXNxAH4ADM05Ry50AA1UYXNrU2NoZWR1bGVyc3EAfgAMHLnUSnQABWNsb25lc3EAfgAMwf8sL3QACHNjaGVkdWxlc3EAfgAMyRmNSnQACHRvU3RyaW5nc3EAfgAM+6VKv3QAAiE9c3EAfgAMiWCwDXQACGdldENsYXNzc3EAfgAM2TMwbXQAAm5lc3EAfgAMYlMrU3QAAmVxc3EAfgAMn/ZIHXQACHBhcmFsbGVsc3EAfgAMYOwlInQAAiMjc3EAfgAMyHKxL3QACGZpbmFsaXplc3EAfgAME2KubXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AT3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQADmNvbW1vbi5wYWNrYWdldXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBnc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AE9MAAlpbmhlcml0ZWRxAH4AT0wAB3BhcmVudHNxAH4AT3hxAH4AbHNxAH4AZ3VxAH4ASgAAAABzcQB+AGd1cQB+AEoAAAAAc3EAfgBndXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBrdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBrc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCEdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCFc3EAfgB4dAADQW55c3EAfgB8c3EAfgB/dXEAfgCCAAAAAnNxAH4AhHQABXNjYWxhcQB+AIt1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAZjb21tb25zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWVIZYvRdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQZ/+lrCchLpWboZsUbrK07MBssEQ==
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwM6QFYAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAA1c3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwAQYIKHQABm5vdGlmeXNxAH4ADHCgTu50AAd1bmFwcGx5c3EAfgAMBnAByXQAB2N1cnJpZWRzcQB+AAz6ApWBdAAHdXBzd2VlcHNxAH4ADFqixPp0AAR3YWl0c3EAfgAMJ03O3nQADmNvcHkkZGVmYXVsdCQyc3EAfgAMmW6n/3QADSRhc0luc3RhbmNlT2ZzcQB+AAxawHVJdAAMcHJvZHVjdEFyaXR5c3EAfgAMGAZU+3QABmVxdWFsc3NxAH4ADBnyk0x0AAxhc0luc3RhbmNlT2ZzcQB+AAw4l8sedAAMc3luY2hyb25pemVkc3EAfgAMZriNtXQABGxlZnRzcQB+AAwnKtlGdAAEVHJlZXNxAH4ADBqtbeF0AA0kaXNJbnN0YW5jZU9mc3EAfgAMXMM3RXQABE5vZGVzcQB+AAxn4/ImdAARTGluZU9mU2lnaHRSdW5uZXJzcQB+AAwox/cudAAGdHVwbGVkc3EAfgAMz+Sue3QAEXVwc3dlZXBTZXF1ZW50aWFsc3EAfgAMUTu3j3QAC2xpbmVPZlNpZ2h0c3EAfgAMACFjlXQACGNhbkVxdWFsc3EAfgAMQGYy7HQABG1haW5zcQB+AAzWZwKYdAAETGVhZnNxAH4ADAe0F2Z0AA1wcm9kdWN0UHJlZml4c3EAfgAMgjaShnQABXVudGlsc3EAfgAM07FxfnQACW5vdGlmeUFsbHNxAH4ADHBt5s90AAxpc0luc3RhbmNlT2ZzcQB+AAxyH408dAATZG93bnN3ZWVwU2VxdWVudGlhbHNxAH4ADIKqXgh0AAlkb3duc3dlZXBzcQB+AAz8VONUdAAGPGluaXQ+c3EAfgAM3clyn3QAA21heHNxAH4ADGUXyjt0AA5wYXJMaW5lT2ZTaWdodHNxAH4ADIjNNsJ0AAVhcHBseXNxAH4ADN/8tCd0AAI9PXNxAH4ADOmtLoZ0AAVjbG9uZXNxAH4ADMatnwF0AARmcm9tc3EAfgAMCpoPP3QABiRpbml0JHNxAH4ADCKlVyF0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADAhqrdp0AARjb3B5c3EAfgAMeVTZVXQACHRvU3RyaW5nc3EAfgAMv/IC9nQADnN0YW5kYXJkQ29uZmlnc3EAfgAM73h6NnQAAiE9c3EAfgAM5Cf0XnQAC0xpbmVPZlNpZ2h0c3EAfgAMrT30f3QACGdldENsYXNzc3EAfgAMbiNoW3QADmNvcHkkZGVmYXVsdCQxc3EAfgAMy82q3HQAAm5lc3EAfgAMRg4b83QAAmVxc3EAfgAM2GC2YnQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADHzYjux0AAVyaWdodHNxAH4ADCwbJa10AAIjI3NxAH4ADBtvnYZ0AAhmaW5hbGl6ZXNxAH4ADE2fpkZ0AA5wcm9kdWN0RWxlbWVudHNxAH4ADH7jZQF0AAhoYXNoQ29kZXNxAH4ADBxt4hZ0AAttYXhQcmV2aW91c3NyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AIF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ABxyZWR1Y3Rpb25zLkxpbmVPZlNpZ2h0UnVubmVydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCZc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AIFMAAlpbmhlcml0ZWRxAH4AgUwAB3BhcmVudHNxAH4AgXhxAH4AnnNxAH4AmXVxAH4AfAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AgnEAfgCLdXEAfgCMAAAAAHNxAH4AjgBxAH4AN3VxAH4AkQAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCddAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AnXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AuXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgANTAADdHBlcQB+AKZ4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AJR0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AK1bAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AJ1zcQB+AKx0AAVBcnJheXEAfgCydXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AKx0AAZTdHJpbmdzcQB+ALBzcQB+ALN1cQB+ALYAAAADc3EAfgC4dAAEamF2YXNxAH4AuHQABGxhbmdxAH4AvXNxAH4AmXVxAH4AfAAAAABzcQB+AJl1cQB+ANEAAAACc3EAfgCsdAAGT2JqZWN0cQB+ANVzcQB+AKx0AANBbnlxAH4AsnNxAH4AfnEAfgCLdXEAfgCMAAAAAHNxAH4AjgB0ABZyZWR1Y3Rpb25zLkxpbmVPZlNpZ2h0dXEAfgCRAAAAAHEAfgCVdXEAfgCXAAAAAHNxAH4AmXEAfgCfc3EAfgCZc3EAfgChc3EAfgCZdXEAfgB8AAAAAHNxAH4AmXVxAH4AfAAAAABzcQB+AJl1cQB+ANEAAAACc3EAfgCscQB+AOFzcQB+ALBzcQB+ALN1cQB+ALYAAAADc3EAfgC4cQB+ANlzcQB+ALhxAH4A23EAfgC9c3EAfgCscQB+AONzcQB+ALBzcQB+ALN1cQB+ALYAAAACc3EAfgC4cQB+ALtxAH4AvXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQACnJlZHVjdGlvbnNzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWVIZYvRdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQYQnYp0Qsl4gUUdtQYYwvPKGbh5w==
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw1KJqQgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAfc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwB4FRMnQABm5vdGlmeXNxAH4ADAyCtWB0AAlUaHJlc2hvbGRzcQB+AAxUhWeMdAAEd2FpdHNxAH4ADBVAn250ABlQYXJhbGxlbENvdW50Q2hhbmdlUnVubmVyc3EAfgAMNEGsHHQADSRhc0luc3RhbmNlT2ZzcQB+AAxxakq8dAAGZXF1YWxzc3EAfgAMrD6SqXQAEWNvbWJpbmVkVGhyZXNob2xkc3EAfgAMY7UMl3QADm1vbmV5VGhyZXNob2xkc3EAfgAM/QZn+3QADGFzSW5zdGFuY2VPZnNxAH4ADGakKEN0AAxzeW5jaHJvbml6ZWRzcQB+AAw44PW7dAAJcGFyUmVzdWx0c3EAfgAMFFsshHQADSRpc0luc3RhbmNlT2ZzcQB+AAyJYXpydAATUGFyYWxsZWxDb3VudENoYW5nZXNxAH4ADK2p7ul0AARtYWluc3EAfgAMOItWgnQACW5vdGlmeUFsbHNxAH4ADGnqrTZ0AAxpc0luc3RhbmNlT2ZzcQB+AAxECg7+dAACPT1zcQB+AAzwFA7edAAFY2xvbmVzcQB+AAwDYkS1dAAIdG9TdHJpbmdzcQB+AAzeY0TQdAAOc3RhbmRhcmRDb25maWdzcQB+AAxUfAbjdAACIT1zcQB+AAwnV4xFdAAIZ2V0Q2xhc3NzcQB+AAwZP050dAAJc2VxUmVzdWx0c3EAfgAMJBfOu3QAC2NvdW50Q2hhbmdlc3EAfgAMBgbLzXQAAm5lc3EAfgAM2m2iznQAE3RvdGFsQ29pbnNUaHJlc2hvbGRzcQB+AAxakvp2dAAOcGFyQ291bnRDaGFuZ2VzcQB+AAz9d4NPdAACZXFzcQB+AAylBRthdAACIyNzcQB+AAzaj6K7dAAIZmluYWxpemVzcQB+AAwnr2XfdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBVeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAkcmVkdWN0aW9ucy5QYXJhbGxlbENvdW50Q2hhbmdlUnVubmVydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBtc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFVMAAlpbmhlcml0ZWRxAH4AVUwAB3BhcmVudHNxAH4AVXhxAH4AcnNxAH4AbXVxAH4AUAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AVnEAfgBfdXEAfgBgAAAAAHNxAH4AYgBxAH4AKXVxAH4AZQAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBxdAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AcXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AjXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgANTAADdHBlcQB+AHp4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AGh0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AIFbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AHFzcQB+AIB0AAVBcnJheXEAfgCGdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AIB0AAZTdHJpbmdzcQB+AIRzcQB+AId1cQB+AIoAAAADc3EAfgCMdAAEamF2YXNxAH4AjHQABGxhbmdxAH4AkXNxAH4AbXVxAH4AUAAAAABzcQB+AG11cQB+AKUAAAACc3EAfgCAdAAGT2JqZWN0cQB+AKlzcQB+AIB0AANBbnlxAH4AhnNxAH4AUnEAfgBfdXEAfgBgAAAAAHNxAH4AYgB0AB5yZWR1Y3Rpb25zLlBhcmFsbGVsQ291bnRDaGFuZ2V1cQB+AGUAAAAAcQB+AGl1cQB+AGsAAAAAc3EAfgBtcQB+AHNzcQB+AG1zcQB+AHVzcQB+AG11cQB+AFAAAAAAc3EAfgBtdXEAfgBQAAAAAHNxAH4AbXVxAH4ApQAAAAJzcQB+AIBxAH4AtXNxAH4AhHNxAH4Ah3VxAH4AigAAAANzcQB+AIxxAH4ArXNxAH4AjHEAfgCvcQB+AJFzcQB+AIBxAH4At3NxAH4AhHNxAH4Ah3VxAH4AigAAAAJzcQB+AIxxAH4Aj3EAfgCRdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAKcmVkdWN0aW9uc3NyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUiY/TZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABtL1VzZXJzL2Fic3RydWN0L0Rlc2t0b3AvT3BlbiBTb3VyY2UgU29jaWV0eS9TY2FsYSBTcGVjaWFsaXphdGlvbi9Db3Vyc2UzL3JlZHVjdGlvbnMvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFCPxOamqmCrvgTXKkSu+VrjHPgmT
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw4VqJPwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAbc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwierQkXQABm5vdGlmeXNxAH4ADI9BLVp0AAR3YWl0c3EAfgAMfOt8KnQADSRhc0luc3RhbmNlT2ZzcQB+AAwapKgYdAAGZXF1YWxzc3EAfgAMjFeu13QADGFzSW5zdGFuY2VPZnNxAH4ADE3e/hN0AAxzeW5jaHJvbml6ZWRzcQB+AAz5Ay9SdAAJcGFyUmVzdWx0c3EAfgAM2VETgnQADSRpc0luc3RhbmNlT2ZzcQB+AAxynffBdAAKcGFyQmFsYW5jZXNxAH4ADO/uaat0AAdiYWxhbmNlc3EAfgAMK9K84XQABG1haW5zcQB+AAxHpqYsdAAJbm90aWZ5QWxsc3EAfgAMEN++h3QADGlzSW5zdGFuY2VPZnNxAH4ADGEEOmN0AAI9PXNxAH4ADIQ6DCl0AAVjbG9uZXNxAH4ADFqLlnt0ACJQYXJhbGxlbFBhcmVudGhlc2VzQmFsYW5jaW5nUnVubmVyc3EAfgAMg5NwwXQACHRvU3RyaW5nc3EAfgAMk6XZcnQADnN0YW5kYXJkQ29uZmlnc3EAfgAMOv2y/XQAAiE9c3EAfgAMb8yAUXQACGdldENsYXNzc3EAfgAMrqNWKHQACXNlcVJlc3VsdHNxAH4ADOzy5XZ0AAJuZXNxAH4ADCLXOFV0AAJlcXNxAH4ADHNg9oN0AAIjI3NxAH4ADIW7ZyN0AAhmaW5hbGl6ZXNxAH4ADK7EEVx0AAhoYXNoQ29kZXNxAH4ADEWi2DB0ABxQYXJhbGxlbFBhcmVudGhlc2VzQmFsYW5jaW5nc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ATXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQALXJlZHVjdGlvbnMuUGFyYWxsZWxQYXJlbnRoZXNlc0JhbGFuY2luZ1J1bm5lcnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AZXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBNTAAJaW5oZXJpdGVkcQB+AE1MAAdwYXJlbnRzcQB+AE14cQB+AGpzcQB+AGV1cQB+AEgAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AE5xAH4AV3VxAH4AWAAAAABzcQB+AFoAcQB+ACN1cQB+AF0AAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AaXQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AGlzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AIV1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgByeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBgdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgB5WwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgBpc3EAfgB4dAAFQXJyYXlxAH4AfnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgB4dAAGU3RyaW5nc3EAfgB8c3EAfgB/dXEAfgCCAAAAA3NxAH4AhHQABGphdmFzcQB+AIR0AARsYW5ncQB+AIlzcQB+AGV1cQB+AEgAAAAAc3EAfgBldXEAfgCdAAAAAnNxAH4AeHQABk9iamVjdHEAfgChc3EAfgB4dAADQW55cQB+AH5zcQB+AEpxAH4AV3VxAH4AWAAAAABzcQB+AFoAdAAncmVkdWN0aW9ucy5QYXJhbGxlbFBhcmVudGhlc2VzQmFsYW5jaW5ndXEAfgBdAAAAAHEAfgBhdXEAfgBjAAAAAHNxAH4AZXEAfgBrc3EAfgBlc3EAfgBtc3EAfgBldXEAfgBIAAAAAHNxAH4AZXVxAH4ASAAAAABzcQB+AGV1cQB+AJ0AAAACc3EAfgB4cQB+AK1zcQB+AHxzcQB+AH91cQB+AIIAAAADc3EAfgCEcQB+AKVzcQB+AIRxAH4Ap3EAfgCJc3EAfgB4cQB+AK9zcQB+AHxzcQB+AH91cQB+AIIAAAACc3EAfgCEcQB+AIdxAH4AiXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQACnJlZHVjdGlvbnNzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWVJLG7qdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTvq3FvJkZKJUr6ceA5h/NmcbQkRQ==
+external apis:
+0 items
+source infos:
+4 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/common/package.scala -> 
+AAAAAAAAAAA=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/LineOfSight.scala -> 
+AAAAAAAAAAA=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelCountChange.scala -> 
+AAAAAAAAAAA=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/reductions/src/main/scala/reductions/ParallelParenthesesBalancing.scala -> 
+AAAAAAAAAAA=
+compilations:
+13 items
+00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUhli9F1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUhxHYd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUhy0nx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+03 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUhzwRx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+04 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUh0uAN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+05 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUh1TKd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+06 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUiNt9p1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+07 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUiWNWh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+08 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUiW5G51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+09 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUiY/TZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+10 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUj/PnF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+11 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUkngI51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+12 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZUksbup1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbS9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlMy9yZWR1Y3Rpb25zL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
