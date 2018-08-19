@@ -58,31 +58,35 @@ object ParallelParenthesesBalancing {
    */
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
 
-    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): Boolean = {
-      if(math.ceil((until - idx) / 2) < 1) {
-        if(chars(until - 1) == '(') true
-        else if (chars(until - 1) == ')') false
-        else throw new Error("oops")
-      } else {
-        val mid = math.ceil((until - idx) / 2).toInt
+    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): (Int, Int) = {
+      if(idx == until) return (arg1, arg2)
+      traverse(idx + 1, until,
+        if(chars(idx) == '(') arg1 + 1 else arg1,
+        if(chars(idx) == ')') arg2 + 1 else arg2)
+    }
 
-        chars(idx) == '('
-        chars(idx) == ')'
-
-        chars(mid) == '('
-        chars(mid) == ')'
-
-        val (x, y) = parallel(traverse(idx, mid, arg1, arg2), traverse(mid, until, arg1, arg2))
-        x && y
+    def reduce(from: Int, until: Int): (Int, Int) /* :??? */ = {
+      if(until - from <= 2) {
+        return traverse(from, until, 0, 0)
       }
+
+      val mid = (until - from) / 2
+
+      val ((x1, x2), (y1, y2)) = parallel(reduce(from, mid), reduce(mid, until))
+
+      (x2 - y1, x1 - y2)
+
+//      println(s"x1: ${x1}\nx2: ${x2}\ny1: ${y1}\ny2${y2}")
+
+
     }
 
-    def reduce(from: Int, until: Int) /* :??? */ = {
-      traverse(from, until, 0, 0)
-    }
-    
-    if(chars.length == 0) true
-    else reduce(0, chars.length) // == ???
+
+    val rslt = reduce(0, chars.length)
+
+    println(s"Result for input ${chars.toList}: $rslt")
+
+    rslt._1 - rslt._2 == 0
   }
 
   // For those who want more:
