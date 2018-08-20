@@ -1,5 +1,7 @@
 package reductions
 
+import java.lang.AssertionError
+
 import scala.annotation._
 import org.scalameter._
 import common._
@@ -59,34 +61,31 @@ object ParallelParenthesesBalancing {
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
 
     def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): (Int, Int) = {
-      if(idx == until) return (arg1, arg2)
+      if(idx >= until) return (arg1, arg2)
       traverse(idx + 1, until,
         if(chars(idx) == '(') arg1 + 1 else arg1,
-        if(chars(idx) == ')') arg2 + 1 else arg2)
+        if(chars(idx) == ')') arg2 - 1 else arg2)
     }
 
-    def reduce(from: Int, until: Int): (Int, Int) /* :??? */ = {
-      if(until - from <= 2) {
-        return traverse(from, until, 0, 0)
-      }
+    def reduce(from: Int, until: Int): (Int, Int) = {
+      if((until - from) / 2 < threshold) return if(balance(chars.slice(from, until))) (0, 0) else throw new AssertionError
+      if(until - from < 2) return traverse(from, until, 0, 0)
 
-      val mid = (until - from) / 2
+      val mid = (from + until) / 2
 
       val ((x1, x2), (y1, y2)) = parallel(reduce(from, mid), reduce(mid, until))
 
-      (x2 - y1, x1 - y2)
+      if((x1 + x2) < (y1 + y2)) throw new AssertionError
 
-//      println(s"x1: ${x1}\nx2: ${x2}\ny1: ${y1}\ny2${y2}")
-
-
+      (x1 + x2, y1 + y2)
     }
 
-
-    val rslt = reduce(0, chars.length)
-
-    println(s"Result for input ${chars.toList}: $rslt")
-
-    rslt._1 - rslt._2 == 0
+    try {
+      val result = reduce(0, chars.length)
+      result._1 + result._2 == 0
+    } catch {
+      case _: AssertionError => false
+    }
   }
 
   // For those who want more:
