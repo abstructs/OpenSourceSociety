@@ -68,8 +68,7 @@ object ParallelParenthesesBalancing {
     }
 
     def reduce(from: Int, until: Int): (Int, Int) = {
-      if((until - from) / 2 < threshold) return if(balance(chars.slice(from, until))) (0, 0) else throw new AssertionError
-      if(until - from < 2) return traverse(from, until, 0, 0)
+      if(until - from <= threshold) return traverse(from, until, 0, 0)
 
       val mid = (from + until) / 2
 
