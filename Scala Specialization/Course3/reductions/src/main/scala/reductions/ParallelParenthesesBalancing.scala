@@ -60,11 +60,18 @@ object ParallelParenthesesBalancing {
    */
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
 
-    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): (Int, Int) = {
-      if(idx >= until) return (arg1, arg2)
-      traverse(idx + 1, until,
-        if(chars(idx) == '(') arg1 + 1 else arg1,
-        if(chars(idx) == ')') arg2 - 1 else arg2)
+    def traverse(idx: Int, until: Int, left: Int, right: Int): (Int, Int) = {
+      if(idx >= until) (left, right)
+      else {
+        if(chars(idx) == '(') {
+          traverse(idx + 1, until, left + 1, right)
+        }
+        else if(chars(idx) == ')') {
+          if(left > 0) traverse(idx + 1, until, left - 1, right)
+          else traverse(idx + 1, until, left, right + 1)
+        }
+        else traverse(idx + 1, until, left, right)
+      }
     }
 
     def reduce(from: Int, until: Int): (Int, Int) = {
@@ -74,17 +81,13 @@ object ParallelParenthesesBalancing {
 
       val ((x1, x2), (y1, y2)) = parallel(reduce(from, mid), reduce(mid, until))
 
-      if((x1 + x2) < (y1 + y2)) throw new AssertionError
+      val matched = scala.math.min(x1, y2)
 
-      (x1 + x2, y1 + y2)
+      (x1 + y1 - matched, x2 + y2 - matched)
     }
 
-    try {
-      val result = reduce(0, chars.length)
-      result._1 + result._2 == 0
-    } catch {
-      case _: AssertionError => false
-    }
+    val result = reduce(0, chars.length)
+    result == (0, 0)
   }
 
   // For those who want more:

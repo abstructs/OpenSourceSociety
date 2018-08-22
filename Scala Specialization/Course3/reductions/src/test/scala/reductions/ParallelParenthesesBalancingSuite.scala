@@ -36,9 +36,13 @@ class ParallelParenthesesBalancingSuite extends FunSuite {
         s"balance($input) should be $expected")
 
     check("()", true)
+    check("()()", true)
     check(")(", false)
-    check("((", false)
+    check("(())", true)
+    check("()()", true)
+    check("((()))", true)
     check("))", false)
+    check("((", false)
     check(".)", false)
     check(".(", false)
     check("(.", false)
@@ -54,7 +58,9 @@ class ParallelParenthesesBalancingSuite extends FunSuite {
     check(")(()", false)
     check(")(", false)
     check(")()(", false)
+
     check("()()", true)
+    check("((()))", true)
   }
 
 

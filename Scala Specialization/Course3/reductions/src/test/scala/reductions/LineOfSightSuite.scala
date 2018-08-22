@@ -54,8 +54,7 @@ class LineOfSightSuite extends FunSuite {
     val input = Array[Float](0f, 1f, 1f, 9f)
     val tree1 = upsweep(input, 1, input.length, 1)
     val tree2 = upsweep(input, 1, input.length, 2)
-    println(tree1)
-    println(tree2)
+
     downsweep(input, output, 2f, tree2)
     assert(output.toList == List(0f, 2f, 2f, 3f))
   }
