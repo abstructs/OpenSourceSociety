@@ -1,7 +1,7 @@
 package kmeans
 
 import scala.annotation.tailrec
-import scala.collection._
+import scala.collection.{GenSeq, _}
 import scala.util.Random
 import org.scalameter._
 import common._
@@ -45,7 +45,6 @@ class KMeans {
   }
 
   def classify(points: GenSeq[Point], means: GenSeq[Point]): GenMap[Point, GenSeq[Point]] = {
-//    println(s"classify: \npoints: $points\nmeans: $means")
     if(points.isEmpty) means.zip((1 to means.length).map(_ => List[Point]())).toMap
     else points groupBy (point => findClosest(point, means))
   }
@@ -63,8 +62,7 @@ class KMeans {
   }
 
   def update(classified: GenMap[Point, GenSeq[Point]], oldMeans: GenSeq[Point]): GenSeq[Point] = {
-    println(s"update: \nclassified: $classified")
-    oldMeans map (mean => findAverage(mean, classified(mean)))
+    oldMeans map (mean => findAverage(mean, classified.getOrElse(mean, GenSeq())))
   }
 
   def converged(eta: Double)(oldMeans: GenSeq[Point], newMeans: GenSeq[Point]): Boolean = {
@@ -123,15 +121,12 @@ object KMeansRunner {
     val seqtime = standardConfig measure {
       kMeans.kMeans(points, means, eta)
     }
-//    println(s"sequential time: $seqtime ms")
 
     val partime = standardConfig measure {
       val parPoints = points.par
       val parMeans = means.par
       kMeans.kMeans(parPoints, parMeans, eta)
     }
-//    println(s"parallel time: $partime ms")
-//    println(s"speedup: ${seqtime / partime}")
   }
 
 }

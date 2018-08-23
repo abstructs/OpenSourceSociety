@@ -4,14 +4,4 @@ all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization
 runMain kmeans.KMeansRunner
 run-main kmeans.fun.ScalaShop
 submit polygoning@gmail.com GG2BaEI9n7ozWyIQ
-all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/test:products
 run-main kmeans.fun.ScalaShop
-all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/test:products
-run-main kmeans.fun.ScalaShop
-all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/test:products
-run-main kmeans.fun.ScalaShop
-all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/test:products
-run-main kmeans.fun.ScalaShop
-all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/kmeans/}root/test:products
-submit polygoning@gmail.com d7GWZUIfyH08RRWK
-git

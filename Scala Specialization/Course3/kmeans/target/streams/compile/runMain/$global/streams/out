@@ -11,6 +11,6 @@
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-3 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-3 exited.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread AWT-EventQueue-0 to terminate.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AWT-Shutdown to terminate.[0m
