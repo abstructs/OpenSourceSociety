@@ -42,7 +42,7 @@ class IndexedColorFilter(initialImage: Img,
     val dst = new Img(img.width, img.height)
     val pts = collection.mutable.Set[Point]()
 
-    for (x <- 0 until img.width; y <- 0 until img.height) yield {
+    for (x <- (0 until img.width).par; y <- (0 until img.height).par) yield {
       val v = img(x, y)
       var point = new Point(red(v), green(v), blue(v))
       point = findClosest(point, means)

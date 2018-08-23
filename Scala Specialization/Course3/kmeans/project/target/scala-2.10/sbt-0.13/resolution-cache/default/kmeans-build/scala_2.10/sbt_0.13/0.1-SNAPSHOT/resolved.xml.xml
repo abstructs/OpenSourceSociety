@@ -4,7 +4,7 @@
 		module="kmeans-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20180822201221"
+		publication="20180822233625"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

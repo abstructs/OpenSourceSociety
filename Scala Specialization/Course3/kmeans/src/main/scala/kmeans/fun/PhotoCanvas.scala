@@ -67,6 +67,7 @@ class PhotoCanvas extends JComponent {
     reload()
   }
 
+
   def saveFile(path: String): Unit = {
     reload()
     val stream = new FileOutputStream(path)

@@ -38,14 +38,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KMeans.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KMeans.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/kmeans/KMeans.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-364">
-              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="154">
+              <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
               <folding>
                 <element signature="e#16#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexedColors.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/kmeans/fun/IndexedColors.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoCanvas.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/kmeans/fun/PhotoCanvas.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,9 +75,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>???</find>
-      <find>update</find>
       <find>findaverage</find>
       <find>classify</find>
+      <find>update</find>
+      <find>println</find>
+      <find>:q</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -68,7 +90,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/scala/kmeans/fun/IndexedColors.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/kmeans/KMeans.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/kmeans/fun/PhotoCanvas.scala" />
       </list>
     </option>
   </component>
@@ -120,6 +144,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="kmeans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parprog1-kmeans" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
+              <item name="fun" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parprog1-kmeans" type="b2602c69:ProjectViewProjectNode" />
@@ -299,6 +332,24 @@
     <history-entry file="Test - 2018.08.22 at 20h 53m 07s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="Test - 2018.08.22 at 23h 36m 44s.xml">
+      <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 23h 38m 14s.xml">
+      <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 23h 40m 00s.xml">
+      <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 23h 53m 47s.xml">
+      <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 23h 57m 41s.xml">
+      <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.23 at 00h 00m 15s.xml">
+      <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,7 +362,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1425" height="819" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -325,7 +375,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="sbt-shell-toolwindow" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -356,13 +406,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kmeans/fun/IndexedColors.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/kmeans/KMeans.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="154">
+          <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
           <folding>
             <element signature="e#16#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kmeans/fun/PhotoCanvas.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
