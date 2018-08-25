@@ -69,10 +69,10 @@ package object barneshut {
       var newSe = se
 
       if(b.x < centerX) {
-        if(b.y <= centerY) newNw = newNw.insert(b)
+        if(b.y >= centerY) newNw = newNw.insert(b)
         else newSw = newSw.insert(b)
       } else {
-        if(b.y <= centerY) newNe = newNe.insert(b)
+        if(b.y >= centerY) newNe = newNe.insert(b)
         else newSe = newSe.insert(b)
       }
 
@@ -89,17 +89,15 @@ package object barneshut {
     val total: Int = bodies.length
 
     // distributes all the bodies across 4 quads (Wrong)
-    // TODO: insert bodies into their appropriate section of the quad
     def insert(b: Body): Quad = {
-      val newBodies: Seq[Body] = b +: bodies
-      if(size >= minimumSize) {
-        val starts = 0 until newBodies.length by (newBodies.length / 4)
-        val iters: List[(Int, Int)] = starts.zip(starts.tail ++ List(newBodies.length - 1)).toList
+      val newBodies: Seq[Body] = bodies :+ b
+      if(size > minimumSize) {
+        val nw = Empty(centerX / 2, centerY / 2, size / 4)
+        val ne = Empty(centerX / 2, centerY / 2, size / 4)
+        val sw = Empty(centerX / 2, centerY / 2, size / 4)
+        val se = Empty(centerX / 2, centerY / 2, size / 4)
 
-        val leaves = iters.map((iter: (Int, Int)) => Leaf(centerX / 2, centerY / 2, iter._1 - iter._2,
-          newBodies.slice(iter._1, iter._2)))
-        assert(leaves.length == 4)
-        return Fork(leaves(0), leaves(1), leaves(2), leaves(3))
+        return Fork(nw, ne, sw, se).insert(b)
       }
 
       Leaf(centerX, centerY, size + 1, newBodies)

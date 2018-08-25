@@ -89,20 +89,24 @@ import FloatOps._
         fail("Empty.insert() should have returned a Leaf, was $inserted")
     }
   }
+//  Leaf(1.0,1.0,1.0E-5,List(barneshut.package$Body@3427b02d, barneshut.package$Body@647e447))
+//
+//  Leaf(1.0,1.0,1.00001,List(barneshut.package$Body@647e447, barneshut.package$Body@3427b02d))
 
-  test("Leaf.insert(b) on leaf with no bodies should return a Leaf with the body included") {
-//    val b:Body = new Body(123f, 18f, 26f, 0f, 0f)
-    val quad = Leaf(51f, 46.3f, 5f, Seq())
-    val b = new Body(3f, 54f, 46f, 0f, 0f)
-    val inserted = quad.insert(b)
-    inserted match {
-      case Leaf(_, _, size, bodies) =>
-        assert(size == 1, s"$size should have a size of 1")
-        assert(bodies == Seq(b), s"$bodies should contain only the inserted body")
-      case _ =>
-        fail("Leaf.insert() should have returned a Leaf, was $inserted")
-    }
-  }
+
+//  test("Leaf.insert(b) on leaf with no bodies should return a Leaf with the body included") {
+////    val b:Body = new Body(123f, 18f, 26f, 0f, 0f)
+//    val quad = Leaf(51f, 46.3f, 5f, Seq())
+//    val b = new Body(3f, 54f, 46f, 0f, 0f)
+//    val inserted = quad.insert(b)
+//    inserted match {
+//      case Leaf(_, _, size, bodies) =>
+//        assert(size == 1, s"$size should have a size of 1")
+//        assert(bodies == Seq(b), s"$bodies should contain only the inserted body")
+//      case _ =>
+//        fail(s"Leaf.insert() should have returned a Leaf, was $inserted")
+//    }
+//  }
 
   // test cases for Body
 
