@@ -1,0 +1,19 @@
+[0m[[0minfo[0m] [0mPackaging /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/target/scala-2.11/parprog1-barneshut_2.11-0.1-SNAPSHOT.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	barneshut/SimulationModel.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/SimulationModel.scala[0m
+[0m[[0mdebug[0m] [0m	barneshut/conctrees/package.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/conctrees/package.scala[0m
+[0m[[0mdebug[0m] [0m	barneshut/conctrees/ConcBuffer.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/conctrees/ConcBuffer.scala[0m
+[0m[[0mdebug[0m] [0m	barneshut/SimulationCanvas.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/SimulationCanvas.scala[0m
+[0m[[0mdebug[0m] [0m	barneshut/BarnesHut.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/BarnesHut.scala[0m
+[0m[[0mdebug[0m] [0m	barneshut/conctrees/Conc.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/conctrees/Conc.scala[0m
+[0m[[0mdebug[0m] [0m	barneshut/Simulator.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/Simulator.scala[0m
+[0m[[0mdebug[0m] [0m	barneshut/package.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course3/barneshut/src/main/scala/barneshut/package.scala[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

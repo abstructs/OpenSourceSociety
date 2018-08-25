@@ -46,32 +46,64 @@ package object barneshut {
   case class Empty(centerX: Float, centerY: Float, size: Float) extends Quad {
     def massX: Float = centerX
     def massY: Float = centerY
-    def mass: Float = centerX + centerY
+    def mass: Float = 0
     def total: Int = 0
-    def insert(b: Body): Quad = ???
+      def insert(b: Body): Quad = Leaf(centerX, centerY, size, Seq(b))
   }
 
   case class Fork(
     nw: Quad, ne: Quad, sw: Quad, se: Quad
   ) extends Quad {
-    val centerX: Float = 2 * nw.centerX
-    val centerY: Float = 2 * nw.centerY
+    val centerX: Float = (nw.centerX + se.centerX) / 2
+    val centerY: Float = (nw.centerY + se.centerY) / 2
     val size: Float = nw.size + ne.size + sw.size + se.size
     val mass: Float = nw.mass + ne.mass + sw.mass + se.mass
-    val massX: Float = nw.massX + ne.massX + sw.massX + se.massX
-    val massY: Float = nw.massY + ne.massY + sw.massY + se.massY
+    val massX: Float = if(mass == 0) 0 else ((nw.mass * nw.massX) + (ne.mass * ne.massX) + (sw.mass * sw.massX) + (se.mass * se.massX)) / mass
+    val massY: Float = if(mass == 0) 0 else ((nw.mass * nw.massY) + (ne.mass * ne.massY) + (sw.mass * sw.massY) + (se.mass * se.massY)) / mass
     val total: Int = nw.total + ne.total + sw.total + se.total
 
     def insert(b: Body): Fork = {
-      ???
+      var newNw = nw
+      var newNe = ne
+      var newSw = sw
+      var newSe = se
+
+      if(b.x < centerX) {
+        if(b.y <= centerY) newNw = newNw.insert(b)
+        else newSw = newSw.insert(b)
+      } else {
+        if(b.y <= centerY) newNe = newNe.insert(b)
+        else newSe = newSe.insert(b)
+      }
+
+      Fork(newNw, newNe, newSw, newSe)
     }
   }
 
   case class Leaf(centerX: Float, centerY: Float, size: Float, bodies: Seq[Body])
   extends Quad {
-    val (mass, massX, massY) = (??? : Float, ??? : Float, ??? : Float)
-    val total: Int = ???
-    def insert(b: Body): Quad = ???
+    val (mass, massX, massY) = bodies.foldLeft(0f, 0f, 0f)((acc: (Float, Float, Float), body: Body) => {
+      (acc._1 + body.mass, acc._2 + (body.mass * body.x) / body.mass, acc._3 + (body.mass * body.y) / body.mass)
+    })
+
+    val total: Int = bodies.length
+
+    // distributes all the bodies across 4 quads (Wrong)
+    // TODO: insert bodies into their appropriate section of the quad
+    def insert(b: Body): Quad = {
+      val newBodies: Seq[Body] = b +: bodies
+      if(size >= minimumSize) {
+        val starts = 0 until newBodies.length by (newBodies.length / 4)
+        val iters: List[(Int, Int)] = starts.zip(starts.tail ++ List(newBodies.length - 1)).toList
+
+        val leaves = iters.map((iter: (Int, Int)) => Leaf(centerX / 2, centerY / 2, iter._1 - iter._2,
+          newBodies.slice(iter._1, iter._2)))
+        assert(leaves.length == 4)
+        return Fork(leaves(0), leaves(1), leaves(2), leaves(3))
+      }
+
+      Leaf(centerX, centerY, size + 1, newBodies)
+    }
   }
 
   def minimumSize = 0.00001f
