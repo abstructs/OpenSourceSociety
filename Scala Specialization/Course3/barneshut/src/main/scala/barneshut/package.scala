@@ -1,5 +1,6 @@
 import common._
 import barneshut.conctrees._
+import com.sun.xml.internal.ws.client.sei.ResponseBuilder.Body
 
 package object barneshut {
 
@@ -151,9 +152,20 @@ package object barneshut {
       def traverse(quad: Quad): Unit = (quad: Quad) match {
         case Empty(_, _, _) =>
           // no force
-        case Leaf(_, _, _, bodies) =>
+        case Leaf(_, _, _, bodies) => bodies.foreach(body => {
+          addForce(body.mass, (body.mass * body.x) / body.mass, (body.mass * body.y) / body.mass)
+        })
           // add force contribution of each body by calling addForce
-        case Fork(nw, ne, sw, se) =>
+        case Fork(nw, ne, sw, se) => {
+          val fork = Fork(nw, ne, sw, se)
+          if(fork.size / distance(fork.centerX, fork.centerY, x, y) < theta) {
+            addForce(fork.mass, fork.massX, fork.massY)
+          } else {
+            val tasks = List(task(traverse(nw)), task(traverse(ne)), task(traverse(sw)), task(traverse(se)))
+
+            tasks foreach (_.join())
+          }
+        }
           // see if node is far enough from the body,
           // or recursion is needed
       }
@@ -178,14 +190,23 @@ package object barneshut {
     for (i <- 0 until matrix.length) matrix(i) = new ConcBuffer
 
     def +=(b: Body): SectorMatrix = {
-      ???
+      var x = b.x
+      var y = b.y
+
+      if(b.x < boundaries.minX) x = boundaries.minX
+      else if(b.x > boundaries.maxX) x = boundaries.maxX
+
+      if(b.y < boundaries.minY) y = boundaries.minY
+      else if(b.y > boundaries.maxY) y = boundaries.maxY
+
+      apply(((SECTOR_PRECISION / boundaries.maxX) * x).toInt, ((SECTOR_PRECISION / boundaries.maxY) * y).toInt) += b
       this
     }
 
     def apply(x: Int, y: Int) = matrix(y * sectorPrecision + x)
 
     def combine(that: SectorMatrix): SectorMatrix = {
-      ???
+      that.
     }
 
     def toQuad(parallelism: Int): Quad = {
