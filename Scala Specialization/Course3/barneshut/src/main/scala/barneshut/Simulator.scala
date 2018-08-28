@@ -12,11 +12,23 @@ import common._
 class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
 
   def updateBoundaries(boundaries: Boundaries, body: Body): Boundaries = {
-    ???
+    if(body.x < boundaries.minX) boundaries.minX = body.x
+    if (body.x > boundaries.maxX) boundaries.minX = body.x
+    if (body.y < boundaries.minY) boundaries.minX = body.y
+    if (body.y > boundaries.maxY) boundaries.minX = body.y
+
+    boundaries
   }
 
   def mergeBoundaries(a: Boundaries, b: Boundaries): Boundaries = {
-    ???
+    val newBounds = new Boundaries
+
+    newBounds.minX = math.min(a.minX, b.minX)
+    newBounds.maxX = math.max(a.maxX, b.maxX)
+    newBounds.minY = math.min(a.minY, b.minY)
+    newBounds.maxY = math.max(a.maxY, b.maxY)
+
+    newBounds
   }
 
   def computeBoundaries(bodies: Seq[Body]): Boundaries = timeStats.timed("boundaries") {
@@ -28,7 +40,7 @@ class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
   def computeSectorMatrix(bodies: Seq[Body], boundaries: Boundaries): SectorMatrix = timeStats.timed("matrix") {
     val parBodies = bodies.par
     parBodies.tasksupport = taskSupport
-    ???
+    parBodies.aggregate(new SectorMatrix(boundaries, SECTOR_PRECISION))(_ += _, _.combine(_))
   }
 
   def computeQuad(sectorMatrix: SectorMatrix): Quad = timeStats.timed("quad") {

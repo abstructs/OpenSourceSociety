@@ -86,7 +86,7 @@ import FloatOps._
         assert(size == 5f, s"$size should be 5f")
         assert(bodies == Seq(b), s"$bodies should contain only the inserted body")
       case _ =>
-        fail("Empty.insert() should have returned a Leaf, was $inserted")
+        fail(s"Empty.insert() should have returned a Leaf, was $inserted")
     }
   }
 //  Leaf(1.0,1.0,1.0E-5,List(barneshut.package$Body@3427b02d, barneshut.package$Body@647e447))
@@ -94,17 +94,52 @@ import FloatOps._
 //  Leaf(1.0,1.0,1.00001,List(barneshut.package$Body@647e447, barneshut.package$Body@3427b02d))
 
 
-//  test("Leaf.insert(b) on leaf with no bodies should return a Leaf with the body included") {
-////    val b:Body = new Body(123f, 18f, 26f, 0f, 0f)
-//    val quad = Leaf(51f, 46.3f, 5f, Seq())
+//  test("Leaf.insert(b).insert(b).insert(b).insert(b) should have all the bodies") {
 //    val b = new Body(3f, 54f, 46f, 0f, 0f)
-//    val inserted = quad.insert(b)
+//    val quad = Leaf(51f, 46.3f, 5f, Seq())
+//    val inserted = quad.insert(b).insert(b).insert(b).insert(b)
 //    inserted match {
 //      case Leaf(_, _, size, bodies) =>
-//        assert(size == 1, s"$size should have a size of 1")
-//        assert(bodies == Seq(b), s"$bodies should contain only the inserted body")
+//        assert(size == 4, s"$size should have a size of 4")
+//        assert(bodies == Seq(b, b, b, b), s"$bodies should contain only the inserted body")
 //      case _ =>
-//        fail(s"Leaf.insert() should have returned a Leaf, was $inserted")
+//        fail(s"Leaf.insert().insert().insert().insert() should have returned 4 bodies, was $inserted")
+//    }
+//  }
+
+  test("Leaf.insert() when leaf.size > minimumSize should return a Fork()") {
+    val b = new Body(3f, 54f, 46f, 0f, 0f)
+    val quad = Leaf(51f, 46.3f, 5f, Seq())
+    val inserted = quad.insert(b).insert(b).insert(b).insert(b)
+    inserted match {
+      case Fork(_, _, _, _) => {
+        println("success")
+      }
+      case Leaf(_, _, size, bodies) =>
+        println("fail")
+        fail(s"Leaf.insert() should have returned a Fork, was $inserted")
+//        assert(size == 4, s"$size should have a size of 4")
+//        assert(bodies == Seq(b, b, b, b), s"$bodies should contain only the inserted body")
+      case _ =>
+        fail(s"Leaf.insert() should have returned a Fork, was $inserted")
+    }
+  }
+
+//  test("Leaf.insert() when leaf.size > minimumSize should return a Fork()") {
+//    val b = new Body(3f, 54f, 46f, 0f, 0f)
+//    val quad = Leaf(51f, 46.3f, 5f, Seq())
+//    val inserted = quad.insert(b).insert(b).insert(b).insert(b)
+//    inserted match {
+//      case Fork(_, _, _, _) => {
+//        println("success")
+//      }
+//      case Leaf(_, _, size, bodies) =>
+//        println("fail")
+//        fail(s"Leaf.insert() should have returned a Fork, was $inserted")
+//      //        assert(size == 4, s"$size should have a size of 4")
+//      //        assert(bodies == Seq(b, b, b, b), s"$bodies should contain only the inserted body")
+//      case _ =>
+//        fail(s"Leaf.insert() should have returned a Fork, was $inserted")
 //    }
 //  }
 

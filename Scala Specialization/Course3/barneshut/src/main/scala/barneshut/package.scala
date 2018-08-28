@@ -49,7 +49,7 @@ package object barneshut {
     def massY: Float = centerY
     def mass: Float = 0
     def total: Int = 0
-      def insert(b: Body): Quad = Leaf(centerX, centerY, size, Seq(b))
+    def insert(b: Body): Quad = Leaf(centerX, centerY, size, Seq(b))
   }
 
   case class Fork(
@@ -69,11 +69,11 @@ package object barneshut {
       var newSw = sw
       var newSe = se
 
-      if(b.x < centerX) {
-        if(b.y >= centerY) newNw = newNw.insert(b)
+      if(b.x <= centerX) {
+        if(b.y <= centerY) newNw = newNw.insert(b)
         else newSw = newSw.insert(b)
       } else {
-        if(b.y >= centerY) newNe = newNe.insert(b)
+        if(b.y <= centerY) newNe = newNe.insert(b)
         else newSe = newSe.insert(b)
       }
 
@@ -93,19 +93,23 @@ package object barneshut {
     def insert(b: Body): Quad = {
       val newBodies: Seq[Body] = bodies :+ b
       if(size > minimumSize) {
-        val nw = Empty(centerX / 2, centerY / 2, size / 4)
-        val ne = Empty(centerX / 2, centerY / 2, size / 4)
-        val sw = Empty(centerX / 2, centerY / 2, size / 4)
-        val se = Empty(centerX / 2, centerY / 2, size / 4)
+        val nw = Empty(centerX / 2, centerY * 1.5f, 0)
+        val ne = Empty(centerX * 1.5f, centerY * 1.5f, 0)
+        val sw = Empty(centerX / 2, centerY / 2, size)
+        val se = Empty(centerX * 1.5f, centerY / 2, size)
 
-        return Fork(nw, ne, sw, se).insert(b)
+        var fork = Fork(nw, ne, sw, se)
+
+        newBodies.foreach(body => fork = fork.insert(body))
+
+        fork
       }
-
-      Leaf(centerX, centerY, size + 1, newBodies)
+      else Leaf(centerX, centerY, size + 1, newBodies)
     }
   }
 
-  def minimumSize = 0.00001f
+//  def minimumSize = 0.00001f
+  def minimumSize = 2f
 
   def gee: Float = 100.0f
 
@@ -206,7 +210,8 @@ package object barneshut {
     def apply(x: Int, y: Int) = matrix(y * sectorPrecision + x)
 
     def combine(that: SectorMatrix): SectorMatrix = {
-      that.
+      for(i <- 0 until matrix.length) matrix(i) = matrix(i).combine(that.matrix(i))
+      this
     }
 
     def toQuad(parallelism: Int): Quad = {
