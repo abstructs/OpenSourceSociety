@@ -24,9 +24,9 @@ class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
     val newBounds = new Boundaries
 
     newBounds.minX = math.min(a.minX, b.minX)
-    newBounds.maxX = math.max(a.maxX, b.maxX)
+    newBounds.maxX = math.min(a.maxX, b.maxX)
     newBounds.minY = math.min(a.minY, b.minY)
-    newBounds.maxY = math.max(a.maxY, b.maxY)
+    newBounds.maxY = math.min(a.maxY, b.maxY)
 
     newBounds
   }
@@ -50,7 +50,9 @@ class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
   def updateBodies(bodies: Seq[Body], quad: Quad): Seq[Body] = timeStats.timed("update") {
     val parBodies = bodies.par
     parBodies.tasksupport = taskSupport
-    ???
+
+//    (for(body <- parBodies) yield task { body.updated(quad) }) map (_.join())
+    bodies.map(body => body.updated(quad))
   }
 
   def eliminateOutliers(bodies: Seq[Body], sectorMatrix: SectorMatrix, quad: Quad): Seq[Body] = timeStats.timed("eliminate") {

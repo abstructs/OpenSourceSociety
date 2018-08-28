@@ -67,8 +67,8 @@ import FloatOps._
     val se = Empty(22.5f, 32.5f, 5f)
     val quad = Fork(nw, ne, sw, se)
 
-//    assert(quad.centerX == 20f, s"${quad.centerX} should be 20f")
-//    assert(quad.centerY == 30f, s"${quad.centerY} should be 30f")
+    assert(quad.centerX == 20f, s"${quad.centerX} should be 20f")
+    assert(quad.centerY == 30f, s"${quad.centerY} should be 30f")
     assert(quad.mass ~= 0, s"${quad.mass} should be 0f")
     assert(quad.massX ~= 0, s"${quad.massX} should be 0f")
     assert(quad.massY ~= 0, s"${quad.massY} should be 0f")
