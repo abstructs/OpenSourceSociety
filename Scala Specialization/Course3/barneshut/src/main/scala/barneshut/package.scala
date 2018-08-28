@@ -2,6 +2,8 @@ import common._
 import barneshut.conctrees._
 import com.sun.xml.internal.ws.client.sei.ResponseBuilder.Body
 
+import scala.collection.parallel.ParSeq
+
 package object barneshut {
 
   class Boundaries {
@@ -57,11 +59,18 @@ package object barneshut {
   ) extends Quad {
     val centerX: Float = (nw.centerX + ne.centerX) / 2
     val centerY: Float = (nw.centerY + sw.centerY) / 2
-    val size: Float = sw.size + se.size
+    val size: Float = math.max(nw.size, sw.size) + math.max(ne.size, ne.size)
     val mass: Float = nw.mass + ne.mass + sw.mass + se.mass
-    val massX: Float = if(mass == 0f) 0 else ((nw.mass * nw.massX) + (ne.mass * ne.massX) + (sw.mass * sw.massX) + (se.mass * se.massX)) / mass
-    val massY: Float = if(mass == 0f) 0 else ((nw.mass * nw.massY) + (ne.mass * ne.massY) + (sw.mass * sw.massY) + (se.mass * se.massY)) / mass
+    val massX: Float = if(isEmpty) centerX else ((nw.mass * nw.massX) + (ne.mass * ne.massX) + (sw.mass * sw.massX) + (se.mass * se.massX)) / mass
+    val massY: Float = if(isEmpty) centerY else ((nw.mass * nw.massY) + (ne.mass * ne.massY) + (sw.mass * sw.massY) + (se.mass * se.massY)) / mass
     val total: Int = nw.total + ne.total + sw.total + se.total
+
+    def isEmpty: Boolean = {
+      List(nw, ne, sw, se) match {
+        case Empty(_, _, _)::Empty(_, _, _)::Empty(_, _, _)::Empty(_, _, _)::_ => true
+        case _ => false
+      }
+    }
 
     def insert(b: Body): Fork = {
       var newNw = nw
@@ -69,11 +78,11 @@ package object barneshut {
       var newSw = sw
       var newSe = se
 
-      if(b.x < centerX) {
-        if(b.y < centerY) newNw = newNw.insert(b)
+      if(b.x <= centerX) {
+        if(b.y <= centerY) newNw = newNw.insert(b)
         else newSw = newSw.insert(b)
       } else {
-        if(b.y < centerY) newNe = newNe.insert(b)
+        if(b.y <= centerY) newNe = newNe.insert(b)
         else newSe = newSe.insert(b)
       }
 
@@ -94,10 +103,10 @@ package object barneshut {
     def insert(b: Body): Quad = {
       val newBodies: Seq[Body] = bodies :+ b
       if(size > minimumSize) {
-        val nw = Empty(centerX / 2f, centerY / 2f, size / 2f)
-        val ne = Empty(centerX * 1.5f, centerY / 2f, size / 2f)
-        val sw = Empty(centerX / 2f, centerY * 1.5f, size / 2f)
-        val se = Empty(centerX * 1.5f, centerY * 1.5f, size / 2f)
+        val nw = Empty(size / 4, size / 4, size / 2)
+        val ne = Empty((size / 2) * 1.5f, size / 4, size / 2)
+        val sw = Empty((size / 2) * 1.5f, (size / 2) * 1.5f, size / 2)
+        val se = Empty(centerX * 1.5f, (size / 2) * 1.5f, size / 2)
 
         var fork = Fork(nw, ne, sw, se)
 
@@ -170,9 +179,8 @@ package object barneshut {
           if(fork.size / distance(fork.centerX, fork.centerY, x, y) < theta) {
             addForce(fork.mass, fork.massX, fork.massY)
           } else {
-            val tasks = List(task(traverse(nw)), task(traverse(ne)), task(traverse(sw)), task(traverse(se)))
-
-            tasks foreach (_.join())
+            val tasks = ParSeq(nw, ne, sw, se).par
+            tasks.foreach(traverse)
           }
         }
       }
@@ -200,13 +208,13 @@ package object barneshut {
       var x = b.x
       var y = b.y
 
-      if(b.x < boundaries.minX) x = boundaries.minX
-      else if(b.x > boundaries.maxX) x = boundaries.maxX
+      if(x < boundaries.minX) x = boundaries.minX
+      else if(x > boundaries.maxX) x = boundaries.maxX
 
-      if(b.y < boundaries.minY) y = boundaries.minY
-      else if(b.y > boundaries.maxY) y = boundaries.maxY
+      if(y < boundaries.minY) y = boundaries.minY
+      else if(y > boundaries.maxY) y = boundaries.maxY
 
-      apply((x / sectorSize).toInt, (y / sectorSize).toInt) += b
+      apply(math.floor((x - boundaries.minX) / sectorSize).toInt, math.floor((y - boundaries.minY) / sectorSize).toInt) += b
       this
     }
 

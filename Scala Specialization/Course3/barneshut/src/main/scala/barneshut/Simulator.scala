@@ -13,22 +13,20 @@ class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
 
   def updateBoundaries(boundaries: Boundaries, body: Body): Boundaries = {
     if(body.x < boundaries.minX) boundaries.minX = body.x
-    if (body.x > boundaries.maxX) boundaries.minX = body.x
-    if (body.y < boundaries.minY) boundaries.minX = body.y
-    if (body.y > boundaries.maxY) boundaries.minX = body.y
+    if (body.x > boundaries.maxX) boundaries.maxX = body.x
+    if (body.y < boundaries.minY) boundaries.minY = body.y
+    if (body.y > boundaries.maxY) boundaries.maxY = body.y
 
     boundaries
   }
 
   def mergeBoundaries(a: Boundaries, b: Boundaries): Boundaries = {
-    val newBounds = new Boundaries
+    a.minX = math.min(a.minX, b.minX)
+    a.maxX = math.max(a.maxX, b.maxX)
+    a.minY = math.min(a.minY, b.minY)
+    a.maxY = math.max(a.maxY, b.maxY)
 
-    newBounds.minX = math.min(a.minX, b.minX)
-    newBounds.maxX = math.min(a.maxX, b.maxX)
-    newBounds.minY = math.min(a.minY, b.minY)
-    newBounds.maxY = math.min(a.maxY, b.maxY)
-
-    newBounds
+    a
   }
 
   def computeBoundaries(bodies: Seq[Body]): Boundaries = timeStats.timed("boundaries") {
@@ -50,9 +48,7 @@ class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
   def updateBodies(bodies: Seq[Body], quad: Quad): Seq[Body] = timeStats.timed("update") {
     val parBodies = bodies.par
     parBodies.tasksupport = taskSupport
-
-//    (for(body <- parBodies) yield task { body.updated(quad) }) map (_.join())
-    bodies.map(body => body.updated(quad))
+    parBodies.map(_.updated(quad)).seq
   }
 
   def eliminateOutliers(bodies: Seq[Body], sectorMatrix: SectorMatrix, quad: Quad): Seq[Body] = timeStats.timed("eliminate") {
