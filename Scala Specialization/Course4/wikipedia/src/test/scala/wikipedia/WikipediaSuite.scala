@@ -99,6 +99,7 @@ class WikipediaSuite extends FunSuite with BeforeAndAfterAll {
     val rdd = sc.parallelize(List(WikipediaArticle("1", "Scala is great"), WikipediaArticle("2", "Java is OK, but Scala is cooler")))
     val ranked = rankLangs(langs, rdd)
     val res = ranked.head._1 == "Scala"
+
     assert(res)
   }
 
@@ -147,6 +148,8 @@ class WikipediaSuite extends FunSuite with BeforeAndAfterAll {
     val rdd = sc.parallelize(articles)
     val ranked = rankLangsReduceByKey(langs, rdd)
     val res = (ranked.head._1 == "Java")
+
+    println(ranked)
     assert(res)
   }
 
