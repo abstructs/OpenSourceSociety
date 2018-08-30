@@ -16,57 +16,48 @@
 [0m[[0mdebug[0m] [0mWaiting for thread AWT-Shutdown to terminate.[0m
 [0m[[0mdebug[0m] [0mDisposing 1 top-level windows...[0m
 [0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
-[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-12-worker-13[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-12-worker-13[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-20-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-20-worker-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-6[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-6[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-19-worker-15[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-19-worker-15[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-21-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-21-worker-3[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[TimerQueue,5,system][0m
 [0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-7[0m
 [0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-7[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-23-worker-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-23-worker-5[0m
-[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Shutdown,5,system][0m
-[0m[[0mdebug[0m] [0mInterrupting thread AWT-EventQueue-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted AWT-EventQueue-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-23-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-23-worker-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-3-worker-11[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-3-worker-11[0m
 [0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-1[0m
 [0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-2[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-2[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Shutdown,5,system][0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-6[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-6[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-4[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-4[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-26-worker-11[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-26-worker-11[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-26-worker-13[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-26-worker-13[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Queue Flusher,10,system][0m
+[0m[[0mdebug[0m] [0mInterrupting thread AWT-EventQueue-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted AWT-EventQueue-0[0m
 [0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-15[0m
 [0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-15[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-2[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-26-worker-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-26-worker-1[0m
 [0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-0[0m
 [0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-6-worker-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-6-worker-5[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-23-worker-9[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-23-worker-9[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-11-worker-13[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-11-worker-13[0m
+[0m[[0mdebug[0m] [0m	Thread AWT-Shutdown exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mDisposing 1 top-level windows...[0m
+[0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
 [0m[[0mdebug[0m] [0mNot interrupting system thread Thread[TimerQueue,5,system][0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-17-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-17-worker-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-16-worker-15[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-16-worker-15[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-8-worker-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-8-worker-5[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-18-worker-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-18-worker-5[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-7[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-7[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-6[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-6[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
 [0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Queue Flusher,10,system][0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-23-worker-7[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-23-worker-7[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-4-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-4-worker-3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-26-worker-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-26-worker-1[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

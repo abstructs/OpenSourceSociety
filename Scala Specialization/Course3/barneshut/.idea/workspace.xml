@@ -26,50 +26,8 @@
     <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BarnesHutSuite.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/barneshut/BarnesHutSuite.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#19#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/barneshut/package.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1088">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Simulator.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/barneshut/Simulator.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fork</find>
-      <find>FORK</find>
-      <find>+:</find>
-      <find>Body()</find>
       <find>SECTORPRE</find>
       <find>SECTORPRECISION</find>
       <find>sectionpre</find>
@@ -78,7 +36,6 @@
       <find>= b</find>
       <find>combine</find>
       <find>Leaf</find>
-      <find>empty</find>
       <find>insert</find>
       <find>m</find>
       <find>minimumsize</find>
@@ -87,15 +44,20 @@
       <find>minimumSize</find>
       <find>Fork</find>
       <find>size</find>
-      <find>class empty</find>
       <find>updated</find>
       <find>sectormat</find>
       <find>minimumSizea</find>
-      <find>class leaf</find>
       <find>eliminateoutliers</find>
       <find>computeBoundaries</find>
-      <find>class fork</find>
       <find>traver</find>
+      <find>class leaf</find>
+      <find>empty</find>
+      <find>updatebound</find>
+      <find>class body</find>
+      <find>class empty</find>
+      <find>class boduy</find>
+      <find>class fork</find>
+      <find>println</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -106,8 +68,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/barneshut/BarnesHutSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/barneshut/Simulator.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/barneshut/BarnesHutSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/barneshut/package.scala" />
       </list>
     </option>
@@ -133,9 +95,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,6 +162,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -345,34 +307,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test - 2018.08.28 at 17h 48m 24s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 12m 22s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 17h 48m 55s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 17m 02s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 17h 49m 16s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 29m 21s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 18h 03m 49s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 29m 28s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 18h 05m 19s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 31m 49s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 18h 12m 49s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 33m 27s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 18h 16m 18s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 40m 07s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 18h 24m 39s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 50m 50s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 18h 25m 16s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 53m 47s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test - 2018.08.28 at 18h 26m 40s.xml">
+    <history-entry file="Test - 2018.08.28 at 20h 55m 07s.xml">
       <configuration name="Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
@@ -387,7 +349,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="23" width="1425" height="819" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -395,16 +356,16 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26030368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26391903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -447,10 +408,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/barneshut/BarnesHutSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#19#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/barneshut/BarnesHutSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -600,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/barneshut/BarnesHutSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="966">
+          <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="28" />
           <folding>
             <element signature="e#19#48#0" expanded="true" />
           </folding>
@@ -610,16 +583,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/barneshut/Simulator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="154">
+          <caret line="41" column="62" lean-forward="false" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/barneshut/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        <state relative-caret-position="270">
+          <caret line="110" column="49" lean-forward="true" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

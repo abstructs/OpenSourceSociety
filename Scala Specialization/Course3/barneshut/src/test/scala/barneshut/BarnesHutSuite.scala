@@ -73,6 +73,28 @@ import FloatOps._
         fail(s"Empty.insert() should have returned a Leaf, was $inserted")
     }
   }
+
+  test("Fork.insert(b) should insert into nw of Fork") {
+    val nw = Empty(17.5f, 27.5f, 5f)
+    val ne = Empty(22.5f, 27.5f, 5f)
+    val sw = Empty(17.5f, 32.5f, 5f)
+    val se = Empty(22.5f, 32.5f, 5f)
+
+    val quad = Fork(nw, ne, sw, se)
+
+    val b = new Body(3f, 5, 5, 0f, 0f)
+    val inserted = quad.insert(b)
+    inserted match {
+      case Fork(nw, ne, sw, se) =>
+        nw match {
+          case Leaf(_, _, _, bodies) => assert(bodies.contains(b), s"leaf should contain $b, bodies was $bodies")
+          case _ => fail(s"nw should have returned a Leaf, was $nw\nnw: $nw ne: $ne sw: $sw se: $se")
+        }
+        assert(nw.total == 1, s"total should be 1, was ${nw.total}")
+      case _ =>
+        fail(s"Fork.insert() should have returned a Fork, was $inserted")
+    }
+  }
 //  Leaf(1.0,1.0,1.0E-5,List(barneshut.package$Body@3427b02d, barneshut.package$Body@647e447))
 //
 //  Leaf(1.0,1.0,1.00001,List(barneshut.package$Body@647e447, barneshut.package$Body@3427b02d))

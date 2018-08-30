@@ -1,0 +1,119 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/target/scala-2.11/classes
+compile options:
+1 items
+0 -> -deprecation
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.12
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+2 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/target/scala-2.11/classes/example/Lists$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/target/scala-2.11/classes/example/Lists.class
+binary dependencies:
+2 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+2 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> example.Lists
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> example.Lists$
+used names:
+37 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> !=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> &&
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> +
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> ::
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> <init>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> ==
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> >
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> A
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> Any
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> AnyRef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> Boolean
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> Int
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> List
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> Lists
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> MatchError
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> NoSuchElementException
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> Nothing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> Object
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> Some
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> T0
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> asInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> aux
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> example
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> get
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> head
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> immutable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> isEmpty
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> isInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> lengthCompare
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> max
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> scala
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> sum
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> unapplySeq
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> unary_!
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> x
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> xs
+product stamps:
+2 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/target/scala-2.11/classes/example/Lists$.class -> lastModified(1535588497000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/target/scala-2.11/classes/example/Lists.class -> lastModified(1535588497000)
+source stamps:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> hash(bce2e1725bc2554eb902e9f417150fb5e928c7e6)
+binary stamps:
+2 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1500701265000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> lastModified(1509673049000)
+class names:
+2 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> scala.package$
+internal apis:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwcWgc4gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAWc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwn4ln9nQABm5vdGlmeXNxAH4ADIzMMMp0AAVMaXN0c3NxAH4ADCVaMgV0AAR3YWl0c3EAfgAMVArymHQADSRhc0luc3RhbmNlT2ZzcQB+AAzKoXPPdAAGZXF1YWxzc3EAfgAMZKx2IHQADGFzSW5zdGFuY2VPZnNxAH4ADNILycl0AAxzeW5jaHJvbml6ZWRzcQB+AAxdzrpIdAANJGlzSW5zdGFuY2VPZnNxAH4ADLqRyO90AAlub3RpZnlBbGxzcQB+AAwtlqzvdAAMaXNJbnN0YW5jZU9mc3EAfgAMSJWvvHQAA21heHNxAH4ADOK5O3J0AAI9PXNxAH4ADML7jD90AAVjbG9uZXNxAH4ADIPUtj90AAh0b1N0cmluZ3NxAH4ADHpNGWl0AAIhPXNxAH4ADNPYM9h0AAhnZXRDbGFzc3NxAH4ADHxPry90AAJuZXNxAH4ADC7ORm50AAJlcXNxAH4ADLkNf5B0AANzdW1zcQB+AAzYyJFhdAACIyNzcQB+AAyCibU5dAAIZmluYWxpemVzcQB+AAztg6jEdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBDeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAANZXhhbXBsZS5MaXN0c3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AW3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBDTAAJaW5oZXJpdGVkcQB+AENMAAdwYXJlbnRzcQB+AEN4cQB+AGBzcQB+AFt1cQB+AD4AAAAAc3EAfgBbdXEAfgA+AAAAAHNxAH4AW3VyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AX3QABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AX3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AeHQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AeXNxAH4AbHQAA0FueXNxAH4AcHNxAH4Ac3VxAH4AdgAAAAJzcQB+AHh0AAVzY2FsYXEAfgB/dXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAHZXhhbXBsZXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZYg09tV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABsL1VzZXJzL2Fic3RydWN0L0Rlc2t0b3AvT3BlbiBTb3VyY2UgU29jaWV0eS9TY2FsYSBTcGVjaWFsaXphdGlvbi9Db3Vyc2U0L2V4YW1wbGUgMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUvOLhclvCVU65Aun0FxUPtekox+Y=
+external apis:
+0 items
+source infos:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/example 2/src/main/scala/example/Lists.scala -> 
+AAAAAAAAAAA=
+compilations:
+4 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZYgyrzh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbC9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlNC9leGFtcGxlIDIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZYg0iNF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbC9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlNC9leGFtcGxlIDIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZYg0xxp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbC9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlNC9leGFtcGxlIDIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZYg09tV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbC9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlNC9leGFtcGxlIDIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=

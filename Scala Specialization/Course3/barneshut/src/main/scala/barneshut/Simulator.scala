@@ -21,12 +21,13 @@ class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
   }
 
   def mergeBoundaries(a: Boundaries, b: Boundaries): Boundaries = {
-    a.minX = math.min(a.minX, b.minX)
-    a.maxX = math.max(a.maxX, b.maxX)
-    a.minY = math.min(a.minY, b.minY)
-    a.maxY = math.max(a.maxY, b.maxY)
+    val bounds = new Boundaries
+    bounds.minX = math.min(a.minX, b.minX)
+    bounds.maxX = math.max(a.maxX, b.maxX)
+    bounds.minY = math.min(a.minY, b.minY)
+    bounds.maxY = math.max(a.maxY, b.maxY)
 
-    a
+    bounds
   }
 
   def computeBoundaries(bodies: Seq[Body]): Boundaries = timeStats.timed("boundaries") {

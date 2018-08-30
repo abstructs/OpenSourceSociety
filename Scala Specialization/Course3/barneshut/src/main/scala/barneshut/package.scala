@@ -57,8 +57,8 @@ package object barneshut {
   case class Fork(
     nw: Quad, ne: Quad, sw: Quad, se: Quad
   ) extends Quad {
-    val centerX: Float = (nw.centerX + ne.centerX) / 2
-    val centerY: Float = (nw.centerY + sw.centerY) / 2
+    val centerX: Float = (nw.centerX + ne.centerX + sw.centerX + se.centerX) / 4
+    val centerY: Float = (nw.centerY + ne.centerY + sw.centerY + se.centerY) / 4
     val size: Float = math.max(nw.size, sw.size) + math.max(ne.size, ne.size)
     val mass: Float = nw.mass + ne.mass + sw.mass + se.mass
     val massX: Float = if(isEmpty) centerX else ((nw.mass * nw.massX) + (ne.mass * ne.massX) + (sw.mass * sw.massX) + (se.mass * se.massX)) / mass
@@ -86,6 +86,8 @@ package object barneshut {
         else newSe = newSe.insert(b)
       }
 
+//      println(Fork(newNw, newNe, newSw, newSe))
+
       Fork(newNw, newNe, newSw, newSe)
     }
   }
@@ -103,10 +105,11 @@ package object barneshut {
     def insert(b: Body): Quad = {
       val newBodies: Seq[Body] = bodies :+ b
       if(size > minimumSize) {
-        val nw = Empty(size / 4, size / 4, size / 2)
-        val ne = Empty((size / 2) * 1.5f, size / 4, size / 2)
-        val sw = Empty((size / 2) * 1.5f, (size / 2) * 1.5f, size / 2)
-        val se = Empty(centerX * 1.5f, (size / 2) * 1.5f, size / 2)
+        val nw = Empty(centerX - size / 4, centerY - size / 4, size / 2)
+        val sw = Empty(centerX - size / 4, centerY + size / 4, size / 2)
+
+        val ne = Empty(centerX + size / 4, centerY - size / 4, size / 2)
+        val se = Empty(centerX + size / 4, centerY + size / 4, size / 2)
 
         var fork = Fork(nw, ne, sw, se)
 
@@ -164,7 +167,7 @@ package object barneshut {
       }
 
       def traverse(quad: Quad): Unit = (quad: Quad) match {
-        case Empty(_, _, _) =>
+        case Empty(_, _, _) => ()
           // no force
         case Leaf(_, _, _, bodies) => bodies.foreach(body => {
           // add force contribution of each body by calling addForce
@@ -179,7 +182,7 @@ package object barneshut {
           if(fork.size / distance(fork.centerX, fork.centerY, x, y) < theta) {
             addForce(fork.mass, fork.massX, fork.massY)
           } else {
-            val tasks = ParSeq(nw, ne, sw, se).par
+            val tasks = Seq(nw, ne, sw, se)
             tasks.foreach(traverse)
           }
         }
