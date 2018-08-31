@@ -81,9 +81,9 @@ class StackOverflow extends Serializable {
   /** Group the questions and answers together */
   def groupedPostings(postings: RDD[Posting]): RDD[(QID, Iterable[(Question, Answer)])] = {
     val questions: RDD[(QID, Question)] = postings.filter(_.postingType == 1)
-      .map(post => (post.acceptedAnswer.getOrElse(-1), post))
+      .map(question => (question.id, question))
     val answers: RDD[(QID, Answer)] = postings.filter(_.postingType == 2)
-      .map(post => (post.parentId.getOrElse(-2), post))
+      .map(answer => (answer.parentId.getOrElse(-1), answer))
 
     questions.join(answers).groupByKey()
   }
@@ -104,9 +104,15 @@ class StackOverflow extends Serializable {
       highScore
     }
 
-    grouped.map { case (_, (q, a)::qas) => {
-      (q, answerHighScore(((q, a)::qas).map(_._2).toArray))
-    }}
+    grouped.map((p: (QID, Iterable[(Question, Answer)])) =>
+      (p._2.head._1, answerHighScore(p._2.map(_._2).toArray))
+    )
+
+//    ???
+//    grouped.map {
+//      case (_, (q, a)::qas) => {
+//      (q, answerHighScore(((q, a)::qas).map(_._2).toArray))
+//    }}
 
   }
 
@@ -128,8 +134,10 @@ class StackOverflow extends Serializable {
     }
 
     scored.map(post => {
-      (firstLangInTag(post._1.tags, List()).get * langSpread, post._2)
-    })
+      val lang = firstLangInTag(post._1.tags, List()).getOrElse(-1)
+
+      (lang * langSpread, post._2)
+    }).filter(_._1 >= 0)
   }
 
 
