@@ -1,3 +1,4 @@
 ;reload; set org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo /private/var/folders/l0/rp1lrwvj3w5b0wyx0scrnm8m0000gn/T/sbt-structure.xml
 all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course4/wikipedia/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course4/wikipedia/}root/test:products
 submit polygoning@gmail.com hyBeNAaGaOW3cI49
+submit polygoning@gmail.com 30WcpJZIqPP17oGp

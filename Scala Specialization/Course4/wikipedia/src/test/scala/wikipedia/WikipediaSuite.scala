@@ -149,7 +149,6 @@ class WikipediaSuite extends FunSuite with BeforeAndAfterAll {
     val ranked = rankLangsReduceByKey(langs, rdd)
     val res = (ranked.head._1 == "Java")
 
-    println(ranked)
     assert(res)
   }
 
