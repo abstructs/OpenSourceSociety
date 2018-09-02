@@ -26,7 +26,7 @@ object StackOverflow extends StackOverflow {
     val raw     = rawPostings(lines)
     val grouped = groupedPostings(raw)
     val scored  = scoredPostings(grouped)
-    val vectors = vectorPostings(scored).sample(true, 0.1, 0)
+    val vectors = vectorPostings(scored)//.sample(true, 0.1, 0)
 //    assert(vectors.count() == 2121822, "Incorrect number of vectors: " + vectors.count())
 
     val means   = kmeans(sampleVectors(vectors), vectors, debug = true)
@@ -185,12 +185,19 @@ class StackOverflow extends Serializable {
   @tailrec final def kmeans(means: Array[(Int, Int)], vectors: RDD[(LangIndex, HighScore)], iter: Int = 1, debug: Boolean = false): Array[(Int, Int)] = {
     val newMeans = means.clone() // you need to compute newMeans
 
+    val vs: RDD[(Int, Iterable[(Int, Int)])] = vectors.cache()
+      .map(vector => (findClosest(vector, means), vector))
+      .groupByKey()
 
-    vectors.map(vector => (findClosest(vector, means), vector)).groupByKey()
-      .mapValues(vs => averageVectors(vs))
-      .foreach { case (i, avg) => {
-        newMeans.update(i, avg)
-      }}
+
+    vs
+      .mapValues((vs: Iterable[(Int, Int)]) => {
+        averageVectors(vs)
+      })
+      .collect()
+      .foreach((v: (Int, (Int, Int))) => {
+        newMeans(v._1) = v._2
+      })
 
     val distance = euclideanDistance(means, newMeans)
 
@@ -263,7 +270,6 @@ class StackOverflow extends Serializable {
     bestIndex
   }
 
-
   /** Average the vectors */
   def averageVectors(ps: Iterable[(Int, Int)]): (Int, Int) = {
     val iter = ps.iterator
@@ -278,9 +284,6 @@ class StackOverflow extends Serializable {
     }
     ((comp1 / count).toInt, (comp2 / count).toInt)
   }
-
-
-
 
   //
   //
@@ -306,13 +309,13 @@ class StackOverflow extends Serializable {
       val langLabel: String   = langs(maxLang._1 / langSpread)
       // percent of the questions in the most common language
 
-      val langPercent: Double = (maxLang._2.toDouble / vs.size) * 10d
+      val langPercent: Double = (maxLang._2.toDouble / vs.size) * 100d
       val clusterSize: Int    = vs.size
 
-      val arr = vs.map(_._2).toArray
+      val arr = vs.map(_._2).toArray.sorted
 
       val medianScore: Int = if(arr.isEmpty) 0
-        else if(arr.length % 2 == 0) arr(arr(arr.length / 2) + arr((arr.length / 2) - 1)) / 2
+        else if(arr.length % 2 == 0) (arr(arr.length / 2) + arr((arr.length / 2) - 1)) / 2
         else arr(arr.length / 2)
 
 
