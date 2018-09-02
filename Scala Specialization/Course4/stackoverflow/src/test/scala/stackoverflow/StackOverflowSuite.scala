@@ -61,6 +61,8 @@ class StackOverflowSuite extends FunSuite with BeforeAndAfterAll {
 
   test("vectorPostings should work with sampleVectors") {
     sampleVectors(vectors)
+//    val vs = vectors.take(5)
+//    fail(s"vs: $vs")
   }
 
 }
