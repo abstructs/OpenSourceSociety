@@ -1,0 +1,272 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes
+compile options:
+1 items
+0 -> -deprecation
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.12
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+7 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$$anonfun$1.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$$anonfun$2.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$$anonfun$3.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsageRow$.class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsageRow.class
+binary dependencies:
+5 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.jar
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> /Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+7 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage.TimeUsage
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage.TimeUsage$
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage.TimeUsage$$anonfun$1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage.TimeUsage$$anonfun$2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage.TimeUsage$$anonfun$3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage.TimeUsageRow
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage.TimeUsageRow$
+used names:
+169 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> $
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> &&
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> <=
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> <init>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> <repeated>
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ==
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ?0
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ???
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> A
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> AbstractFunction6
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Any
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> AnyRef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Array
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ArrayOps
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Boolean
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Builder
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> CanBuildFrom
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Class
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ClassTag
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Col
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Coll
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Column
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ColumnName
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> DataFrame
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Dataset
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Double
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Function1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Function2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> IndexOutOfBoundsException
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Int
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Iterator
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> List
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> MatchError
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> None
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Nothing
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Object
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Path
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Paths
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Predef
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Product
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> RDD
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Row
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ScalaRunTime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Serializable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Some
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> SparkContext
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> SparkSession
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Statics
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> String
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> StringContext
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> StringToColumn
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> StructType
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T0
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T4
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T5
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> T6
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> TimeUsage
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> TimeUsageRow
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Tuple2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Tuple3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Tuple6
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> U
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> URI
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> URL
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> Unit
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> _$7
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> _1
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> _2
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> _3
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> _toString
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> age
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ageProjection
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> anyHash
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> apache
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> appName
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> apply
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> asInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> builder
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> canBuildFrom
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> classifiedColumns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> columns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> config
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> createDataFrame
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> createOrReplaceTempView
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> data
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> dataFrame
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> df
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> dfSchema
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> doubleHash
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> drop
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> eq
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> expressions
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> file
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> finalDf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> finalizeHash
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> first
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> fsPath
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> functions
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> get
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> getClass
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> getOrCreate
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> getResource
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> headerColumns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> i
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> immutable
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> implicits
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> initDf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> isInstanceOf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> it
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> java
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> map
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> mapPartitionsWithIndex
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> materializeClassTag
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> mix
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ne
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> nio
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> org
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> other
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> otherColumns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> otherProjection
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> package
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> primaryNeeds
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> primaryNeedsColumns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> primaryNeedsProjection
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> rdd
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> read
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> refArrayOps
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> resource
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> row
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> runtime
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> s
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> scala
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> scalalang
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> schema
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> select
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> sex
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> sexProjection
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> show
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> spark
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> sparkContext
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> split
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> sql
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> summaryDf
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> summed
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> textFile
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeUsageByLifePeriod
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeUsageGrouped
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeUsageGroupedSqlQuery
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeUsageSummary
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> timeusage
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> to
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> toString
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> toURI
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> typed
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> typedProductIterator
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> types
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> unchecked
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> viewName
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> where
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> work
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> workColumns
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> workProjection
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> working
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> workingStatusProjection
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> ||
+product stamps:
+7 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$$anonfun$1.class -> lastModified(1536085333000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$$anonfun$2.class -> lastModified(1536085333000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$$anonfun$3.class -> lastModified(1536085333000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage$.class -> lastModified(1536085333000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsage.class -> lastModified(1536085333000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsageRow$.class -> lastModified(1536085333000)
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/target/scala-2.11/classes/timeusage/TimeUsageRow.class -> lastModified(1536085333000)
+source stamps:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> hash(70478474dfd6dfc66801d76c85e33385302ce8e2)
+binary stamps:
+5 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1500701265000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.jar -> lastModified(1481872148000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar -> lastModified(1481871925000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.jar -> lastModified(1481872304000)
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> lastModified(1509673049000)
+class names:
+5 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.jar -> org.apache.spark.sql.types.StructType
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar -> org.apache.spark.SparkContext
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.jar -> org.apache.spark.sql.SparkSession$
+/Users/abstruct/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar -> scala.Product
+internal apis:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw6dXyrgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAA3c3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwKZR39HQABm5vdGlmeXNxAH4ADCVVLqd0AARyZWFkc3EAfgAMjoGnonQAB3dvcmtpbmdzcQB+AAwevaWgdAAEd2FpdHNxAH4ADLOh6N90AA5jb3B5JGRlZmF1bHQkMnNxAH4ADGCE0Et0AA0kYXNJbnN0YW5jZU9mc3EAfgAM28hZ6HQAFXRpbWVVc2FnZUdyb3VwZWRUeXBlZHNxAH4ADAfq4zB0AA5jb3B5JGRlZmF1bHQkNXNxAH4ADDoT63d0AAxUaW1lVXNhZ2VSb3dzcQB+AAzjzwvKdAAMcHJvZHVjdEFyaXR5c3EAfgAMpRm+7XQABmVxdWFsc3NxAH4ADGR2NPh0AAlUaW1lVXNhZ2VzcQB+AAzPBWKMdAAMYXNJbnN0YW5jZU9mc3EAfgAMyM78oHQAE3RpbWVVc2FnZUdyb3VwZWRTcWxzcQB+AAxltjLVdAAMc3luY2hyb25pemVkc3EAfgAMVtYRzHQADSRpc0luc3RhbmNlT2ZzcQB+AAwg9rr+dAAGZnNQYXRoc3EAfgAMHdl//HQACGNhbkVxdWFsc3EAfgAMA8Gl03QAEHRpbWVVc2FnZVN1bW1hcnlzcQB+AAw36CFYdAADcm93c3EAfgAMkMtr/HQAEWNsYXNzaWZpZWRDb2x1bW5zc3EAfgAMkAbMBnQADmNvcHkkZGVmYXVsdCQ0c3EAfgAM6NRtAHQABG1haW5zcQB+AAyn0FbudAANcHJvZHVjdFByZWZpeHNxAH4ADDngaN50AANhZ2VzcQB+AAz7pbPGdAAEd29ya3NxAH4ADBWEmu50AAlub3RpZnlBbGxzcQB+AAz0JYxNdAAVdGltZVVzYWdlQnlMaWZlUGVyaW9kc3EAfgAMMzEVUXQAEHRpbWVVc2FnZUdyb3VwZWRzcQB+AAx9it7tdAADc2V4c3EAfgAMqyl+rXQADGlzSW5zdGFuY2VPZnNxAH4ADO4ca9R0AAY8aW5pdD5zcQB+AAyA/0NfdAAFc3BhcmtzcQB+AAzlnyuUdAACPT1zcQB+AAw65YLadAAFY2xvbmVzcQB+AAxYJbpddAAYdGltZVVzYWdlR3JvdXBlZFNxbFF1ZXJ5c3EAfgAMcCV92nQACGRmU2NoZW1hc3EAfgAMmrx/lXQABiRpbml0JHNxAH4ADF3qxJ90ABV0aW1lVXNhZ2VTdW1tYXJ5VHlwZWRzcQB+AAyZylxudAAOY29weSRkZWZhdWx0JDNzcQB+AAw8PmcddAAEY29weXNxAH4ADIk06910AAh0b1N0cmluZ3NxAH4ADIWCzrh0AAxwcmltYXJ5TmVlZHNzcQB+AAyhfpX8dAACIT1zcQB+AAyXrZYTdAAIZ2V0Q2xhc3NzcQB+AAwufINUdAAOY29weSRkZWZhdWx0JDFzcQB+AAzT3BnsdAAOY29weSRkZWZhdWx0JDZzcQB+AAz1wZzXdAACbmVzcQB+AAybwt8SdAACZXFzcQB+AAxLHOcJdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMkLDSmHQABW90aGVyc3EAfgAM07R1SnQAAiMjc3EAfgAMy4H1LHQACGZpbmFsaXplc3EAfgAMXBN6anQADnByb2R1Y3RFbGVtZW50c3EAfgAMZGHy6nQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AhXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAE3RpbWV1c2FnZS5UaW1lVXNhZ2V1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AJ1zcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AhUwACWluaGVyaXRlZHEAfgCFTAAHcGFyZW50c3EAfgCFeHEAfgCic3EAfgCddXEAfgCAAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgCGcQB+AI91cQB+AJAAAAAAc3EAfgCSAHEAfgA7dXEAfgCVAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AKF0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgChc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgC9dXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4AqnhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AmHQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AsVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AoXNxAH4AsHQABUFycmF5cQB+ALZ1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4AsHQABlN0cmluZ3NxAH4AtHNxAH4At3VxAH4AugAAAANzcQB+ALx0AARqYXZhc3EAfgC8dAAEbGFuZ3EAfgDBc3EAfgCddXEAfgCAAAAAAHNxAH4AnXVxAH4A1QAAAAJzcQB+ALB0AAZPYmplY3RxAH4A2XNxAH4AsHQAA0FueXEAfgC2c3EAfgCCcQB+AI91cQB+AJAAAAAAc3EAfgCSAHQAFnRpbWV1c2FnZS5UaW1lVXNhZ2VSb3d1cQB+AJUAAAAAfnEAfgCXdAAIQ2xhc3NEZWZ1cQB+AJsAAAAAc3EAfgCdcQB+AKNzcQB+AJ1zcQB+AKVzcQB+AJ11cQB+AIAAAAAAc3EAfgCddXEAfgCAAAAAAHNxAH4AnXVxAH4A1QAAAAZzcQB+ALB0AAxTZXJpYWxpemFibGVzcQB+ALRzcQB+ALd1cQB+ALoAAAACc3EAfgC8cQB+AL9xAH4AwXNxAH4AsHEAfgD6c3EAfgC0c3EAfgC3dXEAfgC6AAAAA3NxAH4AvHEAfgDdc3EAfgC8dAACaW9xAH4AwXNxAH4AsHQAB1Byb2R1Y3RxAH4A+3NxAH4AsHQABkVxdWFsc3EAfgD7c3EAfgCwcQB+AOVzcQB+ALRzcQB+ALd1cQB+ALoAAAADc3EAfgC8cQB+AN1zcQB+ALxxAH4A33EAfgDBc3EAfgCwcQB+AOdxAH4A+3VyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQACXRpbWV1c2FnZXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZaXR9dF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABsL1VzZXJzL2Fic3RydWN0L0Rlc2t0b3AvT3BlbiBTb3VyY2UgU29jaWV0eS9TY2FsYSBTcGVjaWFsaXphdGlvbi9Db3Vyc2U0L3RpbWV1c2FnZS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUcEeEdN/W38ZoAddsheMzhTAs6OI=
+external apis:
+0 items
+source infos:
+1 items
+/Users/abstruct/Desktop/Open Source Society/Scala Specialization/Course4/timeusage/src/main/scala/timeusage/TimeUsage.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZaXR9dF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAbC9Vc2Vycy9hYnN0cnVjdC9EZXNrdG9wL09wZW4gU291cmNlIFNvY2lldHkvU2NhbGEgU3BlY2lhbGl6YXRpb24vQ291cnNlNC90aW1ldXNhZ2UvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
