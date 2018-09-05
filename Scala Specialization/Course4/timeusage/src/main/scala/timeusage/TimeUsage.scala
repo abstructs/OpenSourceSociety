@@ -94,7 +94,17 @@ object TimeUsage {
     *    “t10”, “t12”, “t13”, “t14”, “t15”, “t16” and “t18” (those which are not part of the previous groups only).
     */
   def classifiedColumns(columnNames: List[String]): (List[Column], List[Column], List[Column]) = {
-    ???
+    val primaryNeeds = List("t01", "t03", "t11", "t1801", "t1803")
+    val workingActivities = List("t05", "t1805")
+
+    columnNames.map(colName => {
+      if(primaryNeeds.exists(code => colName.contains(code))) {
+        (List(col(colName)), List(), List())
+      } else if(workingActivities.exists(code => colName.contains(code))) {
+        (List(), List(col(colName)), List())
+      } else (List(), List(), List(col(colName)))
+    })
+    .reduce((acc, col) => (acc._1 ++ col._1, acc._2 ++ col._2, acc._3 ++ col._3))
   }
 
   /** @return a projection of the initial DataFrame such that all columns containing hours spent on primary needs
@@ -137,17 +147,23 @@ object TimeUsage {
     // more sense for our use case
     // Hint: you can use the `when` and `otherwise` Spark functions
     // Hint: don’t forget to give your columns the expected name with the `as` method
-    val workingStatusProjection: Column = ???
-    val sexProjection: Column = ???
-    val ageProjection: Column = ???
+    val workingStatusProjection: Column = $"telfs".when($"telfs" >= 1 && $"telfs" < 3, "working")
+      .otherwise("not working")
+      .as("workingStatusProjection")
+    val sexProjection: Column = $"tesex".when($"tesex" === 1, "male").otherwise("female").as("sexProjection")
+    val ageProjection: Column = $"teage".when($"teage" >= 15 && $"teage" <= 22, "young")
+      .when($"teage" >= 23 && $"teage" <= 55, "active")
+      .otherwise("elder")
+      .as("ageProjection")
 
     // Create columns that sum columns of the initial dataset
     // Hint: you want to create a complex column expression that sums other columns
     //       by using the `+` operator between them
     // Hint: don’t forget to convert the value to hours
-    val primaryNeedsProjection: Column = ???
-    val workProjection: Column = ???
-    val otherProjection: Column = ???
+    val primaryNeedsProjection: Column = primaryNeedsColumns.reduce(_ + _)
+    val workProjection: Column = workColumns.reduce(_ + _)
+    val otherProjection: Column = otherColumns.reduce(_ + _)
+
     df
       .select(workingStatusProjection, sexProjection, ageProjection, primaryNeedsProjection, workProjection, otherProjection)
       .where($"telfs" <= 4) // Discard people who are not in labor force
@@ -171,7 +187,7 @@ object TimeUsage {
     * Finally, the resulting DataFrame should be sorted by working status, sex and age.
     */
   def timeUsageGrouped(summed: DataFrame): DataFrame = {
-    ???
+      ???
   }
 
   /**
