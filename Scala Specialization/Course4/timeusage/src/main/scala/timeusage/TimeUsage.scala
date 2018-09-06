@@ -160,9 +160,9 @@ object TimeUsage {
     // Hint: you want to create a complex column expression that sums other columns
     //       by using the `+` operator between them
     // Hint: don’t forget to convert the value to hours
-    val primaryNeedsProjection: Column = primaryNeedsColumns.reduce(_ + _)
-    val workProjection: Column = workColumns.reduce(_ + _)
-    val otherProjection: Column = otherColumns.reduce(_ + _)
+    val primaryNeedsProjection: Column = primaryNeedsColumns.reduce(_ + _) / 60
+    val workProjection: Column = workColumns.reduce(_ + _) / 60
+    val otherProjection: Column = otherColumns.reduce(_ + _) / 60
 
     df
       .select(workingStatusProjection, sexProjection, ageProjection, primaryNeedsProjection, workProjection, otherProjection)
@@ -187,7 +187,14 @@ object TimeUsage {
     * Finally, the resulting DataFrame should be sorted by working status, sex and age.
     */
   def timeUsageGrouped(summed: DataFrame): DataFrame = {
-      ???
+    summed.groupBy($"working", $"sex", $"age")
+      .agg($"workingStatusProjection".as("working"),
+        $"sexProjection".as("sex"),
+        $"ageProjection".as("age"),
+        round($"primaryNeedsProjection", 1).as("primaryNeeds"),
+        round($"workProjection", 1).as("work"),
+        round($"otherProjection", 1).as("other"))
+      .orderBy($"working", $"sex", $"age")
   }
 
   /**
@@ -203,8 +210,15 @@ object TimeUsage {
   /** @return SQL query equivalent to the transformation implemented in `timeUsageGrouped`
     * @param viewName Name of the SQL view to use
     */
-  def timeUsageGroupedSqlQuery(viewName: String): String =
-    ???
+  def timeUsageGroupedSqlQuery(viewName: String): String = {
+    s"SELECT workingStatusProjection as working, sexProjection as sex, ageProjection as age," +
+      s"ROUND(primaryNeedsProjection, 1) as primaryNeeds," +
+      s"ROUND(workProjection, 1) as work," +
+      s"ROUND(otherProjection, 1) as other" +
+      s"FROM ${viewName} " +
+      s"GROUP BY working, sex, age" +
+      s"ORDER BY working, sex, age"
+  }
 
   /**
     * @return A `Dataset[TimeUsageRow]` from the “untyped” `DataFrame`
