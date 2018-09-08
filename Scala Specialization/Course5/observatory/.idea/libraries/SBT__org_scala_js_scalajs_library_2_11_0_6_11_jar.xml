@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: org.scala-js:scalajs-library_2.11:0.6.11:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.11/0.6.11/scalajs-library_2.11-0.6.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.11/0.6.11/scalajs-library_2.11-0.6.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.11/0.6.11/scalajs-library_2.11-0.6.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

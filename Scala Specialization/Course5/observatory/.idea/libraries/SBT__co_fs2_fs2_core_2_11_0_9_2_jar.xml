@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: co.fs2:fs2-core_2.11:0.9.2:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_2.11/0.9.2/fs2-core_2.11-0.9.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_2.11/0.9.2/fs2-core_2.11-0.9.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_2.11/0.9.2/fs2-core_2.11-0.9.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

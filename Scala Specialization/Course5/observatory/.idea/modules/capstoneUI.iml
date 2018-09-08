@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="capstoneUI" external.linked.project.path="$MODULE_DIR$/../../capstone-ui" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../capstone-ui/target/scala-2.11/classes" />
+    <output-test url="file://$MODULE_DIR$/../../capstone-ui/target/scala-2.11/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../capstone-ui">
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/main/scala-2.11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/test/scala-2.11" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/target/scala-2.11/src_managed/main" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/target/scala-2.11/src_managed/test" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/target/scala-2.11/resource_managed/main" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../capstone-ui/target/scala-2.11/resource_managed/test" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../capstone-ui/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:scalatags_sjs0.6_2.11:0.6.0:jar" level="project" />
+    <orderEntry type="module-library">
+      <library name="SBT: unmanaged-sources-and-docs">
+        <CLASSES />
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.7.7/avro-mapred-1.7.7-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.7.7/avro-mapred-1.7.7-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.8:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-js:scalajs-test-interface_2.11:0.6.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-js:scalajs-library_2.11:0.6.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-js:scalajs-dom_sjs0.6_2.11:0.9.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lihaoyi:sourcecode_sjs0.6_2.11:0.1.1:jar" level="project" />
+  </component>
+</module>
