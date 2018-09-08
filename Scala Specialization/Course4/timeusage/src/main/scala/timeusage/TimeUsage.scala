@@ -37,7 +37,7 @@ object TimeUsage {
 
     val finalDf = timeUsageGroupedTyped(summaryDfTyped)
 
-    println(finalDf.select($"primaryNeeds"))
+//    println(finalDf.select($"primaryNeeds"))
 
 //    println(finalDf.select("work"))
 
@@ -92,7 +92,7 @@ object TimeUsage {
     * @param line Raw fields
     */
   def row(line: List[String]): Row = {
-    Row(col(line.head).as[Double] :: line.tail.map(e => col(e).as[String]):_*)
+    Row.fromSeq(line.head :: line.tail.map(_.toDouble))
   }
 
   /** @return The initial data frame columns partitioned in three groups: primary needs (sleeping, eating, etc.),
@@ -208,19 +208,6 @@ object TimeUsage {
         round(avg($"workProjection"), 1).as("work"),
         round(avg($"otherProjection"), 1).as("other")
       ).orderBy($"working", $"sex", $"age")
-
-
-//      .agg(round($"primaryNeedsProjection", 1))
-//        avg($"workingStatusProjection"))
-//      .as("working")
-//        avg($"sexProjection").as("sex"),
-//        avg($"ageProjection").as("age"))
-//      .orderBy($"working", $"sex", $"age")
-//    round($"primaryNeedsProjection", 1).as("primaryNeeds")
-    //        round($"workProjection", 1).as("work"),
-    //              round($"otherProjection", 1).as("other")
-
-
   }
 
   /**
@@ -255,7 +242,6 @@ object TimeUsage {
     */
   def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow] = {
     timeUsageSummaryDf.map((row: Row) => {
-//      row.asInstanceOf[TimeUsageRow]
       TimeUsageRow(
         row.getAs[String]("workingStatusProjection"),
         row.getAs[String]("sexProjection"),
@@ -291,30 +277,8 @@ object TimeUsage {
         TimeUsageRow(working, sex, age, primaryNeeds, work, other)
       }
     }.orderBy($"working", $"sex", $"age")
-
-//    ((k: ((String, String, String), Double, Double, Double)) => {
-//        k._1._1
-//        TimeUsageRow("", "", "", 2, 2, 2)
-//    })
-
-//    ???
-
   }
-
-  //    ???
-  //    .agg(
-  //      $"workingStatusProjection".as("working").as[StringType],
-  //      $"sexProjection".as("sex").as[StringType],
-  //      $"ageProjection".as("age").as[StringType],
-  //      round($"primaryNeedsProjection", 1).as("primaryNeeds").as[DoubleType],
-  //      round($"workProjection", 1).as("work").as[DoubleType],
-  //      round($"otherProjection", 1).as("other").as[DoubleType]
-  //    )
-
-  //    ???
-  //  }
 }
-
 
 /**
   * Models a row of the summarized data set
