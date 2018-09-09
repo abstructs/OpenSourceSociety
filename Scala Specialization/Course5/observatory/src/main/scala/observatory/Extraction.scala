@@ -2,29 +2,37 @@ package observatory
 
 import java.io.InputStream
 import java.net.URL
+import java.nio.file.Paths
 import java.time.LocalDate
 
+//import org.apache.spark
+//import org.apache.spark.SparkContext
 import org.apache.spark.sql._
-import org.apache.spark.sql.streaming.DataStreamReader
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.StructType
-
-import scala.io.Source
-
 
 /**
   * 1st milestone: data extraction
   */
 object Extraction {
+  val ss: SparkSession = SparkSession.builder()
+    .master("local")
+    .appName("temps")
+    .getOrCreate()
+
+  import ss.implicits._
 
   def main(args: Array[String]): Unit = {
-    locateTemperatures(1975, "stations.csv", "1975.csv")
+//    val records =
+
+    locationYearlyAverageRecords(locateTemperatures(1975, "/stations.csv", "/1975.csv"))
   }
 
-  case class Temperature(stn: String, wban: String, month: Int, day: Int, temperature: Double)
+  case class TempuratureTypes(stn: Int, wban: Int, month: Int, day: Int, temperature: Temperature)
 
-  case class Station(stn: String, wban: String, latitude: Double, longitude: Double)
+  case class Station(stn: Int, wban: Int, latitude: Double, longitude: Double)
 
-  def tempSchema: StructType = Encoders.product[Temperature].schema
+  def tempSchema: StructType = Encoders.product[TempuratureTypes].schema
 
   def stationSchema: StructType = Encoders.product[Station].schema
 
@@ -35,30 +43,20 @@ object Extraction {
     * @return A sequence containing triplets (date, location, temperature)
     */
   def locateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): Iterable[(LocalDate, Location, Temperature)] = {
+    val temps = ss.read.schema(tempSchema).csv(Paths.get(getClass.getResource(temperaturesFile).toURI).toString)
+    val stations = ss.read.schema(stationSchema).csv(Paths.get(getClass.getResource(stationsFile).toURI).toString)
+      .filter($"longitude".isNotNull && $"latitude".isNotNull)
 
-
-
-    val ss = SparkSession.builder()
-      .master("local")
-      .appName("temps")
-      .getOrCreate()
-
-    val temps = ss.read.schema(tempSchema).csv(s"src/main/resources/$temperaturesFile")
-    val stations = ss.read.schema(stationSchema).csv(s"src/main/resources/$stationsFile")
-
-    temps.show(5)
-
-//    ss.Da
-//    val s = new DataStreamReader(ss)
-//    println(s)
-//    s.show(2)
-
-
-//    val tempFile: InputStream = getClass.getResourceAsStream(temperaturesFile)
-//    val stationFile: InputStream = getClass.getResourceAsStream(stationsFile)
-
-
-    List()
+    temps
+      .join(stations,
+        temps("stn") <=> stations("stn") && temps("wban") <=> stations("wban"))
+      .select($"month", $"day", $"longitude", $"latitude", (($"temperature" - 32) * 5 / 9).as("temperature"))
+      .collect()
+      .map { row =>
+        (LocalDate.of(year, row.getAs[Int]("month"), row.getAs[Int]("day")),
+          Location(row.getAs[Double]("latitude"), row.getAs[Double]("longitude")),
+          row.getAs[Temperature]("temperature"))
+      }
   }
 
   /**
@@ -66,7 +64,11 @@ object Extraction {
     * @return A sequence containing, for each location, the average temperature over the year.
     */
   def locationYearlyAverageRecords(records: Iterable[(LocalDate, Location, Temperature)]): Iterable[(Location, Temperature)] = {
-    ???
-  }
+    def avgTemp(records: Iterable[(LocalDate, Location, Temperature)]): Temperature = {
+      records.reduce((acc, record) => (acc._1, acc._2, acc._3 + record._3))._3 / records.size
+    }
 
+    records.groupBy(_._2:Location)
+      .map { case (location, rs) => (location, avgTemp(rs)) }
+  }
 }
