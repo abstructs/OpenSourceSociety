@@ -22,11 +22,11 @@ object Extraction {
 
   import ss.implicits._
 
-  def main(args: Array[String]): Unit = {
+//  def main(args: Array[String]): Unit = {
 //    val records =
 
-    locationYearlyAverageRecords(locateTemperatures(1975, "/stations.csv", "/1975.csv"))
-  }
+//    locationYearlyAverageRecords(locateTemperatures(1975, "/stations.csv", "/1975.csv"))
+//  }
 
   case class TempuratureTypes(stn: Int, wban: Int, month: Int, day: Int, temperature: Temperature)
 
