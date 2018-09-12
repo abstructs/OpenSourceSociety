@@ -50,29 +50,26 @@ object Visualization {
     * @return The color that corresponds to `value`, according to the color scale defined by `points`
     */
   def interpolateColor(points: Iterable[(Temperature, Color)], value: Temperature): Color = {
-    def interpolate(a: (Temperature, Double), b: (Temperature, Double), x: Temperature) = {
+    def interpolate(a: (Temperature, Double), b: (Temperature, Double), x: Temperature): Double = {
       a match { case (x0: Temperature, y0: Double) => b match {
           case (x1: Temperature, y1: Double) => (y0 * (x1 - x) + y1 * (x - x0)) / (x1 - x0)
         }
       }
     }
 
-    val sortedPoints = points.toArray.sortWith((p1, p2) => p1._1 > p2._1)
-    val upperIndex = sortedPoints.indexWhere(_._1 > value)
-    val lowerIndex = upperIndex - 1
+    val greaters = points.filter(_._1 >= value)
+    val lowers = points.filter(_._1 <= value)
 
-    val upper = points.head
-    val lower = points.tail.head
+    val (x0, y0) = lowers.maxBy(_._1)
+    val (x1, y1) = greaters.minBy(_._1)
 
+    if(x0 == value) return y0
+    if(x1 == value) return y1
 
-
-
-
-
-    // idea: Compute the interpolations between two colours on a 1D plane and weigh the bounds by the ratio of the bound to
-    // the value
-    // ex:  red1 * distance(value, red1)/distance(value, red2) - red2 * distance(value, red2)/distance(value, red1)
-    ???
+    Color(
+    interpolate((x0, y0.red), (x1, y1.red), value).round.toInt,
+    interpolate((x0, y0.blue), (x1, y1.blue), value).round.toInt,
+    interpolate((x0, y0.green), (x1, y1.green), value).round.toInt)
   }
 
   /**
