@@ -68,8 +68,8 @@ object Visualization {
 
     Color(
     interpolate((x0, y0.red), (x1, y1.red), value).round.toInt,
-    interpolate((x0, y0.blue), (x1, y1.blue), value).round.toInt,
-    interpolate((x0, y0.green), (x1, y1.green), value).round.toInt)
+    interpolate((x0, y0.green), (x1, y1.green), value).round.toInt,
+    interpolate((x0, y0.blue), (x1, y1.blue), value).round.toInt)
   }
 
   /**
