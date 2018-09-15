@@ -11,9 +11,9 @@ object Visualization {
     // distanced based on Great-circle distance: https://en.wikipedia.org/wiki/Great-circle_distance
     // Antipodes: https://en.wikipedia.org/wiki/Antipodes#Mathematical_description
     def deltaSigma(l1: Location, l2: Location): Double = {
-      1 / math.cos(
-        math.sin(l1.lat) * math.sin(l2.lat) + math.cos(l1.lon) * math.cos(l2.lon) *
-          math.cos(math.abs(l1.lat - l2.lat) * math.abs(l1.lon * l2.lon))
+      math.acos(
+        math.sin(l1.lat) * math.sin(l2.lat) + math.cos(l1.lat) * math.cos(l2.lat) *
+          math.cos(math.abs(l1.lon - l2.lon))
       )
     }
 
@@ -24,15 +24,18 @@ object Visualization {
     // radius of the earth in km
     6371 * (if(l1 == l2) 0
     else if(areAntipodes(l1, l2)) math.Pi
-    else  deltaSigma(l1, l2))
+    else deltaSigma(l1, l2))
   }
 
-  def weight(l1: Location, l2: Location, p: Int): Double = {
-    1 / math.pow(distance(l1, l2), p)
+  def weight(distance: Double, p: Int): Double = {
+    1 / math.pow(distance, p)
   }
 
-  def interpolate(temp: (Location, Temperature), location: Location, pow: Int): Double = {
-    weight(temp._1, location, pow) * temp._2
+  def interpolate(temps: Iterable[(Location, Temperature)], location: Location, pow: Int): Temperature = {
+    temps.map(temp => {
+      val w = weight(distance(temp._1, location), pow)
+      (w * temp._2) / w
+    }).sum
   }
 
   /**
@@ -41,7 +44,10 @@ object Visualization {
     * @return The predicted temperature at `location`
     */
   def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
-    temperatures.map(temp => interpolate(temp, location, 2)).sum
+    temperatures.find(temp => distance(temp._1, location) < 1) match {
+      case Some((_, temp)) => temp
+      case None => interpolate(temperatures, location, 2)
+    }
   }
 
   /**
@@ -50,7 +56,7 @@ object Visualization {
     * @return The color that corresponds to `value`, according to the color scale defined by `points`
     */
   def interpolateColor(points: Iterable[(Temperature, Color)], value: Temperature): Color = {
-    def interpolate(a: (Temperature, Double), b: (Temperature, Double), x: Temperature): Double = {
+    def interpolateC(a: (Temperature, Double), b: (Temperature, Double), x: Temperature): Double = {
       a match { case (x0: Temperature, y0: Double) => b match {
           case (x1: Temperature, y1: Double) => (y0 * (x1 - x) + y1 * (x - x0)) / (x1 - x0)
         }
@@ -67,9 +73,9 @@ object Visualization {
     if(x1 == value) return y1
 
     Color(
-    interpolate((x0, y0.red), (x1, y1.red), value).round.toInt,
-    interpolate((x0, y0.green), (x1, y1.green), value).round.toInt,
-    interpolate((x0, y0.blue), (x1, y1.blue), value).round.toInt)
+    interpolateC((x0, y0.red), (x1, y1.red), value).round.toInt,
+    interpolateC((x0, y0.green), (x1, y1.green), value).round.toInt,
+    interpolateC((x0, y0.blue), (x1, y1.blue), value).round.toInt)
   }
 
   /**
