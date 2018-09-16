@@ -14,8 +14,9 @@ object Visualization {
       val toRadians = Math.PI / 180d
 
       math.acos(
-        math.sin(l1.lat * toRadians) * math.sin(l2.lat * toRadians) + math.cos(l1.lat * toRadians) * math.cos(l2.lat * toRadians) *
-          math.cos(math.abs(l1.lon * toRadians - l2.lon * toRadians) )
+        math.sin(l1.lat * toRadians) * math.sin(l2.lat * toRadians) +
+          math.cos(l1.lat * toRadians) * math.cos(l2.lat * toRadians) *
+          math.cos(math.abs(l1.lon * toRadians - l2.lon * toRadians))
       )
     }
 
@@ -23,7 +24,9 @@ object Visualization {
       l1.lat == -l2.lat && (l1.lon == l2.lon + 180d || l1.lon == l2.lon - 180d)
     }
 
-    6371 * (if(l1 == l2) 0d
+    val earthsRadius = 6371
+
+    earthsRadius * (if(l1 == l2) 0d
     else if(areAntipodes(l1, l2)) math.Pi
     else deltaSigma(l1, l2))
   }
@@ -64,19 +67,23 @@ object Visualization {
       }
     }
 
-    val greaters = points.filter(_._1 >= value)
-    val lowers = points.filter(_._1 <= value)
+    val greaterThanValues = points.filter(_._1 >= value)
+    val lowerThanValues = points.filter(_._1 <= value)
 
-    val (x0, y0) = lowers.maxBy(_._1)
-    val (x1, y1) = greaters.minBy(_._1)
+    if(greaterThanValues.isEmpty) points.maxBy(_._1)._2
+    else if(lowerThanValues.isEmpty) points.minBy(_._1)._2
+    else {
+      val (x0, y0) = lowerThanValues.maxBy(_._1)
+      val (x1, y1) = greaterThanValues.minBy(_._1)
 
-    if(x0 == value) y0
-    else if(x1 == value) y1
-    else
-      Color(
-      interpolate((x0, y0.red), (x1, y1.red), value).round.toInt,
-      interpolate((x0, y0.green), (x1, y1.green), value).round.toInt,
-      interpolate((x0, y0.blue), (x1, y1.blue), value).round.toInt)
+      if(x0 == value) y0
+      else if(x1 == value) y1
+      else
+        Color(
+          interpolate((x0, y0.red), (x1, y1.red), value).round.toInt,
+          interpolate((x0, y0.green), (x1, y1.green), value).round.toInt,
+          interpolate((x0, y0.blue), (x1, y1.blue), value).round.toInt)
+    }
   }
 
   /**
@@ -85,7 +92,39 @@ object Visualization {
     * @return A 360×180 image where each pixel shows the predicted temperature at its location
     */
   def visualize(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)]): Image = {
-    ???
+    val height = 180
+    val width = 360
+
+    def pixelIndexOfL(l: Location): Int = {
+      (width * (-l.lat + 90) + l.lon + 180).toInt
+    }
+
+    def pixelIndexOfXY(x: Int, y: Int): Int = {
+      width * y + x
+    }
+
+    def toLocation(x: Int, y: Int): Location = {
+      Location(90 - y, -180 + x)
+    }
+
+    val pixels: Array[Pixel] = Array.fill(height * width){Pixel(0, 0, 0, 0)}
+
+    temperatures.foreach(temp => {
+      val c = interpolateColor(colors, temp._2)
+      pixels(pixelIndexOfL(temp._1)) = Pixel(c.red, c.green, c.blue, 1)
+    })
+
+    for(h <- 0 until height; w <- 0 until width) {
+      val p: Pixel = pixels(pixelIndexOfXY(w, h))
+      if(p.alpha == 0) {
+        val t: Temperature = predictTemperature(temperatures, toLocation(w, h))
+        val c: Color = interpolateColor(colors, t)
+
+        pixels(pixelIndexOfXY(w, h)) = Pixel(c.red, c.green, c.blue, 1)
+      }
+    }
+
+    Image(width, height, pixels)
   }
 
 }
