@@ -11,31 +11,32 @@ object Visualization {
     // distanced based on Great-circle distance: https://en.wikipedia.org/wiki/Great-circle_distance
     // Antipodes: https://en.wikipedia.org/wiki/Antipodes#Mathematical_description
     def deltaSigma(l1: Location, l2: Location): Double = {
+      val toRadians = Math.PI / 180d
+
       math.acos(
-        math.sin(l1.lat) * math.sin(l2.lat) + math.cos(l1.lat) * math.cos(l2.lat) *
-          math.cos(math.abs(l1.lon - l2.lon))
+        math.sin(l1.lat * toRadians) * math.sin(l2.lat * toRadians) + math.cos(l1.lat * toRadians) * math.cos(l2.lat * toRadians) *
+          math.cos(math.abs(l1.lon * toRadians - l2.lon * toRadians) )
       )
     }
 
     def areAntipodes(l1: Location, l2: Location): Boolean = {
-      l1.lat == -l2.lat && (l2.lon == l2.lon + 180 || l2.lon == l2.lon - 180)
+      l1.lat == -l2.lat && (l1.lon == l2.lon + 180d || l1.lon == l2.lon - 180d)
     }
 
-    // radius of the earth in km
-    6371 * (if(l1 == l2) 0
+    6371 * (if(l1 == l2) 0d
     else if(areAntipodes(l1, l2)) math.Pi
     else deltaSigma(l1, l2))
   }
 
-  def weight(distance: Double, p: Int): Double = {
-    1 / math.pow(distance, p)
+  def weight(l1: Location, l2: Location): Double = {
+    1d / math.pow(distance(l1, l2), 4)
   }
 
-  def interpolate(temps: Iterable[(Location, Temperature)], location: Location, pow: Int): Temperature = {
-    temps.map(temp => {
-      val w = weight(distance(temp._1, location), pow)
-      (w * temp._2) / w
-    }).sum
+  def inverseWeighting(temps: Iterable[(Location, Temperature)], location: Location): Temperature = {
+    val numerator = temps.map(temp => weight(temp._1, location) * temp._2).sum
+    val denominator = temps.map(temp => weight(temp._1, location)).sum
+
+    numerator / denominator
   }
 
   /**
@@ -46,7 +47,7 @@ object Visualization {
   def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
     temperatures.find(temp => distance(temp._1, location) < 1) match {
       case Some((_, temp)) => temp
-      case None => interpolate(temperatures, location, 2)
+      case None => inverseWeighting(temperatures, location)
     }
   }
 
@@ -56,7 +57,7 @@ object Visualization {
     * @return The color that corresponds to `value`, according to the color scale defined by `points`
     */
   def interpolateColor(points: Iterable[(Temperature, Color)], value: Temperature): Color = {
-    def interpolateC(a: (Temperature, Double), b: (Temperature, Double), x: Temperature): Double = {
+    def interpolate(a: (Temperature, Double), b: (Temperature, Double), x: Temperature): Double = {
       a match { case (x0: Temperature, y0: Double) => b match {
           case (x1: Temperature, y1: Double) => (y0 * (x1 - x) + y1 * (x - x0)) / (x1 - x0)
         }
@@ -69,13 +70,13 @@ object Visualization {
     val (x0, y0) = lowers.maxBy(_._1)
     val (x1, y1) = greaters.minBy(_._1)
 
-    if(x0 == value) return y0
-    if(x1 == value) return y1
-
-    Color(
-    interpolateC((x0, y0.red), (x1, y1.red), value).round.toInt,
-    interpolateC((x0, y0.green), (x1, y1.green), value).round.toInt,
-    interpolateC((x0, y0.blue), (x1, y1.blue), value).round.toInt)
+    if(x0 == value) y0
+    else if(x1 == value) y1
+    else
+      Color(
+      interpolate((x0, y0.red), (x1, y1.red), value).round.toInt,
+      interpolate((x0, y0.green), (x1, y1.green), value).round.toInt,
+      interpolate((x0, y0.blue), (x1, y1.blue), value).round.toInt)
   }
 
   /**
