@@ -1,6 +1,7 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
+import observatory.Visualization._
 
 /**
   * 3rd milestone: interactive visualization
@@ -12,33 +13,51 @@ object Interaction {
     * @return The latitude and longitude of the top-left corner of the tile, as per http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
     */
 
-  def toLocation(x: Double, y: Double): Location = {
-    Location(90 - y, -180 + x)
-  }
-
   def tileLocation(tile: Tile): Location = {
-    // TODO: Implement this properly
-    // based off https://en.wikipedia.org/wiki/Web_Mercator_projection
+    val lat = Math.atan(Math.sinh(Math.PI - tile.y / Math.pow(2, tile.zoom) * 2 * Math.PI)) * 180 / Math.PI
+    val lon = tile.x / Math.pow(2, tile.zoom) * 360 - 180
 
-    val location = toLocation(tile.x, tile.y)
-    val (lat, lon) = (location.lat, location.lon)
-
-    val x = 256 / 2 * Math.PI * Math.pow(2, tile.zoom) * (lon + Math.PI)
-    val y = 256 / 2 * Math.PI * Math.pow(2, tile.zoom) * (Math.PI - Math.log(Math.tan(Math.PI / 4 + lat / 2)))
-
-    toLocation(x, y)
-
-
+    Location(lat, lon)
   }
 
   /**
+    *
     * @param temperatures Known temperatures
     * @param colors Color scale
-    * @param tile Tile coordinates
+    * @param tile tile coordinates
     * @return A 256×256 image showing the contents of the given tile
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
-    ???
+    def generatePixels(tile: Tile): Array[((Int, Int), Pixel)] = {
+      if(Math.pow(2, tile.zoom) >= 256) {
+        val loc = tileLocation(tile)
+        val t = predictTemperature(temperatures, loc)
+        val c = interpolateColor(colors, t)
+
+        Array(((tile.x, tile.y), Pixel(c.red, c.green, c.blue, 127)))
+      } else {
+        val nw = generatePixels(Tile(2 * tile.x, 2 * tile.y, tile.zoom + 1))
+        val ne = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y, tile.zoom + 1))
+        val sw = generatePixels(Tile(2 * tile.x, 2 * tile.y + 1, tile.zoom + 1))
+        val se = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y + 1, tile.zoom + 1))
+        nw ++ ne ++ sw ++ se
+      }
+    }
+    val pixels = generatePixels(tile)
+//
+    Image(256, 256,
+      pixels.sortWith((l, r) => l._1._1 < r._1._1 && l._1._2 < r._1._2).map(_._2))
+
+
+
+//        .sortWith((lt: (((Int, Int), Pixel), ((Int, Int), Pixel))) => true)
+//        .sortWith((l: ((Int, Int), Pixel), r: ((Int, Int), Pixel)) => {
+//          val (coord1, coord2) = (l._1, r._1)
+//          coord1._1 < coord2._1 && coord1._2 < coord2._1
+//        })
+//        .map(_._2))
+
+//    Image(256, 256, )
   }
 
   /**
