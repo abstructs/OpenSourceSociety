@@ -11,8 +11,24 @@ object Interaction {
     * @param tile Tile coordinates
     * @return The latitude and longitude of the top-left corner of the tile, as per http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
     */
+
+  def toLocation(x: Double, y: Double): Location = {
+    Location(90 - y, -180 + x)
+  }
+
   def tileLocation(tile: Tile): Location = {
-    ???
+    // TODO: Implement this properly
+    // based off https://en.wikipedia.org/wiki/Web_Mercator_projection
+
+    val location = toLocation(tile.x, tile.y)
+    val (lat, lon) = (location.lat, location.lon)
+
+    val x = 256 / 2 * Math.PI * Math.pow(2, tile.zoom) * (lon + Math.PI)
+    val y = 256 / 2 * Math.PI * Math.pow(2, tile.zoom) * (Math.PI - Math.log(Math.tan(Math.PI / 4 + lat / 2)))
+
+    toLocation(x, y)
+
+
   }
 
   /**
