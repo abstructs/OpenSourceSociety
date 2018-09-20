@@ -32,7 +32,7 @@ object Visualization {
   }
 
   def weight(l1: Location, l2: Location): Double = {
-    1d / math.pow(distance(l1, l2), 4)
+    1d / math.pow(distance(l1, l2), 6)
   }
 
   def inverseWeighting(temps: Iterable[(Location, Temperature)], location: Location): Temperature = {

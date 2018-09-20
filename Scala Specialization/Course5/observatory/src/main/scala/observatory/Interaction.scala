@@ -3,9 +3,6 @@ package observatory
 import com.sksamuel.scrimage.{Image, Pixel}
 import observatory.Visualization._
 
-import scala.collection.immutable
-import scala.collection.parallel.ParSeq
-
 /**
   * 3rd milestone: interactive visualization
   */
@@ -32,7 +29,7 @@ object Interaction {
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
     def generatePixels(tile: Tile): Array[((Int, Int), Pixel)] = {
-      if(Math.pow(2, tile.zoom) >= 256) {
+      if(Math.pow(2, tile.zoom) == 256) {
         val loc = tileLocation(tile)
         val t = predictTemperature(temperatures, loc)
         val c = interpolateColor(colors, t)
@@ -40,23 +37,28 @@ object Interaction {
         Array(((tile.x, tile.y), Pixel(c.red, c.green, c.blue, 127)))
       } else {
         // TODO: Run this in parallel
+
         val nw = generatePixels(Tile(2 * tile.x, 2 * tile.y, tile.zoom + 1))
         val ne = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y, tile.zoom + 1))
         val sw = generatePixels(Tile(2 * tile.x, 2 * tile.y + 1, tile.zoom + 1))
         val se = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y + 1, tile.zoom + 1))
 
-        ParSeq(nw, ne, sw, se).reduce(_ ++ _)
+        nw ++ ne ++ sw ++ se
       }
     }
+
     val pixels = generatePixels(tile)
 
     // sort by the columns then sort the rows
-    val ps: Array[Pixel] = pixels.sortBy(_._1._1).sortBy(_._1._2).map(_._2)
+    val ps = pixels.sortBy(_._1._1).sortBy(_._1._2).map(_._2)
 
 //    ps.foreach(println)
-//    pixels.sort
 
-    Image(256, 256, ps)
+    Image(Math.pow(2, 8 - tile.zoom).toInt, Math.pow(2, 8 - tile.zoom).toInt, ps)
+  }
+
+  def generateImage(year: Year, t: Tile, data: Unit): Unit = {
+    ???
   }
 
   /**
@@ -75,6 +77,5 @@ object Interaction {
         generateImage(data._1, Tile(x, y, zoom), data._2)
       }
     })
-//    ???
   }
 }
