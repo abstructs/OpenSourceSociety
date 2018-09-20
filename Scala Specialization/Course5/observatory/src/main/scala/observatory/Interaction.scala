@@ -3,6 +3,9 @@ package observatory
 import com.sksamuel.scrimage.{Image, Pixel}
 import observatory.Visualization._
 
+import scala.collection.immutable
+import scala.collection.parallel.ParSeq
+
 /**
   * 3rd milestone: interactive visualization
   */
@@ -36,28 +39,24 @@ object Interaction {
 
         Array(((tile.x, tile.y), Pixel(c.red, c.green, c.blue, 127)))
       } else {
+        // TODO: Run this in parallel
         val nw = generatePixels(Tile(2 * tile.x, 2 * tile.y, tile.zoom + 1))
         val ne = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y, tile.zoom + 1))
         val sw = generatePixels(Tile(2 * tile.x, 2 * tile.y + 1, tile.zoom + 1))
         val se = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y + 1, tile.zoom + 1))
-        nw ++ ne ++ sw ++ se
+
+        ParSeq(nw, ne, sw, se).reduce(_ ++ _)
       }
     }
     val pixels = generatePixels(tile)
-//
-    Image(256, 256,
-      pixels.sortWith((l, r) => l._1._1 < r._1._1 && l._1._2 < r._1._2).map(_._2))
 
+    // sort by the columns then sort the rows
+    val ps: Array[Pixel] = pixels.sortBy(_._1._1).sortBy(_._1._2).map(_._2)
 
+//    ps.foreach(println)
+//    pixels.sort
 
-//        .sortWith((lt: (((Int, Int), Pixel), ((Int, Int), Pixel))) => true)
-//        .sortWith((l: ((Int, Int), Pixel), r: ((Int, Int), Pixel)) => {
-//          val (coord1, coord2) = (l._1, r._1)
-//          coord1._1 < coord2._1 && coord1._2 < coord2._1
-//        })
-//        .map(_._2))
-
-//    Image(256, 256, )
+    Image(256, 256, ps)
   }
 
   /**
@@ -71,7 +70,11 @@ object Interaction {
     yearlyData: Iterable[(Year, Data)],
     generateImage: (Year, Tile, Data) => Unit
   ): Unit = {
-    ???
+    yearlyData.foreach(data => {
+      for(zoom <- 0 to 3; x <- 0 until Math.pow(2, zoom).toInt; y <- 0 until Math.pow(2, zoom).toInt) {
+        generateImage(data._1, Tile(x, y, zoom), data._2)
+      }
+    })
+//    ???
   }
-
 }
