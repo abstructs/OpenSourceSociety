@@ -2,7 +2,8 @@ package observatory
 
 import org.scalatest.FunSuite
 import org.scalatest.prop.Checkers
-import Interaction._
+import Interaction.{tile, _}
+
 import scala.collection.concurrent.TrieMap
 
 trait InteractionTest extends FunSuite with Checkers {
@@ -12,7 +13,11 @@ trait InteractionTest extends FunSuite with Checkers {
     val ts = locs.zip(temps)
     val cs = List((-30d, Color(0, 0, 0)), (30d, Color(255, 255, 255)))
 
-    tile(ts, cs, tile = Tile(0, 0, 0))
+//    tile(ts, cs, tile = Tile(0, 0, 0))
+
+    println(tile(ts, cs, tile = Tile(0, 0, 0)).pixel((0, 5)))
+    println(tile(ts, cs, tile = Tile(0, 0, 1)).pixel((0, 5)))
+
 
 //    fail(s"Result was: ${result}")
   }

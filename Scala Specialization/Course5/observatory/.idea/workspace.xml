@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Interaction.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Interaction.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Interaction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+            <state relative-caret-position="142">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="e#21#64#0" expanded="true" />
               </folding>
@@ -43,31 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Visualization.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Visualization.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Interaction2.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Interaction2.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InteractionTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/observatory/InteractionTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="92">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grading.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Grading.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -120,17 +110,17 @@
         <option value="$PROJECT_DIR$/src/test/scala/observatory/ExtractionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/observatory/Extraction.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/observatory/VisualizationTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/observatory/Grading.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/observatory/InteractionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/observatory/Visualization.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/observatory/InteractionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/observatory/Interaction.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/observatory/Grading.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
+    <option name="x" value="8" />
     <option name="y" value="23" />
-    <option name="width" value="1377" />
+    <option name="width" value="1069" />
     <option name="height" value="819" />
   </component>
   <component name="ProjectView">
@@ -387,39 +377,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Visualization_Test - 2018.09.19 at 19h 29m 21s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 12h 13m 35s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.19 at 19h 29m 49s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 17m 58s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.19 at 21h 33m 36s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 18m 54s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.19 at 21h 33m 56s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 20m 40s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.19 at 21h 34m 25s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 20m 56s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.20 at 14h 48m 05s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 21m 06s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.20 at 15h 50m 42s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 21m 28s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.20 at 15h 51m 02s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 21m 42s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.20 at 15h 53m 31s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 22m 44s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Visualization_Test - 2018.09.20 at 16h 10m 51s.xml">
+    <history-entry file="Visualization_Test - 2018.09.21 at 13h 22m 55s.xml">
       <configuration name="Visualization Test" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="23" width="1377" height="819" extended-state="0" />
+    <frame x="8" y="23" width="1069" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -428,13 +418,13 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28248587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28248587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28764045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3739046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -616,14 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Grading.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/com/sksamuel/scrimage/scrimage-core_2.11/2.1.6/scrimage-core_2.11-2.1.6-sources.jar!/com/sksamuel/scrimage/color.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -658,6 +640,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="316" column="25" lean-forward="false" selection-start-line="316" selection-start-column="25" selection-end-line="316" selection-end-column="25" />
+          <folding>
+            <element signature="e#11999#12000#0" expanded="false" />
+            <element signature="e#12082#12083#0" expanded="false" />
+            <element signature="e#66828#66829#0" expanded="false" />
+            <element signature="e#66870#66871#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,6 +716,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-157">
           <caret line="658" column="11" lean-forward="false" selection-start-line="658" selection-start-column="11" selection-end-line="658" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -749,14 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/models.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,17 +781,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/observatory/InteractionTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Interaction2.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-175">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -824,13 +797,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/models.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Interaction.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+        <state relative-caret-position="142">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#21#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/observatory/InteractionTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/observatory/Grading.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

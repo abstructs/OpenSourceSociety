@@ -14,8 +14,8 @@ object Interaction {
     */
 
   def tileLocation(tile: Tile): Location = {
-    val lat = Math.atan(Math.sinh(Math.PI - tile.y / Math.pow(2, tile.zoom) * 2 * Math.PI)) * 180 / Math.PI
     val lon = tile.x / Math.pow(2, tile.zoom) * 360 - 180
+    val lat = Math.atan(Math.sinh(Math.PI - tile.y / Math.pow(2, tile.zoom) * 2 * Math.PI)) * 180 / Math.PI
 
     Location(lat, lon)
   }
@@ -28,8 +28,9 @@ object Interaction {
     * @return A 256×256 image showing the contents of the given tile
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
+    val z = tile.zoom
     def generatePixels(tile: Tile): Array[((Int, Int), Pixel)] = {
-      if(Math.pow(2, tile.zoom) == 256) {
+      if(Math.pow(2, tile.zoom) == Math.pow(2, 8 + z)) {
         val loc = tileLocation(tile)
         val t = predictTemperature(temperatures, loc)
         val c = interpolateColor(colors, t)
@@ -50,11 +51,11 @@ object Interaction {
     val pixels = generatePixels(tile)
 
     // sort by the columns then sort the rows
-    val ps = pixels.sortBy(_._1._1).sortBy(_._1._2).map(_._2)
+    val ps = pixels.sortBy(_._1._1).sortBy(_._1._2)
 
 //    ps.foreach(println)
 
-    Image(Math.pow(2, 8 - tile.zoom).toInt, Math.pow(2, 8 - tile.zoom).toInt, ps)
+    Image(256, 256, ps.map(_._2))
   }
 
   def generateImage(year: Year, t: Tile, data: Unit): Unit = {
