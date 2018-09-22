@@ -1,5 +1,7 @@
 package observatory
 
+import scala.collection.mutable
+import Visualization.predictTemperature
 /**
   * 4th milestone: value-added information
   */
@@ -11,7 +13,19 @@ object Manipulation {
     *         returns the predicted temperature at this location
     */
   def makeGrid(temperatures: Iterable[(Location, Temperature)]): GridLocation => Temperature = {
-    ???
+    val memo: mutable.Map[GridLocation, Temperature] = mutable.Map()
+
+    (location: GridLocation) => {
+      memo get location match {
+        case Some(temp: Temperature) => temp
+        case None => {
+          val temp = predictTemperature(temperatures, Location(location.lat, location.lon))
+          memo += (location -> temp)
+
+          temp
+        }
+      }
+    }
   }
 
   /**
@@ -20,7 +34,11 @@ object Manipulation {
     * @return A function that, given a latitude and a longitude, returns the average temperature at this location
     */
   def average(temperaturess: Iterable[Iterable[(Location, Temperature)]]): GridLocation => Temperature = {
-    ???
+    (location: GridLocation) => {
+      temperaturess.par.aggregate(0d)((acc, temperatures) => {
+        acc + predictTemperature(temperatures, Location(location.lat, location.lon))
+      },  _ + _) / temperaturess.size
+    }
   }
 
   /**
@@ -29,7 +47,9 @@ object Manipulation {
     * @return A grid containing the deviations compared to the normal temperatures
     */
   def deviation(temperatures: Iterable[(Location, Temperature)], normals: GridLocation => Temperature): GridLocation => Temperature = {
-    ???
+    (location: GridLocation) => {
+      normals(location) - predictTemperature(temperatures, Location(location.lat, location.lon))
+    }
   }
 
 

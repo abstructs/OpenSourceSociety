@@ -3,13 +3,8 @@ package observatory
 import java.io.File
 
 import com.sksamuel.scrimage.{Image, Pixel}
-import monix.eval.Task
-import monix.execution.CancelableFuture
 import observatory.Visualization._
 import observatory.Extraction._
-import scala.concurrent.Await
-import scala.concurrent.duration.Duration
-import monix.execution.Scheduler.Implicits.global
 import org.apache.commons.math3.util.FastMath
 
 /**
@@ -38,24 +33,28 @@ object Interaction {
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
     val z = tile.zoom
-    def generatePixels(tile: Tile): Array[((Int, Int), Pixel)] = {
+//    val toCompute = Math.pow(Math.pow(2, 7 + z), 2)
+//    var computed = 0
 
-      if(FastMath.pow(2, tile.zoom) == FastMath.pow(2, 8 + z)) {
+    def generatePixels(tile: Tile): Array[((Int, Int), Pixel)] = {
+      if(FastMath.pow(2, tile.zoom) >= FastMath.pow(2, 8 + z)) {
+//        computed += 1
+//
+//        val percentageDone = 100 - (toCompute - computed) / toCompute * 100
+//        if(computed % 1000 == 0) println(s"$percentageDone% complete")
+
         val loc = tileLocation(tile)
         val t = predictTemperature(temperatures, loc)
         val c = interpolateColor(colors, t)
 
         Array(((tile.x, tile.y), Pixel(c.red, c.green, c.blue, 127)))
       } else {
-        val nw = Task(generatePixels(Tile(2 * tile.x, 2 * tile.y, tile.zoom + 1)))
-        val ne = Task(generatePixels(Tile(2 * tile.x + 1, 2 * tile.y, tile.zoom + 1)))
-        val sw = Task(generatePixels(Tile(2 * tile.x, 2 * tile.y + 1, tile.zoom + 1)))
-        val se = Task(generatePixels(Tile(2 * tile.x + 1, 2 * tile.y + 1, tile.zoom + 1)))
+        val nw = generatePixels(Tile(2 * tile.x, 2 * tile.y, tile.zoom + 1))
+        val ne = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y, tile.zoom + 1))
+        val sw = generatePixels(Tile(2 * tile.x, 2 * tile.y + 1, tile.zoom + 1))
+        val se = generatePixels(Tile(2 * tile.x + 1, 2 * tile.y + 1, tile.zoom + 1))
 
-        val tasks = Task.gatherUnordered(Seq(nw, ne, sw, se)).runAsync
-
-        Await.result[List[Array[((Year, Year), Pixel)]]](tasks, Duration.Inf).reduce(_ ++ _)
-
+        nw ++ ne ++ sw ++ se
       }
     }
 
@@ -63,8 +62,6 @@ object Interaction {
 
     // sort by the columns then sort the rows
     val ps = pixels.sortBy(_._1._1).sortBy(_._1._2)
-
-//    ps.foreach(println)
 
     Image(256, 256, ps.map(_._2))
   }
@@ -86,8 +83,9 @@ object Interaction {
     val image = tile(data, colors, t)
 
     println("Writing image to disk...")
-
-    image.output(new File("."))
+    val file = new File(s"target/temperatures/$year/${t.zoom}/${t.x}-${t.y}.png")
+    file.getParentFile.mkdirs
+    image.output(file)
   }
 
   def main(args: Array[String]): Unit = {
