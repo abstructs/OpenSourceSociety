@@ -1,6 +1,7 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
+import org.apache.commons.math3.util.FastMath
 
 /**
   * 2nd milestone: basic visualization
@@ -11,12 +12,12 @@ object Visualization {
     // distanced based on Great-circle distance: https://en.wikipedia.org/wiki/Great-circle_distance
     // Antipodes: https://en.wikipedia.org/wiki/Antipodes#Mathematical_description
     def deltaSigma(l1: Location, l2: Location): Double = {
-      val toRadians = Math.PI / 180d
+      val toRadians = FastMath.PI / 180d
 
-      math.acos(
-        math.sin(l1.lat * toRadians) * math.sin(l2.lat * toRadians) +
-          math.cos(l1.lat * toRadians) * math.cos(l2.lat * toRadians) *
-          math.cos(math.abs(l1.lon * toRadians - l2.lon * toRadians))
+      FastMath.acos(
+        FastMath.sin(l1.lat * toRadians) * FastMath.sin(l2.lat * toRadians) +
+          FastMath.cos(l1.lat * toRadians) * FastMath.cos(l2.lat * toRadians) *
+            FastMath.cos(FastMath.abs(l1.lon * toRadians - l2.lon * toRadians))
       )
     }
 
@@ -27,19 +28,26 @@ object Visualization {
     val earthsRadius = 6371
 
     earthsRadius * (if(l1 == l2) 0d
-    else if(areAntipodes(l1, l2)) math.Pi
+    else if(areAntipodes(l1, l2)) FastMath.PI
     else deltaSigma(l1, l2))
   }
 
   def weight(l1: Location, l2: Location): Double = {
-    1d / math.pow(distance(l1, l2), 6)
+    1d / FastMath.pow(distance(l1, l2), 6)
   }
 
   def inverseWeighting(temps: Iterable[(Location, Temperature)], location: Location): Temperature = {
-    val numerator = temps.map(temp => weight(temp._1, location) * temp._2).sum
-    val denominator = temps.map(temp => weight(temp._1, location)).sum
+    var hasLessThanOne = false
+    var lessThanOneTemp = 0d
 
-    numerator / denominator
+    val (numerator, denominator) = temps.par.aggregate((0d, 0d))((acc, temp) => {
+      if(distance(temp._1, location) < 1 && !hasLessThanOne) hasLessThanOne = true; lessThanOneTemp = temp._2
+      val w = weight(temp._1, location)
+      (w * temp._2 + acc._1, w + acc._2)
+    }, (t1, t2) => (t1._1 + t2._1, t1._2 + t2._2))
+
+    if(hasLessThanOne) lessThanOneTemp
+    else numerator / denominator
   }
 
   /**
@@ -48,7 +56,7 @@ object Visualization {
     * @return The predicted temperature at `location`
     */
   def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
-    temperatures.find(temp => distance(temp._1, location) < 1) match {
+    temperatures.par.find(temp => distance(temp._1, location) < 1) match {
       case Some((_, temp)) => temp
       case None => inverseWeighting(temperatures, location)
     }
