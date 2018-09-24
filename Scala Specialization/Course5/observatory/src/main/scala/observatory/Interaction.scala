@@ -5,7 +5,7 @@ import java.io.File
 import com.sksamuel.scrimage.{Image, Pixel}
 import observatory.Visualization._
 import observatory.Extraction._
-//import org.apache.commons.math3.util.FastMath
+import org.apache.commons.math3.util.FastMath
 
 /**
   * 3rd milestone: interactive visualization
@@ -18,8 +18,8 @@ object Interaction {
     */
 
   def tileLocation(tile: Tile): Location = {
-    val lon = tile.x / Math.pow(2, tile.zoom) * 360 - 180
-    val lat = Math.atan(Math.sinh(Math.PI - tile.y / Math.pow(2, tile.zoom) * 2 * Math.PI)) * 180 / Math.PI
+    val lon = tile.x / FastMath.pow(2, tile.zoom) * 360 - 180
+    val lat = FastMath.atan(FastMath.sinh(FastMath.PI - tile.y / FastMath.pow(2, tile.zoom) * 2 * FastMath.PI)) * 180 / FastMath.PI
 
     Location(lat, lon)
   }
@@ -33,11 +33,11 @@ object Interaction {
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
     val z = tile.zoom
-//    val toCompute = Math.pow(Math.pow(2, 7 + z), 2)
+//    val toCompute = FastMath.pow(FastMath.pow(2, 7 + z), 2)
 //    var computed = 0
 
     def generatePixels(tile: Tile): Array[((Int, Int), Pixel)] = {
-      if(Math.pow(2, tile.zoom) >= Math.pow(2, 8 + z)) {
+      if(FastMath.pow(2, tile.zoom) >= FastMath.pow(2, 8 + z)) {
 //        computed += 1
 //
 //        val percentageDone = 100 - (toCompute - computed) / toCompute * 100
@@ -66,38 +66,37 @@ object Interaction {
     Image(256, 256, ps.map(_._2))
   }
 
-//  def generateImage(year: Year, t: Tile, data: Iterable[(Location, Temperature)]): Unit = {
-//    val colors = List(
-//      (60d, Color(255, 255, 255)),
-//      (32d, Color(255, 0, 0)),
-//      (12d, Color(255, 255, 0)),
-//      (0d, Color(0, 255, 255)),
-//      (-15d, Color(0, 0, 255)),
-//      (-27d, Color(255, 0, 255)),
-//      (-50d, Color(33, 0, 255)),
-//      (-60d, Color(0, 0, 0)))
-//
-//
-//    println("Creating image from data...")
-//
-//    val image = tile(data, colors, t)
-//
-//    println("Writing image to disk...")
-//    val file = new File(s"target/temperatures/$year/${t.zoom}/${t.x}-${t.y}.png")
-//    file.getParentFile.mkdirs
-//    image.output(file)
-//  }
+  def generateImage(year: Year, t: Tile, data: Iterable[(Location, Temperature)]): Unit = {
+    val colors = List(
+      (60d, Color(255, 255, 255)),
+      (32d, Color(255, 0, 0)),
+      (12d, Color(255, 255, 0)),
+      (0d, Color(0, 255, 255)),
+      (-15d, Color(0, 0, 255)),
+      (-27d, Color(255, 0, 255)),
+      (-50d, Color(33, 0, 255)),
+      (-60d, Color(0, 0, 0)))
 
-//  def main(args: Array[String]): Unit = {
-////    2015
-//    val yearlyData = (1975 to 1975).map(year => {
-//      val records = locateTemperatures(year, "/stations.csv", s"/$year.csv")
-//      val data: Iterable[(Location, Temperature)] = locationYearlyAverageRecords(records)
-//      (year, data)
-//    })
-//
-//    generateTiles[Iterable[(Location, Temperature)]](yearlyData, generateImage)
-//  }
+
+    println("Creating image from data...")
+
+    val image = tile(data, colors, t)
+
+    println("Writing image to disk...")
+    val file = new File(s"target/temperatures/$year/${t.zoom}/${t.x}-${t.y}.png")
+    file.getParentFile.mkdirs
+    image.output(file)
+  }
+
+  def main(args: Array[String]): Unit = {
+    val yearlyData = (1976 to 2015).map(year => {
+      val records = locateTemperatures(year, "/stations.csv", s"/$year.csv")
+      val data: Iterable[(Location, Temperature)] = locationYearlyAverageRecords(records)
+      (year, data)
+    })
+
+    generateTiles[Iterable[(Location, Temperature)]](yearlyData, generateImage)
+  }
 
   /**
     * Generates all the tiles for zoom levels 0 to 3 (included), for all the given years.
@@ -112,7 +111,7 @@ object Interaction {
   ): Unit = {
     yearlyData.foreach(data => {
       // 3
-      for(zoom <- 0 to 3; x <- 0 until Math.pow(2, zoom).toInt; y <- 0 until Math.pow(2, zoom).toInt) {
+      for(zoom <- 0 to 3; x <- 0 until FastMath.pow(2, zoom).toInt; y <- 0 until FastMath.pow(2, zoom).toInt) {
         generateImage(data._1, Tile(x, y, zoom), data._2)
       }
     })
