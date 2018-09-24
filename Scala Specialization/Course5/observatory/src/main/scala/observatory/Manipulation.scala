@@ -34,11 +34,23 @@ object Manipulation {
     * @return A function that, given a latitude and a longitude, returns the average temperature at this location
     */
   def average(temperaturess: Iterable[Iterable[(Location, Temperature)]]): GridLocation => Temperature = {
+//    val memo: mutable.Map[GridLocation, Temperature] = mutable.Map()
+//
     (location: GridLocation) => {
-      temperaturess.par.aggregate(0d)((acc, temperatures) => {
-        acc + predictTemperature(temperatures, Location(location.lat, location.lon))
-      },  _ + _) / temperaturess.size
-    }
+      2d
+//      memo get location match {
+//        case Some(avg: Temperature) => avg
+//        case None => {
+//          val avg = temperaturess.par.aggregate(0d)((acc, temperatures) => {
+//            acc + predictTemperature(temperatures, Location(location.lat, location.lon))
+//          }, _ + _) / temperaturess.size
+//
+//          memo += (location -> avg)
+//
+//          avg
+//        }
+      }
+//    }
   }
 
   /**
@@ -47,8 +59,21 @@ object Manipulation {
     * @return A grid containing the deviations compared to the normal temperatures
     */
   def deviation(temperatures: Iterable[(Location, Temperature)], normals: GridLocation => Temperature): GridLocation => Temperature = {
+    ???
+//    val memo: mutable.Map[GridLocation, Temperature] = mutable.Map()
+//
     (location: GridLocation) => {
-      normals(location) - predictTemperature(temperatures, Location(location.lat, location.lon))
+//      memo get location match {
+//        case Some(devi: Temperature) => devi
+//        case None => {
+//          val devi = normals(location) - predictTemperature(temperatures, Location(location.lat, location.lon))
+//
+//          memo += (location -> devi)
+//
+//          devi
+//        }
+//      }
+      2d
     }
   }
 

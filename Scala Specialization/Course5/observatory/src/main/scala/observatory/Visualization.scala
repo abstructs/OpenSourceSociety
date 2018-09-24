@@ -32,17 +32,21 @@ object Visualization {
     else deltaSigma(l1, l2))
   }
 
-  def weight(l1: Location, l2: Location): Double = {
-    1d / FastMath.pow(distance(l1, l2), 6)
+  def weight(l1: Location, l2: Location, distance: Double): Double = {
+    1d / FastMath.pow(distance, 6)
   }
 
   def inverseWeighting(temps: Iterable[(Location, Temperature)], location: Location): Temperature = {
     var hasLessThanOne = false
     var lessThanOneTemp = 0d
 
-    val (numerator, denominator) = temps.par.aggregate((0d, 0d))((acc, temp) => {
-      if(distance(temp._1, location) < 1 && !hasLessThanOne) hasLessThanOne = true; lessThanOneTemp = temp._2
-      val w = weight(temp._1, location)
+    val (numerator, denominator) = temps.takeWhile(temp => {
+      val d = distance(temp._1, location)
+      if(d < 1 && !hasLessThanOne) hasLessThanOne = true; lessThanOneTemp = temp._2
+      d >= 1
+    }).aggregate((0d, 0d))((acc, temp) => {
+      val d = distance(temp._1, location)
+      val w = weight(temp._1, location, d)
       (w * temp._2 + acc._1, w + acc._2)
     }, (t1, t2) => (t1._1 + t2._1, t1._2 + t2._2))
 
@@ -56,10 +60,11 @@ object Visualization {
     * @return The predicted temperature at `location`
     */
   def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
-    temperatures.par.find(temp => distance(temp._1, location) < 1) match {
-      case Some((_, temp)) => temp
-      case None => inverseWeighting(temperatures, location)
-    }
+    inverseWeighting(temperatures, location)
+//    temperatures.find(temp => distance(temp._1, location) < 1) match {
+//      case Some((_, temp)) => temp
+//      case None => inverseWeighting(temperatures, location)
+//    }
   }
 
   /**
