@@ -25,7 +25,7 @@ object Visualization2 {
     d10: Temperature,
     d11: Temperature
   ): Temperature = {
-    d00 * (1 - point.x) * (1 - point.y) + d10 * point.x * (1 - point.y) + d01 * (1 - point.x) * point.y + d11 * point.x * point.y
+    d00 * (1d - point.x) * (1d - point.y) + d10 * point.x * (1d - point.y) + d01 * (1d - point.x) * point.y + d11 * point.x * point.y
   }
 
   /**
@@ -41,30 +41,20 @@ object Visualization2 {
     tile: Tile
   ): Image = {
 
-    val pixels = for(y <- tile.y until tile.y + 256; x <- tile.x until tile.x + 256)
+    val pixels = for(y <- 0 until 256; x <- 0 until 256)
     yield {
-      val modX = x % 360
-      val modY = y % 180
+      val pixelLoc = tileLocation(Tile(x + 256 * tile.x, y + 256 * tile.y, tile.zoom + 8))
 
-      GridLocation(x , 0)
+      val d00 = grid(GridLocation(pixelLoc.lon.toInt, pixelLoc.lat.toInt))
+      val d01 = grid(GridLocation(pixelLoc.lon.toInt, pixelLoc.lat.toInt + 1))
+      val d10 = grid(GridLocation(pixelLoc.lon.toInt + 1, pixelLoc.lat.toInt))
+      val d11 = grid(GridLocation(pixelLoc.lon.toInt + 1, pixelLoc.lat.toInt + 1))
 
-      val d00 = grid(GridLocation(modX - 180, modY - 90))
-      val d10 = grid(GridLocation(modX - 179, modY - 90))
-      val d01 = grid(GridLocation(modX - 180, modY - 89))
-      val d11 = grid(GridLocation(modX - 179, modY - 89))
-
-      val temp = bilinearInterpolation(CellPoint(modX / (modX + 1), modY / (modY + 1)), d00, d01, d10, d11)
-//      val t = tileLocation(Tile(x, y, tile.zoom))
-
-//      val temp = grid(GridLocation(t.lat.round.toInt, t.lon.round.toInt))
-      val color = interpolateColor(colors, temp)
-      Pixel(color.red, color.green, color.blue, 127)
+      val temp = bilinearInterpolation(CellPoint(pixelLoc.lon - pixelLoc.lon.floor, pixelLoc.lat - pixelLoc.lat.floor), d00, d10, d01, d11)
+      val c = interpolateColor(colors.toList.sortWith(_._1 < _._1), temp)
+      Pixel.apply(c.red, c.green, c.blue, 127)
     }
 
-//    pixels.foreach(println)
-
-
-//    val ps = pixels.sortBy(_._1._1).sortBy(_._1._2).map(_._2)
     Image(256, 256, pixels.toArray)
   }
 }

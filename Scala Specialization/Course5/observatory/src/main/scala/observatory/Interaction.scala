@@ -18,8 +18,12 @@ object Interaction {
     */
 
   def tileLocation(tile: Tile): Location = {
-    val lon = tile.x / FastMath.pow(2, tile.zoom) * 360 - 180
-    val lat = FastMath.atan(FastMath.sinh(FastMath.PI - tile.y / FastMath.pow(2, tile.zoom) * 2 * FastMath.PI)) * 180 / FastMath.PI
+    toLocation(tile.x, tile.y, tile.zoom)
+  }
+
+  def toLocation(x: Double, y: Double, zoom: Double): Location = {
+    val lon = x / FastMath.pow(2, zoom) * 360 - 180
+    val lat = FastMath.atan(FastMath.sinh(FastMath.PI - y / FastMath.pow(2, zoom) * 2 * FastMath.PI)) * 180 / FastMath.PI
 
     Location(lat, lon)
   }
