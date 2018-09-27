@@ -40,21 +40,46 @@ object Visualization2 {
     colors: Iterable[(Temperature, Color)],
     tile: Tile
   ): Image = {
+//    val height = 256
+//    val width = 256
+//    val offsetX = tile.x
+//    val offsetY = tile.y
+//
+//    val pixels: Array[Pixel] = Array.fill(height * width){Pixel(0, 0, 0, 0)}
+//
+//    for(x <- 0 until 256; y <- 0 until 256) {
+//      val loc = tileLocation(Tile(x + offsetX, y + offsetY, tile.zoom + 8))
+//
+//      val d00 = GridLocation(loc.lat.floor.toInt, loc.lon.floor.toInt)
+//      val d01 = GridLocation(loc.lat.floor.toInt, loc.lon.floor.toInt)
+//      val d10 = GridLocation(loc.lat.floor.toInt, loc.lon.floor.toInt)
+//      val d11 = GridLocation(loc.lat.floor.toInt, loc.lon.floor.toInt)
+//
+//      bilinearInterpolation(CellPoint(loc.lon - loc.lon.floor, loc.lat - loc.lat.floor), ), )
+//
+//
+//      pixels(y * width + x) = Pixel(0, 0, 0, 0)
+//    }
+//
+//    Image(256, 256, pixels)
 
-    val pixels = for(y <- 0 until 256; x <- 0 until 256)
-    yield {
-      val pixelLoc = tileLocation(Tile(x + 256 * tile.x, y + 256 * tile.y, tile.zoom + 8))
 
-      val d00 = grid(GridLocation(pixelLoc.lon.toInt, pixelLoc.lat.toInt))
-      val d01 = grid(GridLocation(pixelLoc.lon.toInt, pixelLoc.lat.toInt + 1))
-      val d10 = grid(GridLocation(pixelLoc.lon.toInt + 1, pixelLoc.lat.toInt))
-      val d11 = grid(GridLocation(pixelLoc.lon.toInt + 1, pixelLoc.lat.toInt + 1))
-
-      val temp = bilinearInterpolation(CellPoint(pixelLoc.lon - pixelLoc.lon.floor, pixelLoc.lat - pixelLoc.lat.floor), d00, d10, d01, d11)
-      val c = interpolateColor(colors.toList.sortWith(_._1 < _._1), temp)
-      Pixel.apply(c.red, c.green, c.blue, 127)
-    }
-
-    Image(256, 256, pixels.toArray)
+//    val pixels = for(y <- 0 until 256; x <- 0 until 256)
+//    yield {
+//      val pixelLoc = tileLocation(Tile(x + 256 * tile.x, y + 256 * tile.y, tile.zoom + 8))
+//
+//      val d00 = grid(GridLocation(pixelLoc.lat.toInt, pixelLoc.lon.toInt))
+//      val d01 = grid(GridLocation(pixelLoc.lat.toInt + 1, pixelLoc.lon.toInt))
+//      val d10 = grid(GridLocation(pixelLoc.lat.toInt, pixelLoc.lon.toInt + 1))
+//      val d11 = grid(GridLocation(pixelLoc.lat.toInt + 1, pixelLoc.lon.toInt + 1))
+//
+//      val temp = bilinearInterpolation(CellPoint(pixelLoc.lon - pixelLoc.lon.floor, pixelLoc.lat - pixelLoc.lat.floor), d00, d10, d01, d11)
+//      val c = interpolateColor(colors, temp)
+//
+//      Pixel(c.red, c.green, c.blue, 127)
+//    }
+//
+//    Image(256, 256, pixels.toArray)
+    ???
   }
 }

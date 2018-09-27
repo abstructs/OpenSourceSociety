@@ -39,14 +39,14 @@ object Visualization {
   def inverseWeighting(temps: Iterable[(Location, Temperature)], location: Location): Temperature = {
     var hasLessThanOne = false
     var lessThanOneTemp = 0d
+    var d = 0d
 
-    val (numerator, denominator) = temps.takeWhile(temp => {
-      val d = distance(temp._1, location)
+    val (numerator, denominator) = temps.par.takeWhile(temp => {
+      d = distance(temp._1, location)
       if(d < 1 && !hasLessThanOne) hasLessThanOne = true; lessThanOneTemp = temp._2
       d >= 1
     }).aggregate((0d, 0d))((acc, temp) => {
-      val d = distance(temp._1, location)
-      val w = weight(temp._1, location, d)
+      val w = weight(temp._1, location, distance(temp._1, location))
       (w * temp._2 + acc._1, w + acc._2)
     }, (t1, t2) => (t1._1 + t2._1, t1._2 + t2._2))
 

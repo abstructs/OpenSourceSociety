@@ -37,15 +37,15 @@ object Interaction {
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
     val z = tile.zoom
-//    val toCompute = FastMath.pow(FastMath.pow(2, 7 + z), 2)
-//    var computed = 0
+    //    val toCompute = FastMath.pow(FastMath.pow(2, 7 + z), 2)
+    //    var computed = 0
 
     def generatePixels(tile: Tile): Array[((Int, Int), Pixel)] = {
       if(FastMath.pow(2, tile.zoom) >= FastMath.pow(2, 8 + z)) {
-//        computed += 1
-//
-//        val percentageDone = 100 - (toCompute - computed) / toCompute * 100
-//        if(computed % 1000 == 0) println(s"$percentageDone% complete")
+        //        computed += 1
+        //
+        //        val percentageDone = 100 - (toCompute - computed) / toCompute * 100
+        //        if(computed % 1000 == 0) println(s"$percentageDone% complete")
 
         val loc = tileLocation(tile)
         val t = predictTemperature(temperatures, loc)
@@ -109,12 +109,8 @@ object Interaction {
     * @param generateImage Function that generates an image given a year, a zoom level, the x and
     *                      y coordinates of the tile and the data to build the image from
     */
-  def generateTiles[Data](
-    yearlyData: Iterable[(Year, Data)],
-    generateImage: (Year, Tile, Data) => Unit
-  ): Unit = {
+  def generateTiles[Data](yearlyData: Iterable[(Year, Data)], generateImage: (Year, Tile, Data) => Unit): Unit = {
     yearlyData.foreach(data => {
-      // 3
       for(zoom <- 0 to 3; x <- 0 until FastMath.pow(2, zoom).toInt; y <- 0 until FastMath.pow(2, zoom).toInt) {
         generateImage(data._1, Tile(x, y, zoom), data._2)
       }
