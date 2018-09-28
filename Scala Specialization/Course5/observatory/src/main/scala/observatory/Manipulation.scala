@@ -66,7 +66,7 @@ object Manipulation {
       memo get location match {
         case Some(devi: Temperature) => devi
         case None => {
-          val devi = getTemp(location)
+          val devi = getTemp(location) - normals(location)
 
           memo += (location -> devi)
 
@@ -78,4 +78,3 @@ object Manipulation {
 
 
 }
-
