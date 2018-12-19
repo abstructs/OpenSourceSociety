@@ -78,3 +78,5 @@ runMain barneshut.BarnesHut
 all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/barneshut/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/barneshut/}root/test:products
 submit polygoning@gmail.com vsLIQPWPOQrI2PGa
 runMain barneshut.BarnesHut
+ls
+all {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/barneshut/}root/products {file:/Users/abstruct/Desktop/Open%20Source%20Society/Scala%20Specialization/Course3/barneshut/}root/test:products

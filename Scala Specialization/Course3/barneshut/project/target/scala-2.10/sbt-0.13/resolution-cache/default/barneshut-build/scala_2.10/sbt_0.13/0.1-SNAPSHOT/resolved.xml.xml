@@ -4,7 +4,7 @@
 		module="barneshut-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20180823211111"
+		publication="20181031133944"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
